@@ -20,6 +20,9 @@
     <loc>http://localhost:1313/belarus-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/middle-east-esim/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/bulgaria-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -149,19 +152,16 @@
     <loc>http://localhost:1313/asia-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/sea-esim/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/americas-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/africa-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/middle-east-esim/</loc>
-    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/europe-esim/</loc>
-    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/sea-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/privacy-policy/</loc>

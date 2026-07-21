@@ -182,12 +182,13 @@
 </section>
 
 <!-- ===== FAQ ===== -->
+<!-- ===== FAQ ===== -->
 <section class="sec">
     <div class="container">
         <h2>{{ $p.faq_title }}</h2>
         <div class="faq-acc" style="margin-top:16px">
             {{ range $p.faq_items }}
-                <details class="faq-a-item"{{ if .open }} open{{ end }}>
+                <details class="faq-a-item" open>
                     <summary class="faq-a-q">{{ .q }}</summary>
                     <div class="faq-a-a">{{ .a | safeHTML }}</div>
                 </details>
