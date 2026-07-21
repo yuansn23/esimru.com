@@ -1,0 +1,230 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>{{ .Title }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:image" content="{{ "img/123.jpg" | absURL }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* 全部 CSS 代码（原样复制自你的静态页面，从 :root 到 .ftr-bot 等） */
+:root{
+    --bg:#08080c;--surface:#111116;--surface2:#18181f;--border:#25252d;--border-light:#1c1c24;
+    --fg:#fafafa;--fg2:#d4d4d8;--fg3:#a1a1aa;--fg4:#71717a;
+    --accent:#ec4899;--accent2:#f472b6;--accent-bg:#ec489910;
+    --green:#34d399;--amber:#fbbf24;--blue:#60a5fa;
+    --r:8px;--r2:12px;--r3:16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;background:var(--bg);color:var(--fg)}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--fg2);line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;color:var(--fg);letter-spacing:-.01em}
+h1{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;margin-bottom:10px}
+h2{font-size:1.5rem;margin-bottom:6px}
+h3{font-size:1rem;font-weight:600}
+a{color:var(--accent2);text-decoration:none;transition:color .15s}a:hover{color:var(--accent)}
+.dim{color:var(--fg4)}.muted{color:var(--fg3)}
+b,strong{color:var(--fg);font-weight:600}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ===== HEADER ===== */
+.hdr{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;height:56px;display:flex;align-items:center}
+.hdr-inner{max-width:1200px;margin:0 auto;width:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;color:var(--fg)}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:24px}.nav a{font-size:.84rem;font-weight:500;color:var(--fg3)}.nav a:hover,.nav a.cur{color:var(--fg)}
+.hdr-search-wrap{position:relative;display:flex;align-items:center}
+.hdr-search{width:220px;padding:9px 14px 9px 36px;border:1px solid var(--accent);border-radius:24px;background:var(--bg);color:var(--fg);font-size:.8rem;font-family:inherit;outline:none;transition:all .2s;box-shadow:0 0 0 2px var(--accent-bg)}
+.hdr-search:hover{border-color:var(--accent2)}
+.hdr-search:focus{border-color:var(--accent2);box-shadow:0 0 0 4px var(--accent-bg);background:var(--surface)}
+.hdr-search::placeholder{color:var(--fg4)}
+.hdr-search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:.85rem;pointer-events:none}
+@media(max-width:768px){.hdr-search-wrap{display:none}}
+@media(max-width:640px){.nav{display:none}}
+
+/* ===== HERO ===== */
+.hero{background:linear-gradient(160deg,var(--surface) 0%,#1a1025 40%,#0d1117 100%);padding:56px 0 48px;border-bottom:1px solid var(--border)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(1.8rem,4.5vw,3rem)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-desc{font-size:.95rem;color:var(--fg3);line-height:1.65;margin-bottom:18px;max-width:520px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.hero-pills span{background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:.76rem;color:var(--fg2);display:inline-flex;align-items:center;gap:5px}
+.hero-pills span b{color:var(--accent)}
+.hero-search{display:flex;gap:8px;max-width:440px}
+.hero-search input{flex:1;padding:12px 18px;border:1px solid var(--border);border-radius:var(--r2);background:var(--surface);color:var(--fg);font-size:.88rem;font-family:inherit;outline:none;transition:border-color .15s}
+.hero-search input:focus{border-color:var(--accent)}
+.hero-search input::placeholder{color:var(--fg4)}
+.hero-search button{padding:12px 24px;background:var(--accent);color:#fff;border:none;border-radius:var(--r2);font-weight:600;font-size:.86rem;cursor:pointer;transition:background .15s;font-family:inherit;white-space:nowrap}
+.hero-search button:hover{background:var(--accent2)}
+.hero-img img{width:100%;border-radius:var(--r3);display:block}
+@media(max-width:768px){.hero-grid{grid-template-columns:1fr;gap:20px}.hero-img{display:none}}
+
+/* ===== SECTION ===== */
+.sec{padding:56px 0}.sec+.sec{border-top:1px solid var(--border)}
+.sec-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.sec-header a{font-size:.82rem;font-weight:500}
+
+/* ===== TRENDING PILLS ===== */
+.trending{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.trending a{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:6px 14px;font-size:.78rem;color:var(--fg2);transition:all .15s;text-decoration:none}
+.trending a:hover{border-color:var(--accent);color:var(--fg)}
+.trending a .hot{color:var(--accent);font-weight:700;font-size:.65rem}
+
+/* ===== TABBED COUNTRIES ===== */
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:20px}
+.tab-btn{flex:1;padding:14px 10px;background:none;border:none;border-bottom:2px solid transparent;color:var(--fg3);font-size:.82rem;font-weight:500;cursor:pointer;transition:all .15s;font-family:inherit;text-align:center}
+.tab-btn:hover{color:var(--fg)}
+.tab-btn.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab-btn .tb-count{display:block;font-size:.68rem;color:var(--fg4);font-weight:400;margin-top:1px}
+.tab-btn.active .tb-count{color:var(--accent2)}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+.country-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cc3{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:16px 18px 30px 18px;text-decoration:none;color:inherit;transition:all .2s;position:relative}
+.cc3:hover{border-color:var(--accent);background:var(--surface2);transform:translateX(3px)}
+.cc3 .f3{flex-shrink:0;width:32px;height:22px;border-radius:2px;overflow:hidden;border:1px solid var(--border)}
+.cc3 .f3 img{width:100%;height:100%;object-fit:cover;display:block}
+.cc3 .c3-badge{position:absolute;top:10px;right:14px;font-size:.6rem;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.03em;text-transform:uppercase}
+.c3-badge.g5{background:#34d39918;color:var(--green)}
+.c3-badge.g4{background:var(--surface2);color:var(--fg4)}
+.cc3 .c3-info{min-width:0;flex:1;padding-right:36px}
+.cc3 .c3-name{font-weight:600;font-size:.85rem;color:var(--fg)}
+.cc3 .c3-sub{font-size:.7rem;color:var(--fg4);margin-top:2px;line-height:1.4}
+.cc3 .c3-sub strong{color:var(--green);font-weight:600}
+.cc3 .c3-arrow{color:var(--fg4);font-size:.8rem;flex-shrink:0;transition:color .15s}
+.cc3:hover .c3-arrow{color:var(--accent)}
+.c3-price{position:absolute;bottom:10px;right:14px;font-size:.72rem;font-weight:700;color:var(--green)}
+@media(max-width:768px){.country-grid-3{grid-template-columns:1fr}.tabs{overflow-x:auto}.tab-btn{flex:none;padding:12px 14px;white-space:nowrap}}
+
+.faq-acc{display:flex;flex-direction:column;gap:6px}
+.faq-a-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.faq-a-q{width:100%;text-align:left;padding:16px 20px;font-size:.88rem;font-weight:600;color:var(--fg);background:none;border:none;cursor:pointer;font-family:inherit;line-height:1.4;display:flex;justify-content:space-between;align-items:center}
+.faq-a-q:hover{color:var(--accent2)}
+.faq-a-q::after{content:'▾';font-size:.55rem;color:var(--fg4);transition:transform .2s;flex-shrink:0;margin-left:14px}
+.faq-a-item[open] .faq-a-q::after{transform:rotate(180deg)}
+.faq-a-a{padding:0 20px 18px;font-size:.82rem;color:var(--fg3);line-height:1.65}
+.faq-a-a a{color:var(--accent2);text-decoration:underline}
+.faq-a-a code{background:var(--surface2);padding:2px 6px;border-radius:4px;font-size:.8rem;color:var(--fg2)}
+@media(max-width:640px){.faq-a-q{font-size:.84rem;padding:14px 16px}.faq-a-a{padding:0 16px 16px;font-size:.78rem}}
+
+/* ===== WHY eSIM ===== */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.why-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:22px 20px;transition:border-color .15s}
+.why-card:hover{border-color:var(--accent)}
+.why-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:800;color:var(--accent);line-height:1;margin-bottom:6px}
+.why-title{font-weight:600;font-size:.9rem;color:var(--fg);margin-bottom:6px}
+.why-card p{font-size:.78rem;color:var(--fg3);line-height:1.6}
+@media(max-width:768px){.why-grid{grid-template-columns:1fr}}
+
+/* ===== INSTALL + COMPAT ===== */
+.dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.dual-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:22px 24px}
+.dual-card h3{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:8px}
+.dual-card ul{list-style:none;font-size:.8rem;color:var(--fg3);line-height:2}
+.steps-inline{display:flex;flex-direction:column;gap:10px}
+.si{display:flex;gap:12px;align-items:flex-start}
+.si-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--accent-bg);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.82rem}
+.si strong{display:block;font-size:.84rem;margin-bottom:2px}
+@media(max-width:768px){.dual-grid{grid-template-columns:1fr}}
+
+/* ===== FOOTER ===== */
+.ftr{background:var(--surface);border-top:1px solid var(--border);padding:48px 0 28px}
+.ftr-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}
+.ftr-grid h4{color:var(--fg);font-family:'Playfair Display',serif;font-size:.9rem;margin-bottom:12px}
+.ftr-grid a{color:var(--fg4);display:block;padding:2px 0;font-size:.78rem}.ftr-grid a:hover{color:var(--fg)}
+.ftr-bot{border-top:1px solid var(--border);margin-top:36px;padding-top:20px;text-align:center;font-size:.72rem;color:var(--fg4)}
+.ftr-bot a{color:var(--fg4);margin:0 12px}
+@media(max-width:768px){.ftr-grid{grid-template-columns:1fr}}
+
+/* ===== ABOUT PAGE SPECIFIC ===== */
+.hero-split{display:flex;gap:40px;align-items:center}
+.hero-split figure{flex:0 0 300px;margin:0;border-radius:var(--r2);overflow:hidden;border:1px solid var(--border)}
+.hero-split figure img{width:100%;height:auto;display:block}
+.bc{font-size:.76rem;color:var(--fg4);margin-bottom:14px}
+.bc a{color:var(--fg4)}.bc a:hover{color:var(--fg2)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+
+.mission-text{font-size:1.05rem;color:var(--fg3);line-height:1.7;max-width:720px}
+.mission-text strong{color:var(--fg)}
+
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.val-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:28px 24px;transition:border-color .15s}
+.val-card:hover{border-color:var(--accent)}
+.val-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:800;color:var(--accent);line-height:1;margin-bottom:12px;opacity:.7}
+.val-title{font-weight:600;font-size:.95rem;color:var(--fg);margin-bottom:8px}
+.val-desc{font-size:.8rem;color:var(--fg4);line-height:1.6}
+
+.how-list{display:flex;flex-direction:column;gap:12px;max-width:720px}
+.how-item{display:flex;gap:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:22px 24px;transition:all .2s}
+.how-item:hover{border-color:var(--accent);transform:translateX(4px)}
+.how-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--accent-bg);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+.how-body{font-size:.84rem;color:var(--fg3);line-height:1.6}
+.how-body strong{color:var(--fg)}
+
+.contact-card{background:var(--surface);border:1px solid var(--accent);border-radius:var(--r3);padding:32px 36px;text-align:center;max-width:600px;margin:0 auto}
+.contact-card h3{font-size:1.2rem;margin-bottom:8px}
+.contact-card p{font-size:.88rem;color:var(--fg3);margin-bottom:6px}
+
+@media(max-width:768px){
+    .hero-split{flex-direction:column!important;gap:20px!important}
+    .hero-split figure{flex:auto!important;width:100%!important}
+    .values-grid{grid-template-columns:1fr}
+}
+/* ===== ABOUT PAGE SPECIFIC ===== */
+.split-row{display:flex;gap:36px;align-items:flex-start}
+.split-text{flex:1;min-width:0}
+.split-img{flex:0 0 260px;margin:0;border-radius:var(--r2);overflow:hidden;border:1px solid var(--border)}
+.split-img img{width:100%;height:auto;display:block;object-fit:cover;min-height:340px}
+@media(max-width:768px){.split-row{flex-direction:column}.split-img{flex:auto;width:100%}.split-img img{min-height:200px;max-height:260px}}
+</style>
+
+<!-- JSON‑LD 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "eSIM RU",
+  "url": "https://www.esimru.com",
+  "description": "Независимый каталог eSIM для путешественников из России — честное сравнение тарифов, без рекламы и скрытых условий, только объективные данные.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.esimru.com/strana/{search_term_string}",
+    "query-input": "required name=country"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://www.esimru.com/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question","name": "Что такое eSIM и как он работает?","acceptedAnswer": {"@type": "Answer","text": "eSIM — это встроенная электронная SIM-карта. Установите её до вылета за 2 минуты через QR-код и пользуйтесь интернетом за границей без роуминга."}},
+    {"@type": "Question","name": "Сколько стоит eSIM для путешествий?","acceptedAnswer": {"@type": "Answer","text": "Цены на eSIM начинаются от $1.99 за 1 ГБ. На eSIM RU вы можете сравнить тарифы 30+ провайдеров и найти лучшую цену за гигабайт."}},
+    {"@type": "Question","name": "Какие телефоны поддерживают eSIM?","acceptedAnswer": {"@type": "Answer","text": "iPhone XS/XR и новее, Samsung Galaxy S20+, Google Pixel 3+, а также флагманы Xiaomi и Huawei с 2022 года. Наберите *#06# — если есть EID, eSIM работает."}}
+  ]
+}
+</script>

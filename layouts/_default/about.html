@@ -1,0 +1,91 @@
+{{ define "main" }}
+
+{{ $p := .Params }}
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-split" style="display:flex;gap:40px;align-items:center">
+            <div style="flex:1;min-width:0">
+                <nav class="bc"><a href="/">Главная</a> / О нас</nav>
+                <h1>{{ $p.hero_title | safeHTML }}</h1>
+                <p class="mission-text" style="margin-top:12px">{{ $p.hero_desc | safeHTML }}</p>
+            </div>
+            <figure style="flex:0 0 300px;margin:0;border-radius:var(--r2);overflow:hidden;border:1px solid var(--border)">
+                <img src="/img/esim.jpg" alt="eSIM RU — независимый каталог eSIM" width="600" height="400" loading="eager" style="width:100%;height:auto;display:block">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- MISSION -->
+<section class="sec">
+    <div class="container">
+        <div class="split-row">
+            <div class="split-text">
+                <h2>{{ $p.mission_title }}</h2>
+                <div class="mission-text">
+                    {{ range $p.mission_paragraphs }}
+                        <p>{{ . | safeHTML }}</p>
+                    {{ end }}
+                </div>
+            </div>
+            <figure class="split-img">
+                <img src="/img/ru-esim.jpg" alt="Планирование путешествия — eSIM RU" width="400" height="500" loading="lazy">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- VALUES -->
+<section class="sec">
+    <div class="container">
+        <h2>{{ $p.values_title }}</h2>
+        <div class="values-grid">
+            {{ range $p.values }}
+                <div class="val-card">
+                    <div class="val-num">{{ .num }}</div>
+                    <div class="val-title">{{ .title }}</div>
+                    <div class="val-desc">{{ .desc }}</div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="sec">
+    <div class="container">
+        <div class="split-row">
+            <div class="split-text">
+                <h2>{{ $p.how_title }}</h2>
+                <div class="how-list">
+                    {{ range $p.how_steps }}
+                        <div class="how-item">
+                            <div class="how-num">{{ .num }}</div>
+                            <div class="how-body">{{ .text | safeHTML }}</div>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+            <figure class="split-img">
+                <img src="/img/aboutus.png" alt="Анализ данных eSIM — eSIM RU" width="400" height="500" loading="lazy">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec">
+    <div class="container">
+        <h2 style="text-align:center">{{ $p.contact_title }}</h2>
+        <div class="contact-card" style="margin-top:20px">
+            <h3>{{ $p.contact_subtitle }}</h3>
+            <p>{{ $p.contact_desc }}</p>
+            <p>{{ $p.contact_email_label }} <strong>{{ $p.contact_email }}</strong></p>
+            <p class="dim" style="font-size:.78rem;margin-top:8px">{{ $p.contact_note }}</p>
+        </div>
+    </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,337 @@
+{{ $p := .Params }}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== 所有 CSS 保持原样 ===== */
+        :root{
+            --bg:#08080c;--surface:#111116;--surface2:#18181f;--border:#25252d;--border-light:#1c1c24;
+            --fg:#fafafa;--fg2:#d4d4d8;--fg3:#a1a1aa;--fg4:#71717a;
+            --accent:#ec4899;--accent2:#f472b6;--accent-bg:#ec489910;
+            --green:#34d399;--amber:#fbbf24;--blue:#60a5fa;
+            --r:8px;--r2:12px;--r3:16px;
+        }
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth;font-size:16px;background:var(--bg);color:var(--fg)}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--fg2);line-height:1.6;-webkit-font-smoothing:antialiased}
+        .container{max-width:1120px;margin:0 auto;padding:0 24px}
+        h1,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;color:var(--fg);letter-spacing:-.01em}
+        h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin-bottom:16px}
+        h1 em{font-style:normal;color:var(--accent)}
+        h2{font-family:'Inter',-apple-system,sans-serif;font-weight:600;color:var(--fg);font-size:1.5rem;margin-bottom:16px}
+        a{color:var(--accent2);text-decoration:none;transition:color .15s}a:hover{color:var(--accent)}
+        .dim{color:var(--fg4)}.muted{color:var(--fg3)}
+        b,strong{color:var(--fg);font-weight:600}
+        ::selection{background:var(--accent);color:#fff}
+
+        /* ===== HERO ===== */
+        .hero{background:linear-gradient(160deg,#0d1528 0%,var(--surface) 50%,#0d1117 100%);padding:64px 0 40px;border-bottom:1px solid var(--border);text-align:center}
+        .bc{font-size:.76rem;color:var(--fg4);margin-bottom:14px;text-align:center}.bc a{color:var(--fg4)}.bc a:hover{color:var(--fg2)}
+        .hero h1{max-width:720px;margin:0 auto 12px}
+        .hero p{font-size:.95rem;color:var(--fg3);max-width:620px;margin:0 auto 18px;line-height:1.65}
+        .hero-figures{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+        .hero-pic{margin:24px auto 0;max-width:900px;border-radius:var(--r3);overflow:hidden;border:1px solid var(--border)}
+        .hero-pic img{width:100%;height:auto;max-height:300px;object-fit:cover;display:block}
+        .hero-fig{text-align:center}
+        .hero-fig .hf-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:800;color:var(--accent);line-height:1}
+        .hero-fig .hf-label{font-size:.72rem;color:var(--fg4);margin-top:2px}
+
+        /* ===== SECTION ===== */
+        .sec{padding:64px 0}.sec+.sec{border-top:1px solid var(--border)}
+
+        /* ===== BRAND MATRIX ===== */
+        .brand-matrix{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+        .bm-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:16px 18px;display:flex;align-items:center;gap:12px;transition:all .15s}
+        .bm-card:hover{border-color:var(--accent);background:var(--surface2)}
+        .bm-logo{flex-shrink:0;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.8rem}
+        .bm-info{min-width:0}
+        .bm-name{font-weight:600;font-size:.82rem;color:var(--fg)}
+        .bm-count{font-size:.7rem;color:var(--fg4)}
+        .bm-count strong{color:var(--accent2);font-weight:700}
+        .bm-bar{height:3px;background:var(--border);border-radius:2px;margin-top:4px;overflow:hidden}
+        .bm-bar-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .5s ease}
+        @media(max-width:900px){.brand-matrix{grid-template-columns:repeat(3,1fr)}}
+        @media(max-width:640px){.brand-matrix{grid-template-columns:repeat(2,1fr)}}
+
+        /* ===== COUNTRY STRIP ===== */
+        .country-strip{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
+        .cs-card{display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:14px 10px;text-decoration:none;color:inherit;transition:all .15s;text-align:center}
+        .cs-card:hover{border-color:var(--accent);background:var(--surface2);transform:translateY(-2px)}
+        .cs-flag{width:26px;height:17px;border-radius:2px;overflow:hidden;display:block;margin:0 auto}
+        .cs-flag img{width:100%;height:100%;object-fit:cover;display:block}
+        .cs-name{font-size:.7rem;font-weight:500;color:var(--fg2)}
+        .cs-price{font-size:.64rem;color:var(--green);font-weight:600}
+        @media(max-width:900px){.country-strip{grid-template-columns:repeat(4,1fr)}}
+        @media(max-width:480px){.country-strip{grid-template-columns:repeat(3,1fr)}}
+
+        /* ===== ROUTES ===== */
+        .route-grid{display:flex;flex-direction:column;gap:10px;max-width:780px;margin:0 auto}
+        .route-card{display:flex;gap:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:20px 22px;transition:border-color .15s}
+        .route-card:hover{border-color:var(--accent)}
+        .route-num{flex-shrink:0;font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;color:var(--accent);opacity:.5;line-height:1;width:40px}
+        .route-desc{font-size:.8rem;color:var(--fg3);line-height:1.6}
+        @media(max-width:640px){.route-card{flex-direction:column}.route-num{width:auto}}
+
+        /* ===== TEXT GRID ===== */
+        .text-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+        .text-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:22px 24px;font-size:.84rem;color:var(--fg3);line-height:1.65}
+        .text-card.highlight{background:var(--accent-bg);border-color:var(--accent)}
+        .text-card-title{font-weight:600;font-size:.9rem;color:var(--fg);margin-bottom:10px}
+        .text-card ul{list-style:none;font-size:.82rem;color:var(--fg3);line-height:2}
+        @media(max-width:640px){.text-grid{grid-template-columns:1fr}}
+
+        /* ===== PRICE CARDS ===== */
+        .price-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+        .pr-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r3);padding:24px;text-decoration:none;color:inherit;transition:all .2s;display:block;position:relative;overflow:hidden}
+        .pr-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+        .pr-card::after{content:'';position:absolute;top:0;right:0;width:80px;height:80px;background:var(--accent-bg);border-radius:0 0 0 80px;opacity:.5}
+        .pr-badge{display:inline-block;font-size:.62rem;font-weight:700;padding:2px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
+        .pr-badge.rec{background:var(--accent);color:#fff}
+        .pr-badge.pop{background:var(--blue);color:#fff}
+        .pr-badge.cheap{background:var(--green);color:var(--bg)}
+        .pr-provider{font-weight:600;font-size:.9rem;color:var(--fg);margin-bottom:2px}
+        .pr-plan{font-size:.78rem;color:var(--fg4);margin-bottom:10px}
+        .pr-price{font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;color:var(--accent);line-height:1}
+        .pr-price span{font-size:.7rem;font-weight:400;color:var(--fg4);display:block;margin-top:4px}
+        .pr-feats{display:flex;gap:10px;margin-top:12px;font-size:.68rem;color:var(--fg3)}
+        .pr-feats span{color:var(--green)}
+        @media(max-width:768px){.price-cards{grid-template-columns:1fr}}
+
+        /* ===== WHY SPLIT ===== */
+        .why-split{display:flex;gap:28px;align-items:flex-start}
+        .why-cards{display:flex;flex-direction:column;gap:10px;flex:1;min-width:0}
+        .why-img{flex:0 0 280px;margin:0;border-radius:var(--r2);overflow:hidden;border:1px solid var(--border)}
+        .why-img img{width:100%;height:auto;display:block;object-fit:cover;min-height:360px}
+        @media(max-width:768px){.why-split{flex-direction:column}.why-img{flex:auto;width:100%}.why-img img{min-height:200px;max-height:260px}}
+        .wc-card{display:flex;gap:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:20px 22px;transition:border-color .15s}
+        .wc-card:hover{border-color:var(--accent)}
+        .wc-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--accent-bg);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+        .wc-body{min-width:0}
+        .wc-title{font-weight:600;font-size:.88rem;color:var(--fg);margin-bottom:4px}
+        .wc-desc{font-size:.78rem;color:var(--fg4);line-height:1.55}
+        @media(max-width:640px){.wc-card{flex-direction:column}.wc-num{width:28px;height:28px;font-size:.78rem}}
+
+        /* ===== TEXT BLOCK ===== */
+        .text-block{max-width:720px;font-size:.9rem;color:var(--fg3);line-height:1.7}
+        .text-block p+p{margin-top:14px}
+
+        /* ===== FAQ ===== */
+        .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+        .faq-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:18px 20px;transition:border-color .15s}
+        .faq-card:hover{border-color:var(--accent)}
+        .faq-card h3{font-family:'Inter',sans-serif;font-size:.85rem;font-weight:600;color:var(--fg);margin-bottom:6px}
+        .faq-card p{font-size:.76rem;color:var(--fg4);line-height:1.55}
+        @media(max-width:640px){.faq-grid{grid-template-columns:1fr}}
+
+        /* ===== FOOTER ===== */
+        .ftr{background:var(--surface);border-top:1px solid var(--border);padding:48px 0 28px}
+        .ftr-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}
+        .ftr-grid h4{color:var(--fg);font-family:'Playfair Display',serif;font-size:.9rem;margin-bottom:12px}
+        .ftr-grid a{color:var(--fg4);display:block;padding:2px 0;font-size:.78rem}.ftr-grid a:hover{color:var(--fg)}
+        .ftr-bot{border-top:1px solid var(--border);margin-top:36px;padding-top:20px;text-align:center;font-size:.72rem;color:var(--fg4)}
+        .ftr-bot a{color:var(--fg4);margin:0 12px}
+        @media(max-width:768px){.ftr-grid{grid-template-columns:1fr}}
+    </style>
+ 
+    {{/* ===== 结构化数据 JSON-LD ===== */}}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Главная",
+              "item": "{{ .Site.BaseURL }}"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": {{ $p.hero_title | plainify | truncate 20 | jsonify }},
+              "item": "{{ .Permalink }}"
+            }
+          ]
+        },
+        {{ if $p.faq }}
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {{ range $index, $item := $p.faq }}
+            {
+              "@type": "Question",
+              "name": {{ $item.q | jsonify }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ $item.a | plainify | jsonify }}
+              }
+            }{{ if ne (add $index 1) (len $p.faq) }},{{ end }}
+            {{ end }}
+          ]
+        },
+        {{ end }}
+        {{ if $p.points }}
+        {
+          "@type": "HowTo",
+          "name": {{ $p.points_title | default "Инструкция" | jsonify }},
+          "description": {{ $p.points_sub | default "Пошаговое руководство" | jsonify }},
+          "step": [
+            {{ range $index, $step := $p.points }}
+            {
+              "@type": "HowToStep",
+              "position": {{ $step.num }},
+              "name": {{ $step.num | printf "Шаг %d" | jsonify }},
+              "text": {{ $step.body | plainify | jsonify }}
+            }{{ if ne (add $index 1) (len $p.points) }},{{ end }}
+            {{ end }}
+          ]
+        }
+        {{ end }}
+      ]
+    }
+    </script>
+ 
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+{{ partial "header.html" . }}
+
+<!-- ===== HERO ===== -->
+<section class="hero"><div class="container">
+<!--
+<nav class="bc"><a href="/">Главная</a> / {{ $p.hero_title }}</nav>
+-->
+<h1>{{ $p.hero_title | safeHTML }}</h1>
+<p>{{ $p.hero_desc }}</p>
+<div class="hero-figures">
+{{ range $p.hero_figures }}
+<!--
+<div class="hero-fig"><div class="hf-num">{{ .num }}</div><div class="hf-label">{{ .label }}</div></div>
+-->
+{{ end }}
+</div>
+<figure class="hero-pic"><img src="{{ $p.hero_image }}" alt="{{ $p.hero_image_alt }}" width="1100" height="320" loading="eager"></figure>
+</div></section>
+
+<!-- ===== COUNTRY STRIP ===== -->
+<section class="sec" style="padding-bottom:0"><div class="container">
+<h2>{{ $p.countries_title }}</h2>
+<div class="country-strip" style="margin-top:16px">
+{{ range $p.countries }}
+<a href="{{ .url }}" class="cs-card">
+<span class="cs-flag"><img src="{{ .flag }}" alt="" width="24" height="16" loading="lazy"></span>
+<span class="cs-name">{{ .name }}</span>
+<span class="cs-price">{{ .price }}</span>
+</a>
+{{ end }}
+</div>
+</div></section>
+
+<!-- ===== BRAND MATRIX ===== -->
+<!-- ===== BRAND MATRIX ===== -->
+<!-- ===== BRAND MATRIX ===== -->
+<section class="sec"><div class="container">
+<h2>Сравнение провайдеров eSIM</h2>
+<p class="muted" style="margin-bottom:18px;font-size:.84rem">{{ $p.brand_sub }}</p>
+<div class="brand-matrix" id="brandMatrix">
+{{ range $p.brands }}
+<div class="bm-card">
+  <!-- 修正：使用 absURL 确保路径正确 -->
+  <img src="{{ .logo | absURL }}" alt="{{ .name }}" class="bm-logo" style="background-color:{{ .logo_color }}; width:40px; height:40px; object-fit:contain; border-radius:4px;">
+  <div class="bm-info">
+    <div class="bm-name">{{ .name }}</div>
+    <div class="bm-count"><strong>{{ .count }}</strong> тарифов</div>
+    <!-- 进度条暂时注释掉（因为数据里没有 percent） -->
+    <!-- <div class="bm-bar"><div class="bm-bar-fill" style="width:{{ .percent }}%"></div></div> -->
+  </div>
+</div>
+{{ end }}
+</div>
+<div class="text-block" style="margin-top:16px"><p>{{ $p.brand_footer | safeHTML }}</p></div>
+</div></section>
+
+ 
+ 
+
+<!-- ===== POINTS ===== -->
+<section class="sec"><div class="container">
+<div style="text-align:center">
+<h2>{{ $p.points_title }}</h2>
+<p class="muted" style="margin-bottom:18px;font-size:.84rem">{{ $p.points_sub }}</p>
+</div>
+<div class="route-grid">
+{{ range $p.points }}
+<div class="route-card">
+<div class="route-num">{{ .num }}</div>
+<div class="route-desc" style="flex:1">{{ .body | safeHTML }}</div>
+</div>
+{{ end }}
+</div>
+</div></section>
+
+<!-- ===== VPN SECTION ===== -->
+<section class="sec"><div class="container">
+<h2>{{ $p.vpn_title }}</h2>
+<div class="text-grid">
+<div class="text-card">
+{{ $p.vpn_text | safeHTML }}
+</div>
+<div class="text-card highlight">
+<div class="text-card-title">{{ $p.vpn_list_title }}</div>
+<ul>
+{{ range $p.vpn_list }}
+<li>{{ . | safeHTML }}</li>
+{{ end }}
+</ul>
+</div>
+</div>
+</div></section>
+
+<!-- ===== WHY CARDS ===== -->
+<section class="sec"><div class="container">
+<h2>{{ $p.why_title }}</h2>
+<div class="why-split">
+<div class="why-cards">
+{{ range $p.why_cards }}
+<div class="wc-card">
+<div class="wc-num">{{ .num }}</div>
+<div class="wc-body">
+<div class="wc-title">{{ .title }}</div>
+<div class="wc-desc">{{ .desc }}</div>
+</div>
+</div>
+{{ end }}
+</div>
+<figure class="why-img"><img src="{{ $p.why_image }}" alt="{{ $p.why_image_alt }}" width="400" height="500" loading="lazy"></figure>
+</div>
+</div></section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec"><div class="container">
+<h2>{{ $p.faq_title }}</h2>
+<div class="faq-grid" style="margin-top:16px">
+{{ range $p.faq }}
+<div class="faq-card">
+<h3>{{ .q }}</h3>
+<p>{{ .a | safeHTML }}</p>
+</div>
+{{ end }}
+</div>
+</div></section>
+
+<!-- ===== FOOTER ===== -->
+{{ partial "footer.html" . }}
+
+</body>
+</html>

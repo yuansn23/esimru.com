@@ -1,0 +1,208 @@
+{{ define "main" }}
+
+{{ $p := .Params }}
+
+{{/* ===== 结构化数据 JSON-LD ===== */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}",
+      "url": "{{ .Permalink }}",
+      "name": {{ .Title | jsonify }},
+      "description": {{ .Description | default $p.hero_desc | plainify | jsonify }},
+      "about": {
+        "@type": "Thing",
+        "name": "eSIM для путешествий"
+      },
+      "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}"
+    },
+    {{ if $p.faq_items }}
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {{ range $index, $item := $p.faq_items }}
+        {
+          "@type": "Question",
+          "name": {{ $item.q | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ $item.a | plainify | jsonify }}
+          }
+        }{{ if ne (add $index 1) (len $p.faq_items) }},{{ end }}
+        {{ end }}
+      ]
+    },
+    {{ end }}
+    {{ if $p.install_steps }}
+    {
+      "@type": "HowTo",
+      "name": {{ $p.install_title | default "Как установить eSIM" | jsonify }},
+      "description": {{ $p.install_sub | default "Пошаговая инструкция" | jsonify }},
+      "step": [
+        {{ range $index, $step := $p.install_steps }}
+        {
+          "@type": "HowToStep",
+          "position": {{ $step.step }},
+          "name": {{ $step.title | jsonify }},
+          "text": {{ $step.desc | jsonify }}
+        }{{ if ne (add $index 1) (len $p.install_steps) }},{{ end }}
+        {{ end }}
+      ]
+    },
+    {{ end }}
+    {{ if $p.countries }}
+    {
+      "@type": "ItemList",
+      "itemListElement": [
+        {{ range $index, $country := $p.countries }}
+        {
+          "@type": "ListItem",
+          "position": {{ add $index 1 }},
+          "name": {{ $country.name | jsonify }},
+          "url": {{ $country.url | absURL | jsonify }}
+        }{{ if ne (add $index 1) (len $p.countries) }},{{ end }}
+        {{ end }}
+      ]
+    }
+    {{ end }}
+  ]
+}
+</script>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <h1>{{ $p.hero_title | safeHTML }}</h1>
+                <p class="hero-desc">{{ $p.hero_desc | safeHTML }}</p>
+                <div class="hero-pills">
+                    {{ range $p.hero_pills }}
+                        <span>{{ .label | safeHTML }}</span>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="{{ "img/travel-esim.jpg" | relURL }}" alt="Сравнение тарифов eSIM для путешествий — eSIM RU" width="500" height="380" loading="eager">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== COUNTRIES BY REGION (TABBED) ========== -->
+<section class="sec" id="countries" style="padding-top:24px">
+    <div class="container">
+        <div class="sec-header"><h2>Все страны — выберите направление и сравните тарифы eSIM</h2></div>
+
+        {{ $countries := $p.countries }}
+        {{ $regions := slice (dict "id" "asia" "label" "Азия") (dict "id" "europe" "label" "Европа") (dict "id" "mena" "label" "Ближний Восток и Африка") (dict "id" "americas" "label" "Америка") }}
+
+        <div class="tabs">
+            {{ range $idx, $r := $regions }}
+                {{ $count := len (where $countries "region" $r.id) }}
+                <button class="tab-btn{{ if eq $idx 0 }} active{{ end }}" onclick="switchTab('{{ $r.id }}')">
+                    {{ $r.label }}<span class="tb-count">{{ $count }} стран</span>
+                </button>
+            {{ end }}
+        </div>
+
+        {{ range $idx, $r := $regions }}
+            <div class="tab-panel{{ if eq $idx 0 }} active{{ end }}" id="tab-{{ $r.id }}">
+                <div class="country-grid-3">
+                    {{ $countriesInRegion := where $countries "region" $r.id }}
+                    {{ range $c := $countriesInRegion }}
+                        <a href="/{{ $c.slug }}/" class="cc3">
+                            <span class="c3-badge {{ if eq $c.badge "5G" }}g5{{ else }}g4{{ end }}">{{ $c.badge }}</span>
+                            <span class="f3"><img src="{{ $c.flag | relURL }}" alt="" width="32" height="22" loading="lazy"></span>
+                            <div class="c3-info">
+                                <div class="c3-name">{{ $c.name }}</div>
+                                <div class="c3-sub">{{ $c.desc | safeHTML }}</div>
+                            </div>
+                            <span class="c3-price">{{ $c.price }}</span>
+                            <span class="c3-arrow">&rarr;</span>
+                        </a>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+
+    </div>
+</section>
+
+<!-- ========== WHY eSIM ========== -->
+<section class="sec">
+    <div class="container">
+        <h2>{{ $p.why_title }}</h2>
+        <div class="why-grid">
+            {{ range $p.why_cards }}
+                <div class="why-card">
+                    <div class="why-num">{{ .num }}</div>
+                    <div class="why-title">{{ .title }}</div>
+                    <p>{{ .text | safeHTML }}</p>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- ===== INSTALL + COMPAT ===== -->
+<section class="sec">
+    <div class="container">
+        <h2>{{ $p.install_title }}</h2>
+        <div class="dual-grid" style="margin-top:18px">
+            <div class="dual-card">
+                <h3>Как установить eSIM: 3 простых шага</h3>
+                <p class="dim" style="font-size:.78rem;margin-bottom:14px">{{ $p.install_sub }}</p>
+                <div class="steps-inline">
+                    {{ range $p.install_steps }}
+                        <div class="si">
+                            <span class="si-num">{{ .step }}</span>
+                            <div>
+                                <strong>{{ .title }}</strong>
+                                <span class="dim" style="font-size:.74rem;display:block">{{ .desc }}</span>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="dual-card">
+                <h3>Совместимость eSIM: какие телефоны поддерживают</h3>
+                <p class="dim" style="font-size:.78rem;margin-bottom:14px">{{ $p.compat_sub }}</p>
+                <ul>
+                    {{ range $p.compat_items }}
+                        <li>&#10003; {{ . | safeHTML }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec">
+    <div class="container">
+        <h2>{{ $p.faq_title }}</h2>
+        <div class="faq-acc" style="margin-top:16px">
+            {{ range $p.faq_items }}
+                <details class="faq-a-item"{{ if .open }} open{{ end }}>
+                    <summary class="faq-a-q">{{ .q }}</summary>
+                    <div class="faq-a-a">{{ .a | safeHTML }}</div>
+                </details>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<script>
+    function switchTab(region){
+        document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+        document.querySelector(`.tab-btn[onclick*="${region}"]`).classList.add('active');
+        document.getElementById('tab-'+region).classList.add('active');
+    }
+</script>
+
+{{ end }}

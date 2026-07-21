@@ -1,0 +1,210 @@
+<style>
+/* ===== HEADER NAVIGATION ===== */
+.hdr{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;height:56px;display:flex;align-items:center}
+.hdr-inner{max-width:1160px;margin:0 auto;width:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;color:var(--fg)}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:24px;align-items:center}
+.nav a{font-size:.84rem;font-weight:500;color:var(--fg3);transition:color .15s;text-decoration:none;position:relative;padding-bottom:4px}
+.nav a:hover{color:var(--fg)}
+.nav a.cur{color:var(--accent)}
+.nav a.cur::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:var(--accent);border-radius:2px}
+.hdr-search-wrap{position:relative;display:flex;align-items:center}
+.hdr-search{width:220px;padding:9px 14px 9px 36px;border:1px solid var(--accent);border-radius:24px;background:var(--bg);color:var(--fg);font-size:.8rem;font-family:inherit;outline:none;transition:all .2s;box-shadow:0 0 0 2px var(--accent-bg)}
+.hdr-search:hover{border-color:var(--accent2)}
+.hdr-search:focus{border-color:var(--accent2);box-shadow:0 0 0 4px var(--accent-bg);background:var(--surface)}
+.hdr-search::placeholder{color:var(--fg4)}
+.hdr-search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:.85rem;pointer-events:none}
+
+/* ===== 搜索下拉结果 ===== */
+.search-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-height: 320px;
+    overflow-y: auto;
+    z-index: 200;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    display: none;
+    padding: 6px 0;
+}
+.search-dropdown .result-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    cursor: pointer;
+    gap: 12px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.15s ease, color 0.15s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+.search-dropdown .result-item:last-child { border-bottom: none; }
+.search-dropdown .result-item:hover {
+    background: #e6f0ff;
+    color: #000;
+}
+.search-dropdown .result-item img {
+    width: 28px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+.search-dropdown .result-item .info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.search-dropdown .result-item .info .name {
+    font-weight: 500;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-dropdown .result-item .info .desc {
+    font-size: .75rem;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-dropdown .no-result {
+    padding: 12px 14px;
+    color: #999;
+    text-align: center;
+    font-size: .85rem;
+}
+.search-dropdown::-webkit-scrollbar { width: 4px; }
+.search-dropdown::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+
+/* 每个结果卡片默认隐藏，只由 JS 控制显示 */
+.search-dropdown .result-item {
+    display: none; /* 默认隐藏所有 */
+}
+.search-dropdown .result-item.visible {
+    display: flex; /* 匹配时显示 */
+}
+
+@media(max-width:768px){.hdr-search-wrap{display:none}}
+@media(max-width:640px){.nav{display:none}}
+</style>
+
+<header class="hdr">
+    <div class="hdr-inner">
+        <a href="/" class="logo">eSIM<span> RU</span></a>
+        <nav class="nav">
+            <a href="/">Главная</a>
+            <a href="/asia-esim/">Азия</a>
+            <a href="/europe-esim/" class="cur">Европа</a>
+            <a href="/africa-esim/">Африка</a>
+            <a href="/americas-esim/">Америка</a>
+            <a href="/sea-esim/">Юго-Восточная Азия​</a>
+            <a href="/middle-east-esim/">Ближний Восток</a>
+            <a href="/about-us/">О нас</a>
+        </nav>
+      
+        <span class="hdr-search-wrap">
+            <input type="text" class="hdr-search" id="searchInput" placeholder="Поиск страны…" autocomplete="off">
+            <span class="hdr-search-icon">&#9906;</span>
+            <div id="searchResults" class="search-dropdown">
+                {{/* 由 Hugo 直接生成所有国家卡片，每个链接独立，无变量污染 */}}
+                {{ range $item := site.Data.ru }}
+                <a href="{{ $item.url }}" class="result-item" data-name="{{ $item.name }}" data-code="{{ $item.code }}">
+                    <img src="{{ $item.flag }}" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">{{ $item.name }}</span>
+                        <span class="desc">{{ $item.desc }}</span>
+                    </div>
+                </a>
+                {{ end }}
+            </div>
+        </span>
+    </div>
+</header>
+
+<script>
+    (function() {
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('searchResults');
+        if (!searchInput || !resultsContainer) return;
+
+        // 获取所有卡片（由 Hugo 生成）
+        const allItems = resultsContainer.querySelectorAll('.result-item');
+
+        // 初始隐藏所有（样式已默认 display:none，但为了保险，先隐藏）
+        allItems.forEach(el => el.classList.remove('visible'));
+
+        function filterItems(query) {
+            const q = query.trim().toLowerCase();
+            let matchCount = 0;
+
+            allItems.forEach(el => {
+                const name = el.getAttribute('data-name').toLowerCase();
+                const code = el.getAttribute('data-code').toLowerCase();
+                const match = name.includes(q) || code.includes(q);
+                if (match) {
+                    el.classList.add('visible');
+                    matchCount++;
+                } else {
+                    el.classList.remove('visible');
+                }
+            });
+
+            // 显示/隐藏容器
+            if (q.length === 0 || matchCount === 0) {
+                resultsContainer.style.display = 'none';
+                if (matchCount === 0 && q.length > 0) {
+                    // 可以显示无结果提示，但因为我们没有单独的 no-result 元素，可以动态添加
+                    let noResult = resultsContainer.querySelector('.no-result');
+                    if (!noResult) {
+                        noResult = document.createElement('div');
+                        noResult.className = 'no-result';
+                        noResult.textContent = 'Ничего не найдено';
+                        resultsContainer.appendChild(noResult);
+                    }
+                    noResult.style.display = 'block';
+                } else {
+                    const noResult = resultsContainer.querySelector('.no-result');
+                    if (noResult) noResult.style.display = 'none';
+                }
+            } else {
+                resultsContainer.style.display = 'block';
+                const noResult = resultsContainer.querySelector('.no-result');
+                if (noResult) noResult.style.display = 'none';
+            }
+        }
+
+        searchInput.addEventListener('input', function() {
+            filterItems(this.value);
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.hdr-search-wrap')) {
+                resultsContainer.style.display = 'none';
+            }
+        });
+
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                this.value = '';
+                resultsContainer.style.display = 'none';
+                this.blur();
+            }
+        });
+
+        searchInput.addEventListener('blur', function() {
+            setTimeout(() => {
+                resultsContainer.style.display = 'none';
+            }, 200);
+        });
+
+        // 初始化：清空查询时隐藏
+        filterItems('');
+    })();
+</script>
