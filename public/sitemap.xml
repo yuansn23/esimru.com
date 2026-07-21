@@ -14,9 +14,6 @@
     <loc>http://localhost:1313/armenia-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/indonesia-esim/</loc>
-    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/belarus-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -56,6 +53,9 @@
     <loc>http://localhost:1313/india-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/indonesia-esim/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/italy-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -69,9 +69,6 @@
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/china-esim/</loc>
-    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/south-korea-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/mauritius-esim/</loc>
@@ -144,6 +141,9 @@
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/south-africa-esim/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/south-korea-esim/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/japan-esim/</loc>

@@ -1,14 +1,14 @@
 ---
-title: "eSIM Германии: где лучшая цена за быстрый интернет"
-description: "Сравните eSIM для Германии от Airalo, Holafly, Roami и Yesim. Узнайте, у какого оператора лучший сигнал и где быстрый 5G."
+title: "eSIM Германии: купить с Deutsche Telekom — цены от $1.99/ГБ"
+description: "Купите eSIM Германии от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Deutsche Telekom от Берлина до Баварии. Установка до вылета за 2 минуты."
 layout: "plan"
 country: "Германия"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:
 # ===== HERO =====
- hero_title: "eSIM Германия — <em>купить и сравнить цены</em>"
- hero_desc: "<strong>В Германию с немецким качеством связи.</strong> На eSIM для Германии: Deutsche Telekom 5G в Берлине и Мюнхене, безлимит от $19. Купите eSIM Германия онлайн — работайте и путешествуйте с быстрым интернетом."
+ hero_title: "eSIM Германия — <em>купить с Deutsche Telekom</em> от $1.99/ГБ"
+ hero_desc: "Купите <strong>eSIM Германии с Deutsche Telekom</strong> — цены от $1.99/ГБ, безлимитные тарифы с 5G. Deutsche Telekom обеспечивает лучшее покрытие от Берлина до Баварии. Установка до вылета за 2 минуты — интернет включится сразу после посадки."
  hero_image: "/img/travel-esim.jpg"
  hero_image_alt: "Путешествие с eSIM"
  hero_image_caption: "Берлин, Германия"
@@ -81,7 +81,7 @@ params:
      - "Postident-процедура: паспорт + подтверждение адреса"
      verdict: "Паспорт + адрес в Германии"
      type: "lose"
-   - title: "eSIM для Germany"
+   - title: "eSIM для Германии"
      price: "$1.29"
      price_note: "/7 дн, 1 ГБ"
      features:
@@ -157,18 +157,15 @@ params:
  - "Airalo"
  - "Holafly"
  - "Yesim"
- - "Airalo"
  - "Ubigi"
  - "Global eSIM"
  - "just esim"
- - "Yesim"
  - "esim plus"
  - "Sim Local"
  - "Maya"
  - "esim365"
  - "Lyca"
  - "Jetpac"
- - "Ubigi"
  - "eSimUSA"
  - "KnowRoam"
  - "Flexiroam"
@@ -2085,7 +2082,7 @@ params:
    logo_color: "#ec4899"
    plan: "5 ГБ · 30 дней · $8.99"
    info: "Deutsche Telekom 5G · Hotspot · Поддержка 24/7"
- - label: "Минимальная цена"
+ - label: "Лучшая цена за ГБ — от $1.99"
    brand: "esim365"
    logo_color: "#22c55e"
    plan: "1 ГБ · 7 дней · $4.50"
@@ -2128,14 +2125,14 @@ params:
      - "Крупнейший мобильный оператор Германии"
      - "Лучшее покрытие 5G в городах и на курортах"
      - "Максимальная скорость интернета для eSIM"
-   used_by: "Airalo, Roami, Holafly, Airalo, Yesim, Yesim, Global eSIM и др."
+   used_by: "Airalo, Roami, Holafly, Yesim, Global eSIM и др."
  - name: "Vodafone"
    color_class: "vodafone"
    features:
      - "Второй по величине оператор Германии"
      - "Хорошее покрытие в туристических зонах и городах"
      - "Высокая скорость интернета в популярных местах"
-   used_by: "just esim, Ubigi, esim plus, eSIM.World, esim365, eSIMCard, Ubigi"
+   used_by: "just esim, Ubigi, esim plus, eSIM.World, esim365, eSIMCard,"
  - name: "O2"
    color_class: "telekom"
    features:
@@ -2194,11 +2191,11 @@ params:
  mistakes_sub: "Большинство проблем с eSIM в Германии связано с покрытием на поездах и в сельской местности. Вот что чаще всего идёт не так."
  mistakes:
  - num: 1
-   body: '<strong>Для работы eSIM нужно включить «Роуминг данных».</strong> Туристические eSIM технически работают через роуминговых партнёров — без включения опции «Роуминг данных» интернет не появится, даже если eSIM активирована. Это не настоящий роуминг, деньги с домашнего счёта не списываются.'
+   body: '<strong>Выбрал eSIM с Vodafone вместо Deutsche Telekom — скорость упала в 2 раза.</strong> Deutsche Telekom обеспечивает лучшее покрытие и скорость от Берлина до Баварии. Vodafone уступает по числу вышек и стабильности сигнала. Перед покупкой проверяйте в описании тарифа, к какому оператору подключается eSIM.'
  - num: 2
-   body: '<strong>На телефоне с двумя SIM нужно выбрать eSIM для интернета.</strong> После установки eSIM телефон может продолжить использовать домашнюю SIM для передачи данных — и вы будете платить за роуминг. В настройках нужно явно выбрать eSIM как линию для сотовых данных и отключить автоматическое переключение между SIM.'
+   body: '<strong>Купил eSIM в аэропорту по прилёту — переплатил в 2–3 раза.</strong> Стойки продаж в аэропортах предлагают eSIM с наценкой 200–300% относительно онлайн-цен. Покупайте eSIM для Германии онлайн до вылета — цены начинаются от $1.99/ГБ, а QR-код приходит на email мгновенно. Сравните цены на eSIM для всех стран на <a href="/">eSIMRU</a>.'
  - num: 3
-   body: '<strong>eSIM нужно установить до вылета, на домашнем Wi-Fi.</strong> Для активации eSIM требуется стабильное интернет-соединение для загрузки профиля. Wi-Fi в аэропортах часто перегружен, ограничен по времени или требует SMS-подтверждения — установить eSIM по прилёту может не получиться.'
+   body: '<strong>Не проверил покрытие Deutsche Telekom за пределами туристических зон.</strong> Deutsche Telekom отлично работает от Берлина до Баварии, но в удалённых районах сигнал может ослабевать. Перед поездкой в малонаселённые регионы проверяйте карту покрытия оператора и скачивайте офлайн-карты через eSIM.'
  - num: 4
    body: '<strong>В Германии Deutsche Telekom, Vodafone DE и O2: Telekom — лучший сигнал на ICE и в малых городах.</strong> Deutsche Telekom лидирует по покрытию в Германии, особенно на скоростных поездах ICE и в малых городах. Vodafone DE сравним в Берлине и Мюнхене. O2 дешевле, но с меньшим покрытием.'
  - num: 5
@@ -2225,48 +2222,54 @@ params:
    a: "Никаких ограничений. Все сервисы и сайты работают свободно. 5G доступен в Берлине, Мюнхене, Гамбурге, Франкфурте и Кёльне. В малых городах и сельской местности — преимущественно 4G. Störerhaftung (ответственность за открытый Wi-Fi) не влияет на eSIM — это касается только владельцев публичных точек Wi-Fi."
    open: false
 
+ - q: "Можно ли купить eSIM Германии через МТС или российских операторов?"
+   a: "МТС, МегаФон, Билайн и Tele2 предлагают eSIM для России, но не предоставляют туристические eSIM с местными тарифами за границей с местными тарифами от Берлина до Баварии. Российский роуминг стоит $10–15 в день с урезанной скоростью. eSIM для Германии от международных провайдеров (Roami, Airalo, Holafly, Yesim) стоит от $1.99/ГБ с полноценным Deutsche Telekom и не требует паспорта для регистрации."
+   open: false
+ - q: "Стоит ли покупать eSIM для Германии или хватит роуминга — сравнение цен и отзывы?"
+   a: "По отзывам путешественников, eSIM для Германии выгоднее роуминга в 5–10 раз. Роуминг стоит $10–15 в день ($70–105 в неделю). eSIM с Deutsche Telekom обходится от $1.99/ГБ: на неделю хватит 5 ГБ примерно за $9.95. Установка до вылета — интернет работает сразу после посадки."
+   open: false
 # ===== RELATED COUNTRIES =====
  related_title: "eSIM для других стран"
  related_sub: "Планируете ещё поездку? Сравните eSIM для популярных направлений."
  related:
  - name: "eSIM Греция"
    flag: "/img/flags/gr.svg"
-   desc: "Крит, Родос, Афины"
+   desc: "eSIM Греция — Cosmote 4G на островах"
    url: "/greece-esim/"
  - name: "eSIM Кипр"
    flag: "/img/flags/cy.svg"
-   desc: "Лимасол, Пафос"
+   desc: "eSIM Кипр — Cyta 4G на всём острове"
    url: "/cyprus-esim/"
  - name: "eSIM ОАЭ"
    flag: "/img/flags/ae.svg"
-   desc: "Дубай, Абу-Даби"
+   desc: "eSIM ОАЭ — Etisalat 5G, безлимитные тарифы"
    url: "/uae-esim/"
  - name: "eSIM Египет"
    flag: "/img/flags/eg.svg"
-   desc: "Шарм-эш-Шейх, Хургада"
+   desc: "eSIM Египет — Orange EG и Vodafone 4G"
    url: "/egypt-esim/"
  - name: "eSIM Таиланд"
    flag: "/img/flags/th.svg"
-   desc: "Пхукет, Паттайя, Бангкок"
+   desc: "eSIM Таиланд — AIS и TrueMove 5G от $1.99"
    url: "/thailand-esim/"
  - name: "eSIM Италия"
    flag: "/img/flags/it.svg"
-   desc: "Рим, Милан, Венеция"
+   desc: "eSIM Италия — TIM и Vodafone 5G"
    url: "/italy-esim/"
  - name: "eSIM Испания"
    flag: "/img/flags/es.svg"
-   desc: "Барселона, Мадрид"
+   desc: "eSIM Испания — Movistar 5G на побережье"
    url: "/spain-esim/"
  - name: "eSIM Франция"
    flag: "/img/flags/fr.svg"
-   desc: "Париж, Ницца, Лион"
+   desc: "eSIM Франция — Orange 5G по всей стране"
    url: "/france-esim/"
- - name: "eSIM Германия"
-   flag: "/img/flags/de.svg"
-   desc: "Берлин, Мюнхен, Гамбург"
-   url: "/germany-esim/"
+ - name: "eSIM Польша"
+   flag: "/img/flags/pl.svg"
+   desc: "eSIM Польша — Orange PL и Play 4G"
+   url: "/poland-esim/"
  - name: "eSIM Китай"
    flag: "/img/flags/cn.svg"
-   desc: "Шанхай, Пекин, Гонконг"
+   desc: "eSIM Китай — VPN-маршрутизация, China Mobile 5G"
    url: "/china-esim/"
 ---

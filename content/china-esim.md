@@ -84,7 +84,7 @@ params:
      - "Без VPN не работают Instagram, WhatsApp, Google"
      verdict: "Паспорт + нет зарубежных сервисов"
      type: "lose"
-   - title: "eSIM для China"
+   - title: "eSIM для Китая"
      price: "$1.53"
      price_note: "/7 дн, 1 ГБ"
      features:
@@ -1912,7 +1912,7 @@ params:
      - "Второй по величине оператор Китая"
      - "Хорошее покрытие в туристических зонах и городах"
      - "Высокая скорость интернета в популярных местах"
-   used_by: "just esim, Ubigi, esim plus, eSIM.World, esim365, eSIMCard, Ubigi"
+   used_by: "just esim, Ubigi, esim plus, eSIM.World, esim365, eSIMCard,"
  - name: "China Telecom"
    color_class: "telekom"
    features:
@@ -1978,7 +1978,7 @@ params:
  - num: 2
    body: '<strong>Пытался активировать eSIM после прилёта в Китай — Gmail и Google Play заблокированы.</strong> Без VPN-маршрутизации письмо с QR-кодом не открывается в Gmail, а приложение провайдера не скачивается из Google Play и App Store (китайская версия). Активируйте китайскую eSIM строго до вылета на домашнем Wi-Fi — после прилёта доступ к зарубежным сервисам будет закрыт «Великим файрволом».'
  - num: 3
-   body: '<strong>eSIM нужно установить до вылета, на домашнем Wi-Fi.</strong> Для активации eSIM требуется стабильное интернет-соединение для загрузки профиля. Wi-Fi в аэропортах часто перегружен, ограничен по времени или требует SMS-подтверждения — установить eSIM по прилёту может не получиться.'
+   body: '<strong>Не проверил, работает ли eSIM с VPN-маршрутизацией для конкретных приложений.</strong> Некоторые китайские eSIM с пометкой «China compatible» маршрутизируют только часть трафика через Гонконг: Instagram и WhatsApp могут работать, а Google Maps или Gmail — нет. Перед покупкой проверяйте в описании тарифа полный список сервисов, для которых работает VPN-маршрутизация, или берите eSIM с гарантированной маршрутизацией всех зарубежных сервисов.'
  - num: 4
    body: '<strong>В Китае действует «Великий файрвол» — Google, WhatsApp и Instagram заблокированы без VPN-маршрутизации.</strong> eSIM с местным IP-адресом China Mobile или China Unicom не открывает зарубежные сервисы. Для доступа к Google, WhatsApp и соцсетям в Пекине, Шанхае и Гуанчжоу нужен eSIM с маршрутизацией трафика через Гонконг или Сингапур — в описании тарифа должна быть пометка «China compatible».'
  - num: 5
@@ -2054,8 +2054,8 @@ params:
    flag: "/img/flags/de.svg"
    desc: "eSIM Германия — Telekom 5G по всей стране"
    url: "/germany-esim/"
- - name: "eSIM Китай"
-   flag: "/img/flags/cn.svg"
-   desc: "eSIM Китай — VPN-маршрутизация, China Mobile 5G"
-   url: "/china-esim/"
+ - name: "eSIM Япония"
+   flag: "/img/flags/jp.svg"
+   desc: "eSIM Япония — NTT Docomo 5G по всей стране"
+   url: "/japan-esim/"
 ---

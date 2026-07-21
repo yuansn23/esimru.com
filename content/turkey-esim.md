@@ -1,14 +1,14 @@
 ---
-title: "eSIM Турции: где найти самый дешёвый тариф"
-description: "Сравните тарифы eSIM для Турции от Airalo, Holafly, Roami и Yesim. Узнайте, как сэкономить с промокодами и почему онлайн дешевле аэропорта."
+title: "eSIM Турции: купить с Turkcell 5G — цены от $0.32/ГБ"
+description: "Купите турецкую eSIM от Airalo, Holafly, Roami и Yesim — цены от $0.32/ГБ. Turkcell 5G по всей стране, без регистрации IMEI. Установка до вылета за 2 минуты."
 layout: "plan"
 country: "Турция"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:
  # ===== HERO =====
- hero_title: "eSIM для Турции — <em>сравнение тарифов</em>"
- hero_desc: "<strong>Сравнение тарифов eSIM для Турции</strong> в одном месте. Цены от $0.54, безлимитный интернет, 5G на Turkcell и Vodafone TR. <strong>Без роуминга</strong> и очередей за местной SIM: установите eSIM до вылета и выходите в интернет сразу в аэропорту Стамбула или Анталии."
+ hero_title: "eSIM Турция — <em>купить с Turkcell 5G</em> от $0.32/ГБ"
+ hero_desc: "Купите <strong>турецкую eSIM с Turkcell 5G</strong> — цены от $0.32/ГБ, безлимитные тарифы от $3.80 за 3 дня. Не требует регистрации IMEI: иностранный телефон не заблокируют через 120 дней. Установка до вылета за 2 минуты — интернет включится сразу после посадки."
  hero_image: "/img/travel-esim.jpg"
  hero_image_alt: "Путешествие с eSIM"
  hero_image_caption: "Стамбул, Турция"
@@ -83,7 +83,7 @@ params:
      - "Иностранный телефон заблокируют через 4 месяца"
      verdict: "Паспорт + блокировка IMEI через 120 дней"
      type: "lose"
-   - title: "eSIM для Turkey"
+   - title: "eSIM для Турции"
      price: "$1.05"
      price_note: "/7 дней"
      features:
@@ -159,18 +159,15 @@ params:
  - "Airalo"
  - "Holafly"
  - "Yesim"
- - "Airalo"
  - "Ubigi"
  - "Global eSIM"
  - "just esim"
- - "Yesim"
  - "esim plus"
  - "Sim Local"
  - "Maya"
  - "esim365"
  - "Lyca"
  - "Jetpac"
- - "Ubigi"
  - "eSimUSA"
  - "KnowRoam"
  - "Flexiroam"
@@ -2068,7 +2065,7 @@ params:
    logo_color: "#ec4899"
    plan: "5 ГБ · 30 дней · $7.99"
    info: "Turkcell 5G · Hotspot · Поддержка 24/7"
- - label: "Минимальная цена"
+ - label: "Лучшая цена за ГБ — от $0.32"
    brand: "esim365"
    logo_color: "#22c55e"
    plan: "1 ГБ · 7 дней · $1.05"
@@ -2117,14 +2114,14 @@ params:
      - "Крупнейший оператор Турции"
      - "Лучшее покрытие 5G: Стамбул, Анкара, Стамбул, Анталия"
      - "Стабильный сигнал в горах и на побережье"
-   used_by: "Airalo, Roami, Holafly, Airalo, Yesim, Yesim, Global eSIM и др."
+   used_by: "Airalo, Roami, Holafly, Yesim, Global eSIM и др."
  - name: "Vodafone TR"
    color_class: "vodafone"
    features:
      - "Второй по величине оператор"
      - "Хорошее покрытие в городах и на курортах"
      - "Высокая скорость в туристических зонах"
-   used_by: "just esim, Ubigi, esim plus, eSIM.World, esim365, eSIMCard, Ubigi"
+   used_by: "just esim, Ubigi, esim plus, eSIM.World, esim365, eSIMCard,"
  - name: "Türk Telekom"
    color_class: "telekom"
    features:
@@ -2192,7 +2189,7 @@ params:
  - num: 3
    body: '<strong>Покупка eSIM в последний момент в аэропорту Стамбула.</strong> Wi-Fi в IST и SAW перегружен и нестабилен — активировать eSIM по прилёту почти невозможно. <em>Как правильно:</em> купите и установите eSIM для Турции дома до вылета. Интернет включится сразу после посадки.'
  - num: 4
-   body: '<strong>Не установил eSIM до вылета в Турцию.</strong> В аэропортах Стамбула Wi-Fi требует SMS-подтверждения или паспорт. <em>Как правильно:</em> установите eSIM дома.'
+   body: '<strong>Использовал российский роуминг вместо турецкой eSIM и переплатил в 5 раз.</strong> Российские операторы берут $10–15 в день за роуминг в Турции — за неделю отпуска набегает $70–105. Турецкая eSIM с Turkcell 5G стоит от $0.32/ГБ: тот же объём трафика обходится в 5–10 раз дешевле. Плюс eSIM не требует регистрации IMEI — ваш телефон не попадёт в чёрный список через 120 дней.'
  - num: 5
    body: '<strong>Выбор самого дешёвого eSIM для Турции без проверки сети.</strong> Сверхдешёвые eSIM часто подключаются только к Vodafone TR с низким приоритетом — в час пик в туристических зонах скорость падает до 2G. <em>Совет:</em> смотрите в таблице столбец с промокодами — лучшие eSIM для Турции подключаются к Turkcell или автоматически выбирают сильнейшую сеть.'
 
@@ -2217,6 +2214,15 @@ params:
  - q: "Нужен ли VPN для eSIM в Турции?"
    a: "Нет. Турция не блокирует зарубежные сайты. Instagram, WhatsApp, YouTube и Google-сервисы работают без ограничений. VPN может понадобиться только для отельных Wi-Fi сетей."
    open: false
+ - q: "Можно ли купить турецкую eSIM через МТС или других российских операторов?"
+   a: "МТС, МегаФон, Билайн и Tele2 предлагают eSIM для России, но не предоставляют туристические eSIM для Турции с местными тарифами. Российский роуминг в Турции стоит $10–15 в день, а скорость часто урезается после 1 ГБ. Турецкая eSIM от международных провайдеров (Roami, Airalo, Holafly, Yesim) стоит от $0.32/ГБ с полноценным Turkcell 5G и не требует регистрации IMEI."
+   open: false
+ - q: "Стоит ли покупать eSIM для Турции или хватит роуминга — отзывы и сравнение цен 2026?"
+   a: "По отзывам путешественников, eSIM для Турции выгоднее роуминга в 5–10 раз. Роуминг стоит $10–15 в день ($70–105 в неделю) с урезанной скоростью. Турецкая eSIM с Turkcell 5G обходится от $0.32/ГБ: на неделю активного использования хватит 5 ГБ за $1.60. Плюс eSIM не требует регистрации IMEI — иностранный телефон не заблокируют через 120 дней."
+   open: false
+ - q: "Как работает eSIM в Турции для россиян в 2026 году — актуальные условия?"
+   a: "В 2026 году eSIM для Турции работает без ограничений для россиян. Оплата доступна картами РФ (Мир, UnionPay) у Yesim и Roami, а также через электронные кошельки. Турецкое правительство не вводило ограничений на eSIM для иностранцев. Важно: местная физическая SIM-карта Turkcell или Vodafone TR требует регистрации IMEI — без неё телефон блокируется через 120 дней. Туристическая eSIM эту регистрацию не требует."
+   open: false
 
 # ===== RELATED COUNTRIES =====
  related_title: "eSIM для других стран — сравните тарифы и цены за гигабайт"
@@ -2224,42 +2230,42 @@ params:
  related:
  - name: "eSIM Греция"
    flag: "/img/flags/gr.svg"
-   desc: "Крит, Родос, Афины"
+   desc: "eSIM Греция — Cosmote 4G на островах"
    url: "/greece-esim/"
  - name: "eSIM Кипр"
    flag: "/img/flags/cy.svg"
-   desc: "Лимасол, Пафос"
+   desc: "eSIM Кипр — Cyta 4G на всём острове"
    url: "/cyprus-esim/"
  - name: "eSIM ОАЭ"
    flag: "/img/flags/ae.svg"
-   desc: "Дубай, Абу-Даби"
+   desc: "eSIM ОАЭ — Etisalat 5G, безлимитные тарифы"
    url: "/uae-esim/"
  - name: "eSIM Египет"
    flag: "/img/flags/eg.svg"
-   desc: "Шарм-эш-Шейх, Хургада"
+   desc: "eSIM Египет — Orange EG и Vodafone 4G"
    url: "/egypt-esim/"
  - name: "eSIM Таиланд"
    flag: "/img/flags/th.svg"
-   desc: "Пхукет, Паттайя, Бангкок"
+   desc: "eSIM Таиланд — AIS и TrueMove 5G от $1.99"
    url: "/thailand-esim/"
  - name: "eSIM Италия"
    flag: "/img/flags/it.svg"
-   desc: "Рим, Милан, Венеция"
+   desc: "eSIM Италия — TIM и Vodafone 5G"
    url: "/italy-esim/"
  - name: "eSIM Испания"
    flag: "/img/flags/es.svg"
-   desc: "Барселона, Мадрид"
+   desc: "eSIM Испания — Movistar 5G на побережье"
    url: "/spain-esim/"
  - name: "eSIM Франция"
    flag: "/img/flags/fr.svg"
-   desc: "Париж, Ницца, Лион"
+   desc: "eSIM Франция — Orange 5G по всей стране"
    url: "/france-esim/"
  - name: "eSIM Германия"
    flag: "/img/flags/de.svg"
-   desc: "Берлин, Мюнхен, Гамбург"
+   desc: "eSIM Германия — Telekom 5G по всей стране"
    url: "/germany-esim/"
  - name: "eSIM Китай"
    flag: "/img/flags/cn.svg"
-   desc: "Шанхай, Пекин, Гонконг"
+   desc: "eSIM Китай — VPN-маршрутизация, China Mobile 5G"
    url: "/china-esim/"
 ---
