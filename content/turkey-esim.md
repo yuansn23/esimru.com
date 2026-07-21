@@ -2,6 +2,7 @@
 title: "eSIM Турции: где найти самый дешёвый тариф"
 description: "Сравните тарифы eSIM для Турции от Airalo, Holafly, Roami и Yesim. Узнайте, как сэкономить с промокодами и почему онлайн дешевле аэропорта."
 layout: "plan"
+country: "Турция"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

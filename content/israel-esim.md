@@ -2,6 +2,7 @@
 title: "eSIM Израиля: как выбрать лучший тариф"
 description: "Сравните eSIM для Израиля от Airalo, Holafly, Roami и Yesim. Узнайте, как активировать eSIM заранее и какой тариф лучший."
 layout: "plan"
+country: "Израиль"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

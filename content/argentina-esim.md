@@ -2,6 +2,7 @@
 title: "eSIM Аргентины: где самый дешёвый интернет"
 description: "Сравните eSIM для Аргентины от Airalo, Holafly, Roami и Yesim. Узнайте, что надёжнее — eSIM или публичный Wi-Fi. Актуальные цены и промокоды на этой странице."
 layout: "plan"
+country: "Аргентина"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

@@ -2,6 +2,7 @@
 title: "eSIM Вьетнама: как найти лучшую цену за гигабайт"
 description: "Сравните eSIM для Вьетнама от Airalo, Holafly, Roami и Yesim. Узнайте, почему онлайн-покупка выгоднее и какой тариф лучший."
 layout: "plan"
+country: "Вьетнам"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

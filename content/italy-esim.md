@@ -2,6 +2,7 @@
 title: "eSIM Италии: какой тариф купить для экономии"
 description: "Сравните eSIM для Италии от Airalo, Holafly, Roami и Yesim. Узнайте, почему сигнал слабеет в центре и какой тариф лучше."
 layout: "plan"
+country: "Италия"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

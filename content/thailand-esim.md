@@ -2,6 +2,7 @@
 title: "eSIM Таиланда: как купить дёшево, а не втридорога"
 description: "Сравните eSIM для Таиланда от Airalo, Holafly, Roami и Yesim. Узнайте, где купить дешевле и как сэкономить с промокодами."
 layout: "plan"
+country: "Таиланд"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

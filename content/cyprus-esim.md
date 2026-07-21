@@ -2,6 +2,7 @@
 title: "eSIM Кипра: где купить выгодный тариф"
 description: "Сравните eSIM для Кипра от Airalo, Holafly, Roami и Yesim. Узнайте, какой тариф выгоднее и как сэкономить. Актуальные цены и промокоды на этой странице."
 layout: "plan"
+country: "Кипр"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

@@ -2,6 +2,7 @@
 title: "eSIM Германии: где лучшая цена за быстрый интернет"
 description: "Сравните eSIM для Германии от Airalo, Holafly, Roami и Yesim. Узнайте, у какого оператора лучший сигнал и где быстрый 5G."
 layout: "plan"
+country: "Германия"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

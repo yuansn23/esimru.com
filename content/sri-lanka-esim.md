@@ -2,6 +2,7 @@
 title: "eSIM Шри-Ланки: как выбрать лучший тариф для отпуска"
 description: "Сравните eSIM для Шри-Ланки от Airalo, Holafly, Roami и Yesim. Узнайте, какой оператор покрывает остров и где лучший 4G."
 layout: "plan"
+country: "Шри-Ланка"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

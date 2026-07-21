@@ -148,6 +148,21 @@
     </div>
 </section>
 
+<!-- ===== BRANDS ===== -->
+<section class="sec">
+    <div class="container">
+        <h2>{{ $p.brands_title }}</h2>
+        <div class="why-grid" style="margin-top:16px">
+            {{ range $p.brands }}
+                <div class="why-card">
+                    <div class="why-num" style="font-size:1.1rem;font-family:'Inter',sans-serif;text-transform:none">{{ .name }}</div>
+                    <p>{{ .desc | safeHTML }}</p>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
 <!-- ===== INSTALL + COMPAT ===== -->
 <section class="sec">
     <div class="container">
@@ -180,6 +195,8 @@
         </div>
     </div>
 </section>
+
+ 
 
 <!-- ===== FAQ ===== -->
 <!-- ===== FAQ ===== -->

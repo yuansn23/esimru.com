@@ -2,6 +2,7 @@
 title: "eSIM Греции: как выбрать лучший тариф для островов"
 description: "Сравните eSIM для Греции от Airalo, Holafly, Roami и Yesim. Узнайте, какой оператор покрывает все острова и где лучший 4G."
 layout: "plan"
+country: "Греция"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

@@ -2,6 +2,7 @@
 title: "eSIM Кореи: где самый быстрый и дешёвый интернет"
 description: "Сравните eSIM для Кореи от Airalo, Holafly, Roami и Yesim. Узнайте, нужен ли 5G и какой тариф самый выгодный по цене за гигабайт."
 layout: "plan"
+country: "Южная Корея"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

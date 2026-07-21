@@ -405,7 +405,9 @@ tr.best td:first-child{box-shadow:inset 3px 0 0 var(--green)}
 <section class="hero"><div class="container">
 <div class="hero-split">
 <div class="hero-text">
-<nav class="bc"><a href="/">Главная</a> / Турция</nav>
+<nav class="bc">
+    <a href="/">Главная</a> / {{ .Params.country }}
+</nav>
 <h1>{{ $p.hero_title | safeHTML }}</h1>
 <p>{{ $p.hero_desc | safeHTML }}</p>
 <!--

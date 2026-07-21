@@ -2,6 +2,7 @@
 title: "eSIM Индии: где самый дешёвый гигабайт"
 description: "Сравните eSIM для Индии от Airalo, Holafly, Roami и Yesim. Узнайте, сколько ГБ нужно и почему публичный Wi-Fi требует местный номер."
 layout: "plan"
+country: "Индия"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

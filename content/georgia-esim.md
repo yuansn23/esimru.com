@@ -2,6 +2,7 @@
 title: "eSIM Грузии: где дешевле — онлайн или в аэропорту"
 description: "Сравните eSIM для Грузии от Airalo, Holafly, Roami и Yesim. Узнайте, где купить дешевле и какой оператор даёт лучший 4G."
 layout: "plan"
+country: "Грузия"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:

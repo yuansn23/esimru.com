@@ -2,6 +2,7 @@
 title: "eSIM Мальдив: что дешевле — 4G или отельный Wi-Fi"
 description: "Сравните eSIM для Мальдив от Airalo, Holafly, Roami и Yesim. Узнайте, что быстрее и дешевле — 4G eSIM или спутниковый Wi-Fi."
 layout: "plan"
+country: "Мальдивы"
 date: '2026-07-20'
 lastmod: '2026-07-20'
 params:
