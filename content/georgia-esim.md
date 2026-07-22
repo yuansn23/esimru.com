@@ -1,6 +1,6 @@
 ---
-title: "eSIM Грузии: купить с Magti — цены от $1.99/ГБ"
-description: "Купите eSIM Грузии от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Magti от Тбилиси до Казбека. Установка до вылета за 2 минуты."
+title: "eSIM Грузии: где дешевле — онлайн или в аэропорту"
+description: "Сравните eSIM для Грузии от Airalo, Holafly, Roami и Yesim. Узнайте, где купить дешевле и какой оператор даёт лучший 4G."
 layout: "plan"
 country: "Грузия"
 date: '2026-07-20'

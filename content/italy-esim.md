@@ -1,6 +1,6 @@
 ---
-title: "eSIM Италии: купить с TIM — цены от $1.99/ГБ"
-description: "Купите eSIM Италии от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. TIM от Рима до Амальфи. Установка до вылета за 2 минуты."
+title: "eSIM Италии: какой тариф купить для экономии"
+description: "Сравните eSIM для Италии от Airalo, Holafly, Roami и Yesim. Узнайте, почему сигнал слабеет в центре и какой тариф лучше."
 layout: "plan"
 country: "Италия"
 date: '2026-07-20'

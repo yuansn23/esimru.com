@@ -1,6 +1,6 @@
 ---
-title: "eSIM Индонезии: купить с Telkomsel — цены от $1.99/ГБ"
-description: "Купите eSIM Индонезии от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Telkomsel на Бали и Яве. Установка до вылета за 2 минуты."
+title: "eSIM Бали: как не переплатить и купить выгодно"
+description: "Сравните eSIM для Бали от Airalo, Holafly, Roami и Yesim. Узнайте, как активировать до вылета и почему онлайн дешевле аэропорта."
 layout: "plan"
 country: "Индонезия"
 date: '2026-07-20'

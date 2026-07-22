@@ -1,6 +1,6 @@
 ---
-title: "eSIM Южной Кореи: купить с SK Telecom — цены от $1.99/ГБ"
-description: "Купите eSIM Южной Кореи от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. SK Telecom в Сеуле и Пусане. Установка до вылета за 2 минуты."
+title: "eSIM Кореи: где самый быстрый и дешёвый интернет"
+description: "Сравните eSIM для Кореи от Airalo, Holafly, Roami и Yesim. Узнайте, нужен ли 5G и какой тариф самый выгодный по цене за гигабайт."
 layout: "plan"
 country: "Южная Корея"
 date: '2026-07-20'

@@ -1,6 +1,6 @@
 ---
-title: "eSIM Израиля: купить с Pelephone — цены от $1.99/ГБ"
-description: "Купите eSIM Израиля от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Pelephone от Тель-Авива до Иерусалима. Установка до вылета за 2 минуты."
+title: "eSIM Израиля: как выбрать лучший тариф"
+description: "Сравните eSIM для Израиля от Airalo, Holafly, Roami и Yesim. Узнайте, как активировать eSIM заранее и какой тариф лучший."
 layout: "plan"
 country: "Израиль"
 date: '2026-07-20'

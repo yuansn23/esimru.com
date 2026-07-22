@@ -1,6 +1,6 @@
 ---
-title: "eSIM Японии: купить с NTT Docomo — цены от $1.99/ГБ"
-description: "Купите eSIM Японии от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. NTT Docomo от Токио до Осаки. Установка до вылета за 2 минуты."
+title: "eSIM Японии: сколько ГБ реально нужно и какой тариф лучший"
+description: "Сравните eSIM для Японии от Airalo, Holafly, Roami и Yesim. Узнайте, сколько ГБ нужно для поездки и какой оператор даёт лучший 5G."
 layout: "plan"
 country: "Япония"
 date: '2026-07-20'

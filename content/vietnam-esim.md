@@ -1,6 +1,6 @@
 ---
-title: "eSIM Вьетнама: купить с Viettel — цены от $1.99/ГБ"
-description: "Купите eSIM Вьетнама от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Viettel от Ханоя до Фукуока. Установка до вылета за 2 минуты."
+title: "eSIM Вьетнама: как найти лучшую цену за гигабайт"
+description: "Сравните eSIM для Вьетнама от Airalo, Holafly, Roami и Yesim. Узнайте, почему онлайн-покупка выгоднее и какой тариф лучший."
 layout: "plan"
 country: "Вьетнам"
 date: '2026-07-20'

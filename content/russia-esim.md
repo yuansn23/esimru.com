@@ -1,6 +1,6 @@
 ---
-title: "eSIM России: купить с Megafon — цены от $1.99/ГБ"
-description: "Купите eSIM Россиа от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Megafon от Москвы до Казани. Установка до вылета за 2 минуты."
+title: "eSIM России: где лучшая цена за гигабайт"
+description: "Сравните eSIM для России от Airalo, Holafly, Roami и Yesim. Узнайте, какой оператор даёт лучший 4G и где выгоднее. Актуальные цены и промокоды на этой странице."
 layout: "plan"
 country: "Россия"
 date: '2026-07-20'

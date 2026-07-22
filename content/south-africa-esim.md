@@ -1,6 +1,6 @@
 ---
-title: "eSIM ЮАР: купить с Vodacom — цены от $1.99/ГБ"
-description: "Купите eSIM ЮАа от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Vodacom от Кейптауна до Крюгера. Установка до вылета за 2 минуты."
+title: "eSIM ЮАР: как найти лучшую цену на интернет"
+description: "Сравните eSIM для ЮАР от Airalo, Holafly, Roami и Yesim. Узнайте, какой тариф работает при отключениях света. Актуальные цены и промокоды на этой странице."
 layout: "plan"
 country: "ЮАР"
 date: '2026-07-20'

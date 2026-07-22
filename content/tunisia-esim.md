@@ -1,6 +1,6 @@
 ---
-title: "eSIM Туниса: купить с Tunisie Telecom — цены от $1.99/ГБ"
-description: "Купите eSIM Туниса от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Tunisie Telecom от Хаммамета до Сусса. Установка до вылета за 2 минуты."
+title: "eSIM Туниса: где дешевле — онлайн или на месте"
+description: "Сравните eSIM для Туниса от Airalo, Holafly, Roami и Yesim. Узнайте, где дешевле — онлайн или на месте. Актуальные цены и промокоды на этой странице."
 layout: "plan"
 country: "Тунис"
 date: '2026-07-20'

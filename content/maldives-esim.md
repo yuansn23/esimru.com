@@ -1,6 +1,6 @@
 ---
-title: "eSIM Мальдив: купить с Dhiraagu — цены от $1.99/ГБ"
-description: "Купите eSIM Мальдив от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Dhiraagu на всех атоллах. Установка до вылета за 2 минуты."
+title: "eSIM Мальдив: что дешевле — 4G или отельный Wi-Fi"
+description: "Сравните eSIM для Мальдив от Airalo, Holafly, Roami и Yesim. Узнайте, что быстрее и дешевле — 4G eSIM или спутниковый Wi-Fi."
 layout: "plan"
 country: "Мальдивы"
 date: '2026-07-20'

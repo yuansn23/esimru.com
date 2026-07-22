@@ -1,6 +1,6 @@
 ---
-title: "eSIM Польши: купить с Orange PL — цены от $1.99/ГБ"
-description: "Купите eSIM Польша от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Orange PL от Варшавы до Кракова. Установка до вылета за 2 минуты."
+title: "eSIM Польши: где самый дешёвый гигабайт"
+description: "Сравните eSIM для Польши от Airalo, Holafly, Roami и Yesim. Узнайте, какой тариф самый дешёвый по цене за гигабайт. Актуальные цены и промокоды на этой странице."
 layout: "plan"
 country: "Польша"
 date: '2026-07-20'

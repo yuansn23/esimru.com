@@ -1,6 +1,6 @@
 ---
-title: "eSIM Омана: купить с Omantel — цены от $1.99/ГБ"
-description: "Купите eSIM Омана от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Omantel от Маската до Салалы. Установка до вылета за 2 минуты."
+title: "eSIM Омана: какой тариф купить для экономии"
+description: "Сравните eSIM для Омана от Airalo, Holafly, Roami и Yesim. Узнайте, какой тариф лучше работает и где стабильный 4G. Актуальные цены и промокоды на этой странице."
 layout: "plan"
 country: "Оман"
 date: '2026-07-20'

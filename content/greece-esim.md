@@ -1,6 +1,6 @@
 ---
-title: "eSIM Греции: купить с Cosmote — цены от $1.99/ГБ"
-description: "Купите eSIM Греции от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Cosmote от Крита до Родоса. Установка до вылета за 2 минуты."
+title: "eSIM Греции: как выбрать лучший тариф для островов"
+description: "Сравните eSIM для Греции от Airalo, Holafly, Roami и Yesim. Узнайте, какой оператор покрывает все острова и где лучший 4G."
 layout: "plan"
 country: "Греция"
 date: '2026-07-20'

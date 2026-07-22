@@ -1,6 +1,6 @@
 ---
-title: "eSIM Сейшел: купить с Cable & Wireless — цены от $1.99/ГБ"
-description: "Купите eSIM Сейшел от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Cable & Wireless на Маэ и Праслине. Установка до вылета за 2 минуты."
+title: "eSIM Сейшел: стоит ли брать или хватит Wi-Fi"
+description: "Сравните eSIM для Сейшел от Airalo, Holafly, Roami и Yesim. Узнайте, стоит ли брать eSIM или хватит отельного Wi-Fi. Актуальные цены и промокоды на этой странице."
 layout: "plan"
 country: "Сейшелы"
 date: '2026-07-20'

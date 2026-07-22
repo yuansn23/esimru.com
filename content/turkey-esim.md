@@ -1,6 +1,6 @@
 ---
-title: "eSIM Турции: купить с Turkcell 5G — цены от $0.32/ГБ"
-description: "Купите турецкую eSIM от Airalo, Holafly, Roami и Yesim — цены от $0.32/ГБ. Turkcell 5G по всей стране, без регистрации IMEI. Установка до вылета за 2 минуты."
+title: "eSIM Турции: где найти самый дешёвый тариф"
+description: "Сравните тарифы eSIM для Турции от Airalo, Holafly, Roami и Yesim. Узнайте, как сэкономить с промокодами и почему онлайн дешевле аэропорта."
 layout: "plan"
 country: "Турция"
 date: '2026-07-20'

@@ -1,6 +1,6 @@
 ---
-title: "eSIM Марокко: купить с Maroc Telecom — цены от $1.99/ГБ"
-description: "Купите eSIM Марокка от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Maroc Telecom от Марракеша до Сахары. Установка до вылета за 2 минуты."
+title: "eSIM Марокко: как выбрать дешёвый и надёжный тариф"
+description: "Сравните eSIM для Марокко от Airalo, Holafly, Roami и Yesim. Узнайте, какой тариф выгоднее и где лучший 4G. Актуальные цены и промокоды на этой странице."
 layout: "plan"
 country: "Марокко"
 date: '2026-07-20'

@@ -1,6 +1,6 @@
 ---
-title: "eSIM Непала: купить с Ncell — цены от $1.99/ГБ"
-description: "Купите eSIM Непала от Airalo, Holafly, Roami и Yesim — цены от $1.99/ГБ. Ncell в Катманду и треккинговых маршрутах. Установка до вылета за 2 минуты."
+title: "eSIM Непала: какой тариф самый надёжный"
+description: "Сравните eSIM для Непала от Airalo, Holafly, Roami и Yesim. Узнайте, какой тариф надёжнее при перебоях с электричеством."
 layout: "plan"
 country: "Непал"
 date: '2026-07-20'
