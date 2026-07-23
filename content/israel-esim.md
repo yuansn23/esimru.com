@@ -203,7 +203,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " 20GB"
    gb: 20
@@ -213,7 +213,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " 20GB"
    gb: 20
@@ -223,7 +223,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "airalo"
    plan: " 20 GB"
    gb: 20
@@ -253,7 +253,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "esim plus"
    plan: " 20GB"
    gb: 20
@@ -273,7 +273,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " 3GB"
    gb: 3
@@ -283,7 +283,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " 20GB"
    gb: 20
@@ -293,7 +293,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "ubigi"
    plan: " 10GB"
    gb: 10
@@ -323,7 +323,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "esim365"
    plan: " 100 GB"
    gb: 100
@@ -353,7 +353,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " 10GB"
    gb: 10
@@ -363,7 +363,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "esim365"
    plan: " 50 GB"
    gb: 50
@@ -423,7 +423,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "globalesim"
    plan: " 10 GB"
    gb: 10
@@ -443,7 +443,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " 5GB"
    gb: 5
@@ -453,7 +453,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "ubigi"
    plan: " 10GB"
    gb: 10
@@ -523,7 +523,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "esim365"
    plan: " 10 GB"
    gb: 10
@@ -553,7 +553,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "esim365"
    plan: " 5 GB"
    gb: 5
@@ -643,7 +643,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "esim365"
    plan: " 3 GB"
    gb: 3
@@ -803,7 +803,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "ubigi"
    plan: " 3GB"
    gb: 3
@@ -1143,7 +1143,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "esim plus"
    plan: " 2GB"
    gb: 2
@@ -1533,7 +1533,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " Unlimited"
    gb: "безлимит"
@@ -1543,7 +1543,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " Unlimited"
    gb: "безлимит"
@@ -1553,7 +1553,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "roami"
    plan: " Unlimited"
    gb: "безлимит"
@@ -1563,7 +1563,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "ubigi"
    plan: " Unlimited"
    gb: "безлимит"
@@ -1727,7 +1727,7 @@ params:
      logo_color: "#ec4899"
      desc: "Скидка <strong>20%</strong> · от $2.39/ГБ со скидкой"
      code: "web20"
-     url: "https://www.roamiapp.com"
+     url: "https://www.roamiapp.com/ru/"
    - brand: "Ubigi"
      logo_color: "#dc2626"
      desc: "Скидка <strong>10%</strong> · 1GB от $5.4 со скидкой"

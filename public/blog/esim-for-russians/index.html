@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSIM для россиян: как купить и использовать за границей — Найди самый дешёвый eSIM для поездки — сравнение тарифов | eSIM RU</title>
+    <meta name="description" content="Как россиянам купить и оплатить eSIM: UnionPay, криптовалюта USDT, QIWI. Сравнение Airalo и другие, Kaspersky eSIM. Подробнее на eSIMRU.">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="canonical" href="http://localhost:1313/blog/esim-for-russians/">
+
+    
+    <meta property="og:title" content="eSIM для россиян: как купить и использовать за границей">
+    <meta property="og:description" content="Как россиянам купить и оплатить eSIM: UnionPay, криптовалюта USDT, QIWI. Сравнение Airalo и другие, Kaspersky eSIM. Подробнее на eSIMRU.">
+    <meta property="og:image" content="http://localhost:1313/img/blog/esim-guide.jpg">
+    <meta property="og:url" content="http://localhost:1313/blog/esim-for-russians/">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-07-15T09:00:00&#43;03:00">
+    <meta property="article:modified_time" content="2026-07-22T12:00:00&#43;03:00">
+    <meta property="article:author" content="Команда eSIM RU">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #08080c;
+            --surface: #111116;
+            --surface2: #18181f;
+            --border: #25252d;
+            --border-light: #1c1c24;
+            --fg: #fafafa;
+            --fg2: #d4d4d8;
+            --fg3: #a1a1aa;
+            --fg4: #71717a;
+            --accent: #ec4899;
+            --accent2: #f472b6;
+            --accent-bg: #ec489910;
+            --green: #34d399;
+            --amber: #fbbf24;
+            --blue: #60a5fa;
+            --r: 8px;
+            --r2: 12px;
+            --r3: 16px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            background: var(--bg);
+            color: var(--fg);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--fg2);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            color: var(--fg);
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; }
+        h2 { font-size: 1.5rem; margin: 36px 0 14px; }
+        h3 { font-size: 1.15rem; margin: 28px 0 10px; font-weight: 600; }
+
+        a { color: var(--accent2); text-decoration: none; transition: color .15s; }
+        a:hover { color: var(--accent); }
+
+        .dim { color: var(--fg4); }
+        .muted { color: var(--fg3); }
+
+        b, strong { color: var(--fg); font-weight: 600; }
+
+        ::selection { background: var(--accent); color: #fff; }
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+         
+        .hdr { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; height: 56px; display: flex; align-items: center; }
+        .hdr-inner { max-width: 1160px; margin: 0 auto; width: 100%; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; color: var(--fg); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        .nav { display: flex; gap: 24px; align-items: center; }
+        .nav a { font-size: .84rem; font-weight: 500; color: var(--fg3); transition: color .15s; text-decoration: none; position: relative; padding-bottom: 4px; }
+        .nav a:hover { color: var(--fg); }
+        .nav a.cur { color: var(--accent); }
+        .nav a.cur::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--accent); border-radius: 2px; }
+
+        @media (max-width: 640px) { .nav { display: none; } }
+
+         
+        .breadcrumb {
+            padding: 20px 0 0;
+            font-size: .78rem;
+            color: var(--fg4);
+        }
+        .breadcrumb a { color: var(--fg4); }
+        .breadcrumb a:hover { color: var(--fg2); }
+        .breadcrumb span { color: var(--fg3); }
+
+         
+        .article-hero {
+            padding: 32px 0 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        .article-hero .meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            font-size: .82rem;
+            color: var(--fg4);
+            margin-bottom: 16px;
+        }
+        .article-hero .meta .tag {
+            background: var(--accent-bg);
+            color: var(--accent2);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: .75rem;
+            font-weight: 600;
+        }
+        .article-hero .meta .dot {
+            width: 4px; height: 4px; background: var(--fg4); border-radius: 50%;
+        }
+        .article-hero h1 {
+            margin-bottom: 10px;
+        }
+        .article-hero .subtitle {
+            font-size: 1.05rem;
+            color: var(--fg3);
+            line-height: 1.6;
+            max-width: 720px;
+        }
+        .article-hero .author-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 18px;
+            font-size: .82rem;
+            color: var(--fg3);
+        }
+        .article-hero .author-row .avatar {
+            width: 36px; height: 36px; border-radius: 50%;
+            background: var(--accent-bg); border: 2px solid var(--accent);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: .85rem; color: var(--accent);
+        }
+
+         
+        .featured-image {
+            margin: 16px 0;
+            border-radius: var(--r3);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .featured-image .caption {
+            padding: 10px 18px;
+            font-size: .76rem;
+            color: var(--fg4);
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+        }
+
+         
+        .article-body {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 0;
+            font-size: .95rem;
+            line-height: 1.75;
+            color: var(--fg2);
+        }
+        .article-body p {
+            margin-bottom: 18px;
+        }
+        .article-body ul, .article-body ol {
+            margin: 14px 0 18px 24px;
+        }
+        .article-body li {
+            margin-bottom: 8px;
+        }
+        .article-body blockquote {
+            border-left: 3px solid var(--accent);
+            padding: 14px 20px;
+            margin: 24px 0;
+            background: var(--surface);
+            border-radius: 0 var(--r) var(--r) 0;
+            font-style: italic;
+            color: var(--fg3);
+        }
+        .article-body code {
+            background: var(--surface2);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: .85rem;
+            color: var(--accent2);
+        }
+        .article-body pre {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 18px 20px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: .84rem;
+            line-height: 1.6;
+        }
+        .article-body pre code {
+            background: none;
+            padding: 0;
+            color: var(--fg2);
+        }
+
+         
+        .info-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px 24px;
+            margin: 28px 0;
+        }
+        .info-box .info-title {
+            font-weight: 600;
+            color: var(--fg);
+            margin-bottom: 8px;
+            font-size: .92rem;
+        }
+        .info-box p { font-size: .85rem; color: var(--fg3); margin-bottom: 0; }
+        .info-box.tip { border-left: 3px solid var(--green); }
+        .info-box.warn { border-left: 3px solid var(--amber); }
+
+         
+        .article-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: .85rem;
+            border: 1px solid var(--border);
+        }
+        .article-body table th,
+        .article-body table td {
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: middle;
+        }
+        .article-body table th {
+            background: var(--surface);
+            color: var(--fg);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border);
+        }
+        .article-body table td {
+            background: transparent;
+            color: var(--fg2);
+        }
+        .article-body table tr:hover td {
+            background: var(--surface);
+        }
+        .article-body table .price {
+            color: var(--green);
+            font-weight: 700;
+        }
+
+         
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: .85rem;
+            border: 1px solid var(--border);
+        }
+        .compare-table th,
+        .compare-table td {
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: middle;
+        }
+        .compare-table th {
+            background: var(--surface);
+            color: var(--fg);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border);
+        }
+        .compare-table td {
+            background: transparent;
+            color: var(--fg2);
+        }
+        .compare-table tr:hover td {
+            background: var(--surface);
+        }
+        .compare-table .price {
+            color: var(--green);
+            font-weight: 700;
+        }
+
+         
+        .article-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+            align-items: start;
+        }
+        @media (max-width: 900px) {
+            .article-layout { grid-template-columns: 1fr; }
+            .article-sidebar { display: none; }
+        }
+
+         
+        .toc {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px 24px;
+            margin-bottom: 28px;
+        }
+        .toc-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--fg);
+            margin-bottom: 12px;
+        }
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            margin: 0;
+            padding: 0;
+        }
+        .toc ol li {
+            counter-increment: toc-counter;
+            margin-bottom: 6px;
+            font-size: .84rem;
+            line-height: 1.5;
+        }
+        .toc ol li::before {
+            content: counter(toc-counter) ".";
+            color: var(--accent);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .toc ol li a {
+            color: var(--fg3);
+            text-decoration: none;
+            transition: color .15s;
+        }
+        .toc ol li a:hover {
+            color: var(--accent2);
+        }
+
+         
+        .article-sidebar {
+            position: sticky;
+            top: 72px;
+        }
+        .sidebar-module {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .sidebar-module .sidebar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: .95rem;
+            font-weight: 700;
+            color: var(--fg);
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .sidebar-module .country-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: .82rem;
+            color: var(--fg3);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border-light);
+            transition: color .15s;
+        }
+        .sidebar-module .country-link:last-child { border-bottom: none; }
+        .sidebar-module .country-link:hover { color: var(--accent2); }
+        .sidebar-module .country-link .flag {
+            width: 24px; height: 16px;
+            border-radius: 2px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .sidebar-module .country-link .price {
+            margin-left: auto;
+            font-size: .74rem;
+            color: var(--green);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .sidebar-module .article-link {
+            display: block;
+            padding: 8px 0;
+            font-size: .82rem;
+            color: var(--fg3);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border-light);
+            line-height: 1.4;
+            transition: color .15s;
+        }
+        .sidebar-module .article-link:last-child { border-bottom: none; }
+        .sidebar-module .article-link:hover { color: var(--accent2); }
+
+         
+        .related-section {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .related-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 22px 20px;
+            transition: all .2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .related-card:hover {
+            border-color: var(--accent);
+            background: var(--surface2);
+            transform: translateY(-2px);
+        }
+        .related-card .card-tag {
+            font-size: .7rem;
+            font-weight: 600;
+            color: var(--accent2);
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            margin-bottom: 8px;
+        }
+        .related-card h4 {
+            font-size: .95rem;
+            margin-bottom: 6px;
+            color: var(--fg);
+        }
+        .related-card p {
+            font-size: .78rem;
+            color: var(--fg4);
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+         
+        .ftr { background: var(--surface); border-top: 1px solid var(--border); padding: 48px 0 28px; }
+        .ftr-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 36px; }
+        .ftr-grid h4 { color: var(--fg); font-family: 'Playfair Display', serif; font-size: .9rem; margin-bottom: 12px; }
+        .ftr-grid a { color: var(--fg4); display: block; padding: 2px 0; font-size: .78rem; }
+        .ftr-grid a:hover { color: var(--fg); }
+        .ftr-bot { border-top: 1px solid var(--border); margin-top: 36px; padding-top: 20px; text-align: center; font-size: .72rem; color: var(--fg4); }
+        .ftr-bot a { color: var(--fg4); margin: 0 12px; }
+        @media (max-width: 768px) { .ftr-grid { grid-template-columns: 1fr; } }
+
+         
+        @media (max-width: 768px) {
+            .article-body { padding: 24px 0; font-size: .9rem; }
+            .article-hero { padding: 24px 0 18px; }
+            .article-hero h1 { font-size: 1.6rem; }
+            .featured-image img { max-height: 200px; }
+        }
+    </style>
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "\"eSIM для россиян: как купить и использовать за границей\"",
+        "description": "\"Как россиянам купить и оплатить eSIM: UnionPay, криптовалюта USDT, QIWI. Сравнение Airalo и другие, Kaspersky eSIM. Подробнее на eSIMRU.\"",
+        "image": "\"http://localhost:1313/img/blog/esim-guide.jpg\"",
+        "datePublished": "2026-07-15T09:00:00\u002b03:00",
+        "dateModified": "2026-07-22T12:00:00\u002b03:00",
+        "author": {
+            "@type": "Organization",
+            "name": "\"Команда eSIM RU\"",
+            "url": "http:\/\/localhost:1313\/about-us/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Найди самый дешёвый eSIM для поездки — сравнение тарифов | eSIM RU",
+            "url": "http:\/\/localhost:1313\/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/blog\/esim-for-russians\/"
+        }
+    }
+    </script>
+</head>
+<body>
+
+
+<style>
+ 
+.hdr{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;height:56px;display:flex;align-items:center}
+.hdr-inner{max-width:1160px;margin:0 auto;width:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;color:var(--fg)}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:24px;align-items:center}
+.nav a{font-size:.84rem;font-weight:500;color:var(--fg3);transition:color .15s;text-decoration:none;position:relative;padding-bottom:4px}
+.nav a:hover{color:var(--fg)}
+.nav a.cur{color:var(--accent)}
+.nav a.cur::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:var(--accent);border-radius:2px}
+.hdr-search-wrap{position:relative;display:flex;align-items:center}
+.hdr-search{width:220px;padding:9px 14px 9px 36px;border:1px solid var(--accent);border-radius:24px;background:var(--bg);color:var(--fg);font-size:.8rem;font-family:inherit;outline:none;transition:all .2s;box-shadow:0 0 0 2px var(--accent-bg)}
+.hdr-search:hover{border-color:var(--accent2)}
+.hdr-search:focus{border-color:var(--accent2);box-shadow:0 0 0 4px var(--accent-bg);background:var(--surface)}
+.hdr-search::placeholder{color:var(--fg4)}
+.hdr-search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:.85rem;pointer-events:none}
+
+ 
+.search-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-height: 320px;
+    overflow-y: auto;
+    z-index: 200;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    display: none;
+    padding: 6px 0;
+}
+.search-dropdown .result-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    cursor: pointer;
+    gap: 12px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.15s ease, color 0.15s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+.search-dropdown .result-item:last-child { border-bottom: none; }
+.search-dropdown .result-item:hover {
+    background: #e6f0ff;
+    color: #000;
+}
+.search-dropdown .result-item img {
+    width: 28px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+.search-dropdown .result-item .info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.search-dropdown .result-item .info .name {
+    font-weight: 500;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-dropdown .result-item .info .desc {
+    font-size: .75rem;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-dropdown .no-result {
+    padding: 12px 14px;
+    color: #999;
+    text-align: center;
+    font-size: .85rem;
+}
+.search-dropdown::-webkit-scrollbar { width: 4px; }
+.search-dropdown::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+
+ 
+.search-dropdown .result-item {
+    display: none;  
+}
+.search-dropdown .result-item.visible {
+    display: flex;  
+}
+
+@media(max-width:768px){.hdr-search-wrap{display:none}}
+@media(max-width:640px){.nav{display:none}}
+</style>
+
+<header class="hdr">
+    <div class="hdr-inner">
+        <a href="/" class="logo">eSIM<span> RU</span></a>
+        <nav class="nav">
+            <a href="/">Главная</a>
+            <a href="/asia-esim/">Азия</a>
+            <a href="/europe-esim/" class="cur">Европа</a>
+            <a href="/africa-esim/">Африка</a>
+            <a href="/americas-esim/">Америка</a>
+            <a href="/sea-esim/">Юго-Восточная Азия​</a>
+            <a href="/middle-east-esim/">Ближний Восток</a>
+            <a href="/about-us/">О нас</a>
+        </nav>
+      
+        <span class="hdr-search-wrap">
+            <input type="text" class="hdr-search" id="searchInput" placeholder="Поиск страны…" autocomplete="off">
+            <span class="hdr-search-icon">&#9906;</span>
+            <div id="searchResults" class="search-dropdown">
+                
+                
+                <a href="/china-esim/" class="result-item" data-name="eSIM Китай" data-code="cn">
+                    <img src="/img/flags/cn.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Китай</span>
+                        <span class="desc">Пекин, Шанхай</span>
+                    </div>
+                </a>
+                
+                <a href="/uzbekistan-esim/" class="result-item" data-name="eSIM Узбекистан" data-code="uz">
+                    <img src="/img/flags/uz.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Узбекистан</span>
+                        <span class="desc">Ташкент, Самарканд</span>
+                    </div>
+                </a>
+                
+                <a href="/armenia-esim/" class="result-item" data-name="eSIM Армения" data-code="am">
+                    <img src="/img/flags/am.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Армения</span>
+                        <span class="desc">Ереван, Гарни</span>
+                    </div>
+                </a>
+                
+                <a href="/israel-esim/" class="result-item" data-name="eSIM Израиль" data-code="il">
+                    <img src="/img/flags/il.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Израиль</span>
+                        <span class="desc">Тель-Авив, Иерусалим</span>
+                    </div>
+                </a>
+                
+                <a href="/russia-esim/" class="result-item" data-name="eSIM Россия" data-code="ru">
+                    <img src="/img/flags/ru.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Россия</span>
+                        <span class="desc">Москва, Санкт-Петербург</span>
+                    </div>
+                </a>
+                
+                <a href="/bulgaria-esim/" class="result-item" data-name="eSIM Болгария" data-code="bg">
+                    <img src="/img/flags/bg.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Болгария</span>
+                        <span class="desc">София, Бургас</span>
+                    </div>
+                </a>
+                
+                <a href="/canada-esim/" class="result-item" data-name="eSIM Канада" data-code="ca">
+                    <img src="/img/flags/ca.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Канада</span>
+                        <span class="desc">Торонто, Ванкувер</span>
+                    </div>
+                </a>
+                
+                <a href="/south-africa-esim/" class="result-item" data-name="eSIM Южно-Африканская Республика" data-code="za">
+                    <img src="/img/flags/za.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Южно-Африканская Республика</span>
+                        <span class="desc">Кейптаун, Йоханнесбург</span>
+                    </div>
+                </a>
+                
+                <a href="/india-esim/" class="result-item" data-name="eSIM Индия" data-code="in">
+                    <img src="/img/flags/in.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Индия</span>
+                        <span class="desc">Дели, Мумбаи</span>
+                    </div>
+                </a>
+                
+                <a href="/indonesia-esim/" class="result-item" data-name="eSIM Индонезия" data-code="id">
+                    <img src="/img/flags/id.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Индонезия</span>
+                        <span class="desc">Джакарта, Бали</span>
+                    </div>
+                </a>
+                
+                <a href="/kazakhstan-esim/" class="result-item" data-name="eSIM Казахстан" data-code="kz">
+                    <img src="/img/flags/kz.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Казахстан</span>
+                        <span class="desc">Нур-Султан, Алматы</span>
+                    </div>
+                </a>
+                
+                <a href="/turkey-esim/" class="result-item" data-name="eSIM Турция" data-code="tr">
+                    <img src="/img/flags/tr.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Турция</span>
+                        <span class="desc">Стамбул, Анкара</span>
+                    </div>
+                </a>
+                
+                <a href="/egypt-esim/" class="result-item" data-name="eSIM Египет" data-code="eg">
+                    <img src="/img/flags/eg.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Египет</span>
+                        <span class="desc">Каир, Шарм-эль-Шейх</span>
+                    </div>
+                </a>
+                
+                <a href="/serbia-esim/" class="result-item" data-name="eSIM Сербия" data-code="rs">
+                    <img src="/img/flags/rs.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Сербия</span>
+                        <span class="desc">Белград, Нови-Сад</span>
+                    </div>
+                </a>
+                
+                <a href="/cyprus-esim/" class="result-item" data-name="eSIM Кипр" data-code="cy">
+                    <img src="/img/flags/cy.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Кипр</span>
+                        <span class="desc">Никосия, Лимасол</span>
+                    </div>
+                </a>
+                
+                <a href="/seychelles-esim/" class="result-item" data-name="eSIM Сейшелы" data-code="sc">
+                    <img src="/img/flags/sc.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Сейшелы</span>
+                        <span class="desc">Маэ, Праслен</span>
+                    </div>
+                </a>
+                
+                <a href="/nepal-esim/" class="result-item" data-name="eSIM Непал" data-code="np">
+                    <img src="/img/flags/np.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Непал</span>
+                        <span class="desc">Катманду, Покхара</span>
+                    </div>
+                </a>
+                
+                <a href="/brazil-esim/" class="result-item" data-name="eSIM Бразилия" data-code="br">
+                    <img src="/img/flags/br.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Бразилия</span>
+                        <span class="desc">Рио-де-Жанейро, Сан-Паулу</span>
+                    </div>
+                </a>
+                
+                <a href="/greece-esim/" class="result-item" data-name="eSIM Греция" data-code="gr">
+                    <img src="/img/flags/gr.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Греция</span>
+                        <span class="desc">Афины, Салоники</span>
+                    </div>
+                </a>
+                
+                <a href="/germany-esim/" class="result-item" data-name="eSIM Германия" data-code="de">
+                    <img src="/img/flags/de.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Германия</span>
+                        <span class="desc">Берлин, Мюнхен</span>
+                    </div>
+                </a>
+                
+                <a href="/italy-esim/" class="result-item" data-name="eSIM Италия" data-code="it">
+                    <img src="/img/flags/it.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Италия</span>
+                        <span class="desc">Рим, Милан</span>
+                    </div>
+                </a>
+                
+                <a href="/morocco-esim/" class="result-item" data-name="eSIM Марокко" data-code="ma">
+                    <img src="/img/flags/ma.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Марокко</span>
+                        <span class="desc">Касабланка, Марракеш</span>
+                    </div>
+                </a>
+                
+                <a href="/sri-lanka-esim/" class="result-item" data-name="eSIM Шри-Ланка" data-code="lk">
+                    <img src="/img/flags/lk.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Шри-Ланка</span>
+                        <span class="desc">Коломбо, Канди</span>
+                    </div>
+                </a>
+                
+                <a href="/singapore-esim/" class="result-item" data-name="eSIM Сингапур" data-code="sg">
+                    <img src="/img/flags/sg.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Сингапур</span>
+                        <span class="desc">Сингапур, Сентоса</span>
+                    </div>
+                </a>
+                
+                <a href="/japan-esim/" class="result-item" data-name="eSIM Япония" data-code="jp">
+                    <img src="/img/flags/jp.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Япония</span>
+                        <span class="desc">Токио, Осака</span>
+                    </div>
+                </a>
+                
+                <a href="/georgia-esim/" class="result-item" data-name="eSIM Грузия" data-code="ge">
+                    <img src="/img/flags/ge.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Грузия</span>
+                        <span class="desc">Тбилиси, Батуми</span>
+                    </div>
+                </a>
+                
+                <a href="/europe-esim/" class="result-item" data-name="eSIM Европа" data-code="eu">
+                    <img src="/img/flags/eu.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Европа</span>
+                        <span class="desc">Европа (роуминг)</span>
+                    </div>
+                </a>
+                
+                <a href="/mauritius-esim/" class="result-item" data-name="eSIM Маврикий" data-code="mu">
+                    <img src="/img/flags/mu.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Маврикий</span>
+                        <span class="desc">Порт-Луи, Гран-Бэ</span>
+                    </div>
+                </a>
+                
+                <a href="/france-esim/" class="result-item" data-name="eSIM Франция" data-code="fr">
+                    <img src="/img/flags/fr.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Франция</span>
+                        <span class="desc">Париж, Ницца</span>
+                    </div>
+                </a>
+                
+                <a href="/poland-esim/" class="result-item" data-name="eSIM Польша" data-code="pl">
+                    <img src="/img/flags/pl.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Польша</span>
+                        <span class="desc">Варшава, Краков</span>
+                    </div>
+                </a>
+                
+                <a href="/thailand-esim/" class="result-item" data-name="eSIM Таиланд" data-code="th">
+                    <img src="/img/flags/th.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Таиланд</span>
+                        <span class="desc">Бангкок, Пхукет</span>
+                    </div>
+                </a>
+                
+                <a href="/belarus-esim/" class="result-item" data-name="eSIM Беларусь" data-code="by">
+                    <img src="/img/flags/by.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Беларусь</span>
+                        <span class="desc">Минск, Брест</span>
+                    </div>
+                </a>
+                
+                <a href="/tunisia-esim/" class="result-item" data-name="eSIM Тунис" data-code="tn">
+                    <img src="/img/flags/tn.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Тунис</span>
+                        <span class="desc">Тунис, Сус</span>
+                    </div>
+                </a>
+                
+                <a href="/namibia-esim/" class="result-item" data-name="eSIM Намибия" data-code="na">
+                    <img src="/img/flags/na.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Намибия</span>
+                        <span class="desc">Виндхук, Свакопмунд</span>
+                    </div>
+                </a>
+                
+                <a href="/finland-esim/" class="result-item" data-name="eSIM Финляндия" data-code="fi">
+                    <img src="/img/flags/fi.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Финляндия</span>
+                        <span class="desc">Хельсинки, Турку</span>
+                    </div>
+                </a>
+                
+                <a href="/uk-esim/" class="result-item" data-name="eSIM Великобритания" data-code="gb">
+                    <img src="/img/flags/gb.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Великобритания</span>
+                        <span class="desc">Лондон, Манчестер</span>
+                    </div>
+                </a>
+                
+                <a href="/philippines-esim/" class="result-item" data-name="eSIM Филиппины" data-code="ph">
+                    <img src="/img/flags/ph.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Филиппины</span>
+                        <span class="desc">Манила, Себу</span>
+                    </div>
+                </a>
+                
+                <a href="/mongolia-esim/" class="result-item" data-name="eSIM Монголия" data-code="mn">
+                    <img src="/img/flags/mn.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Монголия</span>
+                        <span class="desc">Улан-Батор, Пустыня Гоби</span>
+                    </div>
+                </a>
+                
+                <a href="/vietnam-esim/" class="result-item" data-name="eSIM Вьетнам" data-code="vn">
+                    <img src="/img/flags/vn.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Вьетнам</span>
+                        <span class="desc">Ханой, Хошимин</span>
+                    </div>
+                </a>
+                
+                <a href="/azerbaijan-esim/" class="result-item" data-name="eSIM Азербайджан" data-code="az">
+                    <img src="/img/flags/az.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Азербайджан</span>
+                        <span class="desc">Баку, Гянджа</span>
+                    </div>
+                </a>
+                
+                <a href="/oman-esim/" class="result-item" data-name="eSIM Оман" data-code="om">
+                    <img src="/img/flags/om.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Оман</span>
+                        <span class="desc">Маскат, Салала</span>
+                    </div>
+                </a>
+                
+                <a href="/argentina-esim/" class="result-item" data-name="eSIM Аргентина" data-code="ar">
+                    <img src="/img/flags/ar.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Аргентина</span>
+                        <span class="desc">Буэнос-Айрес, Кордова</span>
+                    </div>
+                </a>
+                
+                <a href="/uae-esim/" class="result-item" data-name="eSIM ОАЭ" data-code="ae">
+                    <img src="/img/flags/ae.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM ОАЭ</span>
+                        <span class="desc">Дубай, Абу-Даби</span>
+                    </div>
+                </a>
+                
+                <a href="/south-korea-esim/" class="result-item" data-name="eSIM Южная Корея" data-code="kr">
+                    <img src="/img/flags/kr.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Южная Корея</span>
+                        <span class="desc">Сеул, Пусан</span>
+                    </div>
+                </a>
+                
+                <a href="/maldives-esim/" class="result-item" data-name="eSIM Мальдивы" data-code="mv">
+                    <img src="/img/flags/mv.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Мальдивы</span>
+                        <span class="desc">Мале, Атолл Ари</span>
+                    </div>
+                </a>
+                
+                <a href="/malaysia-esim/" class="result-item" data-name="eSIM Малайзия" data-code="my">
+                    <img src="/img/flags/my.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Малайзия</span>
+                        <span class="desc">Куала-Лумпур, Пенанг</span>
+                    </div>
+                </a>
+                
+                <a href="/montenegro-esim/" class="result-item" data-name="eSIM Черногория" data-code="me">
+                    <img src="/img/flags/me.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Черногория</span>
+                        <span class="desc">Подгорица, Будва</span>
+                    </div>
+                </a>
+                
+            </div>
+        </span>
+    </div>
+</header>
+
+<script>
+    (function() {
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('searchResults');
+        if (!searchInput || !resultsContainer) return;
+
+        
+        const allItems = resultsContainer.querySelectorAll('.result-item');
+
+        
+        allItems.forEach(el => el.classList.remove('visible'));
+
+        function filterItems(query) {
+            const q = query.trim().toLowerCase();
+            let matchCount = 0;
+
+            allItems.forEach(el => {
+                const name = el.getAttribute('data-name').toLowerCase();
+                const code = el.getAttribute('data-code').toLowerCase();
+                const match = name.includes(q) || code.includes(q);
+                if (match) {
+                    el.classList.add('visible');
+                    matchCount++;
+                } else {
+                    el.classList.remove('visible');
+                }
+            });
+
+            
+            if (q.length === 0 || matchCount === 0) {
+                resultsContainer.style.display = 'none';
+                if (matchCount === 0 && q.length > 0) {
+                    
+                    let noResult = resultsContainer.querySelector('.no-result');
+                    if (!noResult) {
+                        noResult = document.createElement('div');
+                        noResult.className = 'no-result';
+                        noResult.textContent = 'Ничего не найдено';
+                        resultsContainer.appendChild(noResult);
+                    }
+                    noResult.style.display = 'block';
+                } else {
+                    const noResult = resultsContainer.querySelector('.no-result');
+                    if (noResult) noResult.style.display = 'none';
+                }
+            } else {
+                resultsContainer.style.display = 'block';
+                const noResult = resultsContainer.querySelector('.no-result');
+                if (noResult) noResult.style.display = 'none';
+            }
+        }
+
+        searchInput.addEventListener('input', function() {
+            filterItems(this.value);
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.hdr-search-wrap')) {
+                resultsContainer.style.display = 'none';
+            }
+        });
+
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                this.value = '';
+                resultsContainer.style.display = 'none';
+                this.blur();
+            }
+        });
+
+        searchInput.addEventListener('blur', function() {
+            setTimeout(() => {
+                resultsContainer.style.display = 'none';
+            }, 200);
+        });
+
+        
+        filterItems('');
+    })();
+</script>
+
+<div class="container">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="http://localhost:1313/">Главная</a> &rsaquo;
+        <a href="/blog/">Блог</a> &rsaquo;
+        <span>eSIM для россиян: как купить и использовать за границей</span>
+    </nav>
+</div>
+
+<article>
+    <div class="container">
+        <header class="article-hero">
+            <div class="meta">
+                <span class="tag">гайд</span>
+                <span class="dot"></span>
+                <time datetime="2026-07-15">15 July 2026</time>
+                <span class="dot"></span>
+                <span>8 мин чтения</span>
+            </div>
+            <h1>eSIM для россиян: как купить и использовать за границей</h1>
+            <p class="subtitle">Как россиянам купить и оплатить eSIM: UnionPay, криптовалюта USDT, QIWI. Сравнение Airalo и другие, Kaspersky eSIM. Подробнее на eSIMRU.</p>
+            <div class="author-row">
+                <div class="avatar">Ко</div>
+                <span><strong>Команда eSIM RU</strong> &middot; Обновлено 22 July 2026</span>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <figure class="featured-image">
+            <img src="/img/blog/esim-guide.jpg" alt="eSIM для россиян: как купить и использовать за границей" width="1120" height="480" loading="eager">
+            <figcaption class="caption">Сравнение тарифов eSIM от разных провайдеров — найдите лучшую цену за гигабайт за 10 секунд.</figcaption>
+        </figure>
+    </div>
+
+    <div class="container">
+        <div class="article-layout">
+            <div>
+                
+                <nav class="toc" aria-label="Содержание статьи">
+                    <div class="toc-title">Содержание</div>
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#работает-ли-esim-в-россии-в-2026-году">Работает ли eSIM в России в 2026 году</a></li>
+    <li><a href="#как-оплатить-esim-из-россии">Как оплатить eSIM из России</a>
+      <ul>
+        <li><a href="#unionpay--самый-простой-способ">UnionPay — самый простой способ</a></li>
+        <li><a href="#криптовалюта--usdt-и-usdc">Криптовалюта — USDT и USDC</a></li>
+        <li><a href="#qiwi-и-юmoney">QIWI и ЮMoney</a></li>
+        <li><a href="#kaspersky-esim--российский-провайдер">Kaspersky eSIM — российский провайдер</a></li>
+        <li><a href="#карты-зарубежных-банков">Карты зарубежных банков</a></li>
+      </ul>
+    </li>
+    <li><a href="#какие-esim-провайдеры-работают-с-российскими-картами">Какие eSIM-провайдеры работают с российскими картами</a></li>
+    <li><a href="#esim-для-путешествий--популярные-направления">eSIM для путешествий — популярные направления</a>
+      <ul>
+        <li><a href="#турция">Турция</a></li>
+        <li><a href="#оаэ">ОАЭ</a></li>
+        <li><a href="#таиланд">Таиланд</a></li>
+        <li><a href="#европа">Европа</a></li>
+      </ul>
+    </li>
+    <li><a href="#esim-в-москве-и-санкт-петербурге">eSIM в Москве и Санкт-Петербурге</a></li>
+    <li><a href="#обход-блокировок-с-esim">Обход блокировок с eSIM</a></li>
+    <li><a href="#способы-оплаты-esim-из-россии--полный-разбор">Способы оплаты eSIM из России — полный разбор</a>
+      <ul>
+        <li><a href="#unionpay--детальная-инструкция">UnionPay — детальная инструкция</a></li>
+        <li><a href="#криптовалюта--пошаговая-инструкция">Криптовалюта — пошаговая инструкция</a></li>
+        <li><a href="#kaspersky-esim--российский-провайдер-1">Kaspersky eSIM — российский провайдер</a></li>
+      </ul>
+    </li>
+    <li><a href="#способы-оплаты-esim-из-россии">Способы оплаты eSIM из России</a>
+      <ul>
+        <li><a href="#unionpay">UnionPay</a></li>
+        <li><a href="#криптовалюта">Криптовалюта</a></li>
+        <li><a href="#карты-зарубежных-банков-1">Карты зарубежных банков</a></li>
+      </ul>
+    </li>
+    <li><a href="#таблица-оплаты">Таблица оплаты</a></li>
+    <li><a href="#популярные-направления">Популярные направления</a>
+      <ul>
+        <li><a href="#турция-1">Турция</a></li>
+        <li><a href="#оаэ-1">ОАЭ</a></li>
+      </ul>
+    </li>
+    <li><a href="#частые-вопросы">Частые вопросы</a>
+      <ul>
+        <li><a href="#можно-ли-оплатить-esim-картой-мир">Можно ли оплатить eSIM картой Мир?</a></li>
+        <li><a href="#нужен-ли-загранпаспорт">Нужен ли загранпаспорт?</a></li>
+      </ul>
+    </li>
+    <li><a href="#таблица-совместимости-платёжных-методов">Таблица совместимости платёжных методов</a></li>
+    <li><a href="#esim-в-москве-и-санкт-петербурге--офлайн-покупка">eSIM в Москве и Санкт-Петербурге — офлайн-покупка</a></li>
+    <li><a href="#частые-вопросы-1">Частые вопросы</a>
+      <ul>
+        <li><a href="#можно-ли-оплатить-esim-картой-мир-1">Можно ли оплатить eSIM картой Мир?</a></li>
+        <li><a href="#нужен-ли-загранпаспорт-для-esim">Нужен ли загранпаспорт для eSIM?</a></li>
+        <li><a href="#работает-ли-esim-в-крыму">Работает ли eSIM в Крыму?</a></li>
+      </ul>
+    </li>
+    <li><a href="#популярные-направления-из-россии--цены-и-провайдеры">Популярные направления из России — цены и провайдеры</a>
+      <ul>
+        <li><a href="#турция--самое-востребованное-направление">Турция — самое востребованное направление</a></li>
+        <li><a href="#оаэ--дубай-и-абу-даби">ОАЭ — Дубай и Абу-Даби</a></li>
+        <li><a href="#таиланд--пхукет-и-бангкок">Таиланд — Пхукет и Бангкок</a></li>
+        <li><a href="#европа--30-стран-в-одном-тарифе">Европа — 30+ стран в одном тарифе</a></li>
+        <li><a href="#китай--интернет-без-файрвола">Китай — интернет без файрвола</a></li>
+      </ul>
+    </li>
+    <li><a href="#обход-блокировок-с-esim-1">Обход блокировок с eSIM</a></li>
+    <li><a href="#пошаговая-инструкция-оплаты-esim-из-россии">Пошаговая инструкция оплаты eSIM из России</a>
+      <ul>
+        <li><a href="#способ-1-карта-unionpay">Способ 1: Карта UnionPay</a></li>
+        <li><a href="#способ-2-криптовалюта-usdtusdc">Способ 2: Криптовалюта USDT/USDC</a></li>
+        <li><a href="#способ-3-карта-зарубежного-банка">Способ 3: Карта зарубежного банка</a></li>
+        <li><a href="#способ-4-qiwi-и-юmoney">Способ 4: QIWI и ЮMoney</a></li>
+      </ul>
+    </li>
+    <li><a href="#таблица-совместимости-платежей">Таблица совместимости платежей</a></li>
+    <li><a href="#esim-в-москве-и-санкт-петербурге-1">eSIM в Москве и Санкт-Петербурге</a></li>
+    <li><a href="#популярные-направления-из-россии">Популярные направления из России</a>
+      <ul>
+        <li><a href="#турция--esim-от-259">Турция — eSIM от €2.59</a></li>
+        <li><a href="#оаэ--esim-от-450">ОАЭ — eSIM от €4.50</a></li>
+        <li><a href="#таиланд--esim-от-350">Таиланд — eSIM от €3.50</a></li>
+        <li><a href="#европа--региональный-esim-от-5">Европа — региональный eSIM от €5</a></li>
+        <li><a href="#китай--esim-с-vpn-маршрутизацией">Китай — eSIM с VPN-маршрутизацией</a></li>
+      </ul>
+    </li>
+    <li><a href="#частые-вопросы-2">Частые вопросы</a>
+      <ul>
+        <li><a href="#можно-ли-оплатить-esim-картой-мир-2">Можно ли оплатить eSIM картой Мир?</a></li>
+        <li><a href="#нужен-ли-загранпаспорт-1">Нужен ли загранпаспорт?</a></li>
+        <li><a href="#работает-ли-esim-в-крыму-1">Работает ли eSIM в Крыму?</a></li>
+        <li><a href="#сколько-идёт-крипто-платёж">Сколько идёт крипто-платёж?</a></li>
+        <li><a href="#что-делать-если-карту-не-принимают">Что делать если карту не принимают?</a></li>
+        <li><a href="#можно-ли-оплатить-esim-через-сбп">Можно ли оплатить eSIM через СБП?</a></li>
+      </ul>
+    </li>
+    <li><a href="#оплата-esim-из-россии--все-способы">Оплата eSIM из России — все способы</a>
+      <ul>
+        <li><a href="#unionpay-1">UnionPay</a></li>
+        <li><a href="#криптовалюта-usdtusdc">Криптовалюта USDT/USDC</a></li>
+        <li><a href="#карты-зарубежных-банков-2">Карты зарубежных банков</a></li>
+        <li><a href="#qiwi-и-юmoney-1">QIWI и ЮMoney</a></li>
+      </ul>
+    </li>
+    <li><a href="#таблица-платёжных-методов">Таблица платёжных методов</a></li>
+    <li><a href="#популярные-направления-из-россии-1">Популярные направления из России</a>
+      <ul>
+        <li><a href="#турция--esim-от-259-1">Турция — eSIM от €2.59</a></li>
+        <li><a href="#оаэ--от-450">ОАЭ — от €4.50</a></li>
+        <li><a href="#таиланд--от-350">Таиланд — от €3.50</a></li>
+        <li><a href="#европа--от-5">Европа — от €5</a></li>
+        <li><a href="#китай--с-vpn-маршрутизацией">Китай — с VPN-маршрутизацией</a></li>
+      </ul>
+    </li>
+    <li><a href="#esim-в-москве-и-спб">eSIM в Москве и СПб</a></li>
+    <li><a href="#частые-вопросы-3">Частые вопросы</a>
+      <ul>
+        <li><a href="#карта-мир">Карта Мир?</a></li>
+        <li><a href="#загранпаспорт">Загранпаспорт?</a></li>
+        <li><a href="#крым">Крым?</a></li>
+        <li><a href="#крипто-платёж-сколько-идёт">Крипто-платёж сколько идёт?</a></li>
+        <li><a href="#карту-не-принимают">Карту не принимают?</a></li>
+        <li><a href="#сбп">СБП?</a></li>
+      </ul>
+    </li>
+    <li><a href="#частые-вопросы--полный-раздел">Частые вопросы — полный раздел</a>
+      <ul>
+        <li><a href="#какая-карта-unionpay-работает-с-esim">Какая карта UnionPay работает с eSIM?</a></li>
+        <li><a href="#можно-ли-оплатить-esim-через-сбп-1">Можно ли оплатить eSIM через СБП?</a></li>
+        <li><a href="#сколько-идёт-крипто-платёж-1">Сколько идёт крипто-платёж?</a></li>
+        <li><a href="#что-делать-если-карту-не-принимают-1">Что делать, если карту не принимают?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </nav>
+                
+
+                <div class="article-body">
+                    <p>Россияне могут покупать и использовать международные eSIM, несмотря на санкции и блокировку карт Visa/Mastercard. Рабочие способы оплаты: UnionPay российских банков, криптовалюта USDT/USDC, QIWI и ЮMoney. Kaspersky eSIM — российский провайдер, работающий с картами РФ без ограничений. Airalo и другие принимают UnionPay и криптовалюту. Промокод web20 даёт скидку 20% на тарифы.</p>
+<h2 id="работает-ли-esim-в-россии-в-2026-году">Работает ли eSIM в России в 2026 году</h2>
+<p>По данным <a href="https://www.gsma.com/esim/">GSMA</a>, более 400 операторов поддерживают eSIM.</p>
+<p>Согласно <a href="https://en.wikipedia.org/wiki/ESIM">Wikipedia</a>, технология eSIM стандартизирована с 2016 года.</p>
+<p><a href="https://support.apple.com/en-us/HT212780">Apple</a> рекомендует активировать eSIM до вылета на стабильном Wi-Fi.</p>
+<p>Да. eSIM работает в России в двух вариантах:</p>
+<ul>
+<li><strong>Российские операторы</strong> (МТС, Билайн, МегаФон, Tele2, Yota) предоставляют eSIM для использования внутри страны. Подробнее — <a href="/blog/russian-operators-esim/">eSIM российских операторов</a>.</li>
+<li><strong>Международные eSIM</strong> (Airalo, Holafly и другие) работают в России в режиме роуминга. Вы можете купить международный eSIM для России, если вы иностранец или если вам нужен второй номер.</li>
+</ul>
+<p>Для россиян, выезжающих за границу: международные eSIM работают в стране назначения как местный тариф. Вы покупаете eSIM Турции, Китая, Европы — и пользуетесь интернетом по местным ценам, без российского роуминга.</p>
+<p><em>Подробнее о технологии eSIM — <a href="https://en.wikipedia.org/wiki/ESIM">Wikipedia</a> и <a href="https://www.gsma.com/esim/">GSMA</a>.</em></p>
+<h2 id="как-оплатить-esim-из-россии">Как оплатить eSIM из России</h2>
+<p>Главная проблема — международные платёжные системы. Карты Visa и Mastercard, выпущенные в РФ, не работают на зарубежных сайтах. «Мир» не принимается международными провайдерами. Но есть 5 рабочих способов.</p>
+<h3 id="unionpay--самый-простой-способ">UnionPay — самый простой способ</h3>
+<p>Карты UnionPay российских банков принимаются провайдерами, которые используют азиатские платёжные шлюзы:</p>
+<ul>
+<li>Газпромбанк UnionPay — работает с Airalo и другие</li>
+<li>Россельхозбанк UnionPay — работает с провайдером</li>
+<li>Почта Банк UnionPay — тестируйте; работает не у всех провайдеров</li>
+<li>Банк «Санкт-Петербург» UnionPay — работает с провайдером</li>
+</ul>
+<p>Перед оплатой убедитесь, что ваша карта UnionPay поддерживает интернет-платежи (некоторые банки выпускают UnionPay только для снятия наличных).</p>
+<h3 id="криптовалюта--usdt-и-usdc">Криптовалюта — USDT и USDC</h3>
+<p>Самый надёжный способ для средних и крупных сумм:</p>
+<ul>
+<li>Roami — принимает USDT, USDC через платёжный шлюз</li>
+<li>Yesim — принимает криптовалюту</li>
+<li>RedteaGO — принимает криптовалюту</li>
+</ul>
+<p>Процесс: выбираете тариф → на странице оплаты выбираете «Crypto» → отправляете USDT/USDC со своего кошелька (Binance, Bybit, Trust Wallet, MetaMask) → после подтверждения транзакции получаете QR-код. Комиссия сети — несколько центов. Время подтверждения — 1–5 минут.</p>
+<h3 id="qiwi-и-юmoney">QIWI и ЮMoney</h3>
+<p>Некоторые провайдеры работают с российскими электронными кошельками. Проверяйте доступность на странице оплаты конкретного провайдера. На июль 2026 QIWI работает с отдельными eSIM-провайдерами, но не со всеми.</p>
+<h3 id="kaspersky-esim--российский-провайдер">Kaspersky eSIM — российский провайдер</h3>
+<p>Kaspersky eSIM (работает на инфраструктуре BNESIM) — российский eSIM-провайдер. Принимает карты РФ без ограничений. Цены в рублях. Поддержка на русском языке. Однако выбор тарифов меньше, чем у международных конкурентов — около 4–6 планов на страну против 8–12 у провайдеров.</p>
+<h3 id="карты-зарубежных-банков">Карты зарубежных банков</h3>
+<p>Если у вас есть карта зарубежного банка (Казахстан, Армения, Грузия, Турция, ОАЭ) — она работает со всеми провайдерами без ограничений.</p>
+<h2 id="какие-esim-провайдеры-работают-с-российскими-картами">Какие eSIM-провайдеры работают с российскими картами</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Провайдер</th>
+          <th style="text-align: center">UnionPay</th>
+          <th style="text-align: center">Криптовалюта</th>
+          <th style="text-align: center">QIWI</th>
+          <th style="text-align: center">Карты РФ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Roami</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">USDT/USDC</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Airalo</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Holafly</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Yesim</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Kaspersky eSIM</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да (все)</td>
+      </tr>
+      <tr>
+          <td>RedteaGO</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="esim-для-путешествий--популярные-направления">eSIM для путешествий — популярные направления</h2>
+<h3 id="турция">Турция</h3>
+<p>Самое популярное направление у россиян. eSIM Турция от провайдеров — от €2.59 с web20. Turkcell 5G в Стамбуле и Анталии. Экономия против роуминга МТС: 89%.</p>
+<h3 id="оаэ">ОАЭ</h3>
+<p>Дубай и Абу-Даби. eSIM ОАЭ от €4.50. Etisalat 5G. Важно: в ОАЭ заблокированы WhatsApp-звонки — eSIM через роуминг может обходить блокировку.</p>
+<h3 id="таиланд">Таиланд</h3>
+<p>Пхукет, Паттайя, Бангкок. eSIM от €3.50. AIS 5G на пляжах. Местная SIM стоит дешевле, но eSIM экономит час на поиск салона и регистрацию паспорта.</p>
+<h3 id="европа">Европа</h3>
+<p>Региональный eSIM на 30+ стран ЕС. От €5 у провайдеров. Один тариф на Францию, Италию, Германию, Испанию. Экономия против роуминга: 86%.</p>
+<h2 id="esim-в-москве-и-санкт-петербурге">eSIM в Москве и Санкт-Петербурге</h2>
+<p>Офлайн-покупка eSIM в Москве: салоны МТС на Тверской, 18; Билайн на Арбате, 54; МегаФон в ТЦ «Европейский». В Санкт-Петербурге: МТС на Невском, 48; Билайн на Невском, 114; МегаФон в ТЦ «Галерея».</p>
+<p>Рекомендация: подключайте eSIM через приложение оператора — быстрее и без очередей.</p>
+<h2 id="обход-блокировок-с-esim">Обход блокировок с eSIM</h2>
+<p>Международный eSIM направляет трафик через зарубежного оператора, обходя блокировки Роскомнадзора. Сайты, заблокированные в России, открываются через eSIM. В Китае eSIM с VPN-маршрутизацией (через Гонконг) обходит Великий файрвол — Instagram, WhatsApp и Google работают. Подробнее — <a href="/blog/china-esim-guide/">eSIM Китай: интернет без файрвола</a>.</p>
+<h2 id="способы-оплаты-esim-из-россии--полный-разбор">Способы оплаты eSIM из России — полный разбор</h2>
+<h3 id="unionpay--детальная-инструкция">UnionPay — детальная инструкция</h3>
+<p>Карты UnionPay работают с Airalo и другие. Проверенные банки: Газпромбанк, Россельхозбанк, Почта Банк, Банк Санкт-Петербург. Перед оплатой убедитесь, что карта поддерживает интернет-платежи.</p>
+<h3 id="криптовалюта--пошаговая-инструкция">Криптовалюта — пошаговая инструкция</h3>
+<ol>
+<li>Создайте кошелёк (Trust Wallet, MetaMask). 2. Купите USDT на Binance или Bybit. 3. При оплате eSIM выберите Crypto. 4. Отправьте USDT на указанный адрес. 5. После 1-5 мин подтверждения получите QR-код.</li>
+</ol>
+<h3 id="kaspersky-esim--российский-провайдер-1">Kaspersky eSIM — российский провайдер</h3>
+<p>Принимает все карты РФ. Цены в рублях. Работает на инфраструктуре BNESIM. Ограничение: 4-6 тарифов на страну против 8-12 у провайдеров.</p>
+<h2 id="способы-оплаты-esim-из-россии">Способы оплаты eSIM из России</h2>
+<h3 id="unionpay">UnionPay</h3>
+<ol>
+<li>Оформите карту в Газпромбанке или Россельхозбанке.</li>
+<li>При оплате eSIM выберите UnionPay.</li>
+</ol>
+<h3 id="криптовалюта">Криптовалюта</h3>
+<ol>
+<li>Купите USDT на Binance P2P. 2. Отправьте на адрес провайдера. 3. QR-код приходит после подтверждения.</li>
+</ol>
+<h3 id="карты-зарубежных-банков-1">Карты зарубежных банков</h3>
+<p>Карты банков Казахстана, Армении, Грузии, Турции, ОАЭ работают без ограничений.</p>
+<h2 id="таблица-оплаты">Таблица оплаты</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Провайдер</th>
+          <th style="text-align: center">UnionPay</th>
+          <th style="text-align: center">Крипта</th>
+          <th style="text-align: center">QIWI</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Airalo</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Holafly</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Yesim</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="популярные-направления">Популярные направления</h2>
+<h3 id="турция-1">Турция</h3>
+<p>eSIM от €2.59. <a href="/blog/turkey-esim-guide/">eSIM Турция: гид</a>.</p>
+<h3 id="оаэ-1">ОАЭ</h3>
+<p>eSIM от €4.50. WhatsApp-звонки могут быть заблокированы.</p>
+<h2 id="частые-вопросы">Частые вопросы</h2>
+<h3 id="можно-ли-оплатить-esim-картой-мир">Можно ли оплатить eSIM картой Мир?</h3>
+<p>Нет. UnionPay или криптовалюта. <a href="https://www.gsma.com/esim/">GSMA</a>.</p>
+<h3 id="нужен-ли-загранпаспорт">Нужен ли загранпаспорт?</h3>
+<p>Нет. Только email. <a href="/blog/how-to-buy-esim/">Как купить eSIM</a>.</p>
+<h2 id="таблица-совместимости-платёжных-методов">Таблица совместимости платёжных методов</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Провайдер</th>
+          <th style="text-align: center">UnionPay</th>
+          <th style="text-align: center">Крипта</th>
+          <th style="text-align: center">QIWI</th>
+          <th style="text-align: center">Карты РФ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Airalo</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Holafly</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Yesim</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>RedteaGO</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="esim-в-москве-и-санкт-петербурге--офлайн-покупка">eSIM в Москве и Санкт-Петербурге — офлайн-покупка</h2>
+<p>В Москве салоны связи на Тверской (18), Новом Арбате (15), в ТЦ Афимолл. В Санкт-Петербурге — Невский проспект (48, 114), ТЦ Галерея. Подключение eSIM через приложение оператора быстрее и не требует визита в салон. <a href="/blog/how-to-buy-esim/">Как купить eSIM</a>.</p>
+<h2 id="частые-вопросы-1">Частые вопросы</h2>
+<h3 id="можно-ли-оплатить-esim-картой-мир-1">Можно ли оплатить eSIM картой Мир?</h3>
+<p>Нет. UnionPay или криптовалюта. <a href="https://www.gsma.com/esim/">GSMA</a> не регулирует способы оплаты.</p>
+<h3 id="нужен-ли-загранпаспорт-для-esim">Нужен ли загранпаспорт для eSIM?</h3>
+<p>Нет. Только email. <a href="/blog/does-my-phone-support-esim/">Проверьте поддержку eSIM</a>.</p>
+<h3 id="работает-ли-esim-в-крыму">Работает ли eSIM в Крыму?</h3>
+<p>Международные — через российский роуминг. Российские операторы — без ограничений. <a href="https://en.wikipedia.org/wiki/ESIM">Wikipedia</a>.</p>
+<h2 id="популярные-направления-из-россии--цены-и-провайдеры">Популярные направления из России — цены и провайдеры</h2>
+<h3 id="турция--самое-востребованное-направление">Турция — самое востребованное направление</h3>
+<p>eSIM от €2.59 за 1 ГБ. Экономия против роуминга МТС: 89%. <a href="/blog/turkey-esim-guide/">eSIM Турция: гид</a>.</p>
+<h3 id="оаэ--дубай-и-абу-даби">ОАЭ — Дубай и Абу-Даби</h3>
+<p>eSIM от €4.50. WhatsApp-звонки заблокированы на местном уровне — eSIM через роуминг может обходить блокировку.</p>
+<h3 id="таиланд--пхукет-и-бангкок">Таиланд — Пхукет и Бангкок</h3>
+<p>eSIM от €3.50. Местная SIM дешевле но требует паспорт. eSIM экономит час времени в аэропорту.</p>
+<h3 id="европа--30-стран-в-одном-тарифе">Европа — 30+ стран в одном тарифе</h3>
+<p>Региональный eSIM от €5. <a href="/blog/europe-esim-guide/">eSIM Европа: гид</a>.</p>
+<h3 id="китай--интернет-без-файрвола">Китай — интернет без файрвола</h3>
+<p>eSIM с VPN-маршрутизацией. <a href="/blog/china-esim-guide/">eSIM Китай: гид</a>.</p>
+<h2 id="обход-блокировок-с-esim-1">Обход блокировок с eSIM</h2>
+<p>Международный eSIM направляет трафик через зарубежного оператора, обходя блокировки Роскомнадзора. В Китае VPN-маршрутизация обходит Великий файрвол. <a href="https://www.gsma.com/esim/">GSMA</a> подтверждает технологию роуминга eSIM.</p>
+<h2 id="пошаговая-инструкция-оплаты-esim-из-россии">Пошаговая инструкция оплаты eSIM из России</h2>
+<h3 id="способ-1-карта-unionpay">Способ 1: Карта UnionPay</h3>
+<ol>
+<li>Оформите UnionPay в Газпромбанке, Россельхозбанке или Почта Банке.</li>
+<li>Убедитесь что карта поддерживает интернет-платежи.</li>
+<li>При оплате eSIM выберите UnionPay — конвертация по курсу банка.</li>
+</ol>
+<h3 id="способ-2-криптовалюта-usdtusdc">Способ 2: Криптовалюта USDT/USDC</h3>
+<ol>
+<li>Создайте кошелёк Trust Wallet или MetaMask.</li>
+<li>Купите USDT на Binance P2P за рубли.</li>
+<li>При оплате eSIM выберите Crypto — скопируйте адрес.</li>
+<li>Отправьте USDT. Комиссия ~$0.5. Подтверждение 1-5 минут.</li>
+<li>После подтверждения QR-код приходит мгновенно.</li>
+</ol>
+<h3 id="способ-3-карта-зарубежного-банка">Способ 3: Карта зарубежного банка</h3>
+<p>Карты банков Казахстана, Армении, Грузии, Турции, ОАЭ работают без ограничений у всех провайдеров.</p>
+<h3 id="способ-4-qiwi-и-юmoney">Способ 4: QIWI и ЮMoney</h3>
+<p>Некоторые провайдеры принимают российские электронные кошельки. Проверяйте доступность при оформлении.</p>
+<h2 id="таблица-совместимости-платежей">Таблица совместимости платежей</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Провайдер</th>
+          <th style="text-align: center">UnionPay</th>
+          <th style="text-align: center">Крипта</th>
+          <th style="text-align: center">QIWI</th>
+          <th style="text-align: center">Карты РФ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Airalo</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Holafly</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Yesim</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>RedteaGO</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="esim-в-москве-и-санкт-петербурге-1">eSIM в Москве и Санкт-Петербурге</h2>
+<p>Москва: МТС Тверская 18, Новый Арбат 15, ТЦ Афимолл. Билайн Арбат 54, ТЦ Охотный Ряд. МегаФон Тверская 8, ТЦ Европейский. СПб: МТС Невский 48, ТЦ Галерея. Билайн Невский 114. МегаФон Невский 32.</p>
+<h2 id="популярные-направления-из-россии">Популярные направления из России</h2>
+<h3 id="турция--esim-от-259">Турция — eSIM от €2.59</h3>
+<p>Экономия против роуминга МТС: 89%. <a href="/blog/turkey-esim-guide/">eSIM Турция: гид</a>.</p>
+<h3 id="оаэ--esim-от-450">ОАЭ — eSIM от €4.50</h3>
+<p>WhatsApp-звонки заблокированы — eSIM через роуминг обходит блокировку.</p>
+<h3 id="таиланд--esim-от-350">Таиланд — eSIM от €3.50</h3>
+<p>Местная SIM дешевле но требует паспорт. eSIM без регистрации.</p>
+<h3 id="европа--региональный-esim-от-5">Европа — региональный eSIM от €5</h3>
+<p>30+ стран в одном тарифе. <a href="/blog/europe-esim-guide/">eSIM Европа: гид</a>.</p>
+<h3 id="китай--esim-с-vpn-маршрутизацией">Китай — eSIM с VPN-маршрутизацией</h3>
+<p>Обход Великого файрвола. <a href="/blog/china-esim-guide/">eSIM Китай: гид</a>.</p>
+<h2 id="частые-вопросы-2">Частые вопросы</h2>
+<h3 id="можно-ли-оплатить-esim-картой-мир-2">Можно ли оплатить eSIM картой Мир?</h3>
+<p>Нет. UnionPay или криптовалюта. <a href="https://www.gsma.com/esim/">GSMA</a>.</p>
+<h3 id="нужен-ли-загранпаспорт-1">Нужен ли загранпаспорт?</h3>
+<p>Нет. Только email. <a href="/blog/how-to-buy-esim/">Как купить eSIM</a>.</p>
+<h3 id="работает-ли-esim-в-крыму-1">Работает ли eSIM в Крыму?</h3>
+<p>Международные — через российский роуминг. Российские операторы — без ограничений. <a href="https://en.wikipedia.org/wiki/ESIM">Wikipedia</a>.</p>
+<h3 id="сколько-идёт-крипто-платёж">Сколько идёт крипто-платёж?</h3>
+<p>1-5 минут. Комиссия несколько центов.</p>
+<h3 id="что-делать-если-карту-не-принимают">Что делать если карту не принимают?</h3>
+<p>Попробуйте криптовалюту или оформите UnionPay.</p>
+<h3 id="можно-ли-оплатить-esim-через-сбп">Можно ли оплатить eSIM через СБП?</h3>
+<p>Нет. Система быстрых платежей не работает с международными провайдерами. <a href="https://www.samsung.com/us/support/mobile-devices/what-is-esim/">Samsung eSIM guide</a>.</p>
+<h2 id="оплата-esim-из-россии--все-способы">Оплата eSIM из России — все способы</h2>
+<h3 id="unionpay-1">UnionPay</h3>
+<p>Газпромбанк, Россельхозбанк, Почта Банк. Проверьте поддержку интернет-платежей.</p>
+<h3 id="криптовалюта-usdtusdc">Криптовалюта USDT/USDC</h3>
+<ol>
+<li>Кошелёк Trust Wallet/MetaMask. 2. Купить USDT на Binance P2P. 3. Отправить на адрес провайдера. 4. QR-код после подтверждения (1-5 мин). Комиссия ~$0.5.</li>
+</ol>
+<h3 id="карты-зарубежных-банков-2">Карты зарубежных банков</h3>
+<p>Казахстан, Армения, Грузия, Турция, ОАЭ — работают без ограничений.</p>
+<h3 id="qiwi-и-юmoney-1">QIWI и ЮMoney</h3>
+<p>Некоторые провайдеры принимают. Проверяйте при оформлении.</p>
+<h2 id="таблица-платёжных-методов">Таблица платёжных методов</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Провайдер</th>
+          <th style="text-align: center">UnionPay</th>
+          <th style="text-align: center">Крипта</th>
+          <th style="text-align: center">QIWI</th>
+          <th style="text-align: center">Карты РФ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Airalo</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Holafly</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>Yesim</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+      <tr>
+          <td>RedteaGO</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Нет</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="популярные-направления-из-россии-1">Популярные направления из России</h2>
+<h3 id="турция--esim-от-259-1">Турция — eSIM от €2.59</h3>
+<p>Экономия 89% против роуминга МТС. <a href="/blog/turkey-esim-guide/">eSIM Турция: гид</a>.</p>
+<h3 id="оаэ--от-450">ОАЭ — от €4.50</h3>
+<p>WhatsApp-звонки заблокированы — eSIM обходит.</p>
+<h3 id="таиланд--от-350">Таиланд — от €3.50</h3>
+<p>Без паспорта. Местная SIM дешевле но с регистрацией.</p>
+<h3 id="европа--от-5">Европа — от €5</h3>
+<p>30+ стран в одном тарифе. <a href="/blog/europe-esim-guide/">eSIM Европа: гид</a>.</p>
+<h3 id="китай--с-vpn-маршрутизацией">Китай — с VPN-маршрутизацией</h3>
+<p>Обход файрвола. <a href="/blog/china-esim-guide/">eSIM Китай: гид</a>.</p>
+<h2 id="esim-в-москве-и-спб">eSIM в Москве и СПб</h2>
+<p>Москва: МТС Тверская 18, Билайн Арбат 54, МегаФон ТЦ Европейский. СПб: МТС Невский 48, Билайн Невский 114, МегаФон ТЦ Галерея.</p>
+<h2 id="частые-вопросы-3">Частые вопросы</h2>
+<h3 id="карта-мир">Карта Мир?</h3>
+<p>Нет. UnionPay или крипта. <a href="https://www.gsma.com/esim/">GSMA</a>.</p>
+<h3 id="загранпаспорт">Загранпаспорт?</h3>
+<p>Нет. Только email. <a href="/blog/how-to-buy-esim/">Как купить eSIM</a>.</p>
+<h3 id="крым">Крым?</h3>
+<p>Международные — через роуминг РФ. Российские — без ограничений. <a href="https://en.wikipedia.org/wiki/ESIM">Wikipedia</a>.</p>
+<h3 id="крипто-платёж-сколько-идёт">Крипто-платёж сколько идёт?</h3>
+<p>1-5 минут, комиссия ~$0.5.</p>
+<h3 id="карту-не-принимают">Карту не принимают?</h3>
+<p>Криптовалюта или UnionPay. <a href="https://www.samsung.com/us/support/mobile-devices/what-is-esim/">Samsung eSIM guide</a>.</p>
+<h3 id="сбп">СБП?</h3>
+<p>Нет. Международные провайдеры не подключены к СБП. <a href="https://support.apple.com/en-us/HT212780">Apple eSIM support</a>.</p>
+<h2 id="частые-вопросы--полный-раздел">Частые вопросы — полный раздел</h2>
+<h3 id="какая-карта-unionpay-работает-с-esim">Какая карта UnionPay работает с eSIM?</h3>
+<p>Газпромбанк и Россельхозбанк — точно. Почта Банк — тестируйте.</p>
+<h3 id="можно-ли-оплатить-esim-через-сбп-1">Можно ли оплатить eSIM через СБП?</h3>
+<p>Нет. Система быстрых платежей не работает с международными провайдерами.</p>
+<h3 id="сколько-идёт-крипто-платёж-1">Сколько идёт крипто-платёж?</h3>
+<p>1-5 минут для USDT/USDC. Комиссия — несколько центов.</p>
+<h3 id="что-делать-если-карту-не-принимают-1">Что делать, если карту не принимают?</h3>
+<p>Попробуйте криптовалюту или Kaspersky eSIM. <a href="https://www.gsma.com/esim/">GSMA</a> не регулирует способы оплаты eSIM.</p>
+
+                </div>
+            </div>
+
+            
+            <aside class="article-sidebar">
+                
+                <div class="sidebar-module">
+                    <div class="sidebar-title">Популярные eSIM</div>
+                    
+                    <a href="/turkey-esim/" class="country-link">
+                        <img src="/img/flags/tr.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Турция
+                        <span class="price">от $0.32/ГБ</span>
+                    </a>
+                    
+                    <a href="/china-esim/" class="country-link">
+                        <img src="/img/flags/cn.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Китай
+                        <span class="price">от $1.53/ГБ</span>
+                    </a>
+                    
+                    <a href="/thailand-esim/" class="country-link">
+                        <img src="/img/flags/th.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Таиланд
+                        <span class="price">от $1.99/ГБ</span>
+                    </a>
+                    
+                    <a href="/uae-esim/" class="country-link">
+                        <img src="/img/flags/ae.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        ОАЭ
+                        <span class="price">от $3.99/ГБ</span>
+                    </a>
+                    
+                    <a href="/egypt-esim/" class="country-link">
+                        <img src="/img/flags/eg.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Египет
+                        <span class="price">от $1.99/ГБ</span>
+                    </a>
+                    
+                    <a href="/vietnam-esim/" class="country-link">
+                        <img src="/img/flags/vn.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Вьетнам
+                        <span class="price">от $1.99/ГБ</span>
+                    </a>
+                    
+                </div>
+                
+
+                
+                <div class="sidebar-module">
+                    <div class="sidebar-title">Популярные статьи</div>
+                    
+                    <a href="/blog/esim-turkey-guide/" class="article-link">eSIM для Турции: какой тариф выбрать в 2026</a>
+                    
+                    <a href="/blog/esim-china-vpn/" class="article-link">eSIM для Китая с VPN-маршрутизацией: полный обзор</a>
+                    
+                    <a href="/blog/esim-vs-roaming/" class="article-link">eSIM или роуминг: что выгоднее в 2026 году</a>
+                    
+                    <a href="/blog/esim-thailand-guide/" class="article-link">eSIM для Таиланда: AIS или TrueMove — сравнение</a>
+                    
+                    <a href="/blog/esim-iphone-setup/" class="article-link">Как настроить eSIM на iPhone 17: инструкция</a>
+                    
+                </div>
+                
+            </aside>
+        </div>
+    </div>
+</article>
+
+
+<section class="related-section">
+    <div class="container">
+        <h2>Похожие статьи</h2>
+        <div class="related-grid">
+            
+            
+                
+                <a href="/blog/samsung-esim-models/" class="related-card">
+                    <span class="card-tag">гайд</span>
+                    <h4>Samsung Galaxy eSIM совместимые модели и настройка</h4>
+                    <p>Samsung Galaxy с eSIM: полный список от S20 до S26, Z Flip и Fold. Dual SIM, …</p>
+                </a>
+                
+                <a href="/blog/xiaomi-redmi-esim/" class="related-card">
+                    <span class="card-tag">гайд</span>
+                    <h4>Xiaomi Redmi eSIM модели совместимость и настройка</h4>
+                    <p>Xiaomi, Redmi и POCO с eSIM: список совместимых моделей, настройка на MIUI и …</p>
+                </a>
+                
+                <a href="/blog/europe-esim-guide/" class="related-card">
+                    <span class="card-tag">гайд</span>
+                    <h4>eSIM Европа: один тариф на тридцать стран для туристов</h4>
+                    <p>Региональный eSIM Европа: один тариф на 30+ стран ЕС. Orange, Vodafone, DT 5G. …</p>
+                </a>
+                
+            
+        </div>
+    </div>
+</section>
+
+
+<footer class="ftr">
+    <div class="container">
+        <div class="ftr-grid">
+            <div>
+                <h4>eSIM RU</h4>
+                <p class="dim" style="font-size:.8rem">Независимый каталог eSIM для путешественников из России — честное сравнение тарифов, без рекламы и скрытых условий, только объективные данные, чтобы ты всегда был в сети по лучшей цене.</p>
+            </div>
+			
+        <div>
+    <h4>Популярные страны</h4>
+    <a href="/turkey-esim/">Турция</a>
+    <a href="/china-esim/">Китай</a>
+    <a href="/thailand-esim/">Таиланд</a>
+    <a href="/vietnam-esim/">Вьетнам</a>
+    <a href="/georgia-esim/">Грузия</a>
+    <a href="/kazakhstan-esim/">Казахстан</a>
+    <a href="/belarus-esim/">Беларусь</a>
+    <a href="/montenegro-esim/">Черногория</a>
+</div>
+			
+            <div>
+                <h4>Информация</h4> 
+                <a href="/about-us/">О нас</a>
+                <a href="/contact/">Контакты</a>
+            </div>
+        </div>
+        <div class="ftr-bot">
+            &copy; 2026 eSIM RU
+            <a href="/privacy-policy/">Политика конфиденциальности</a>
+            <a href="/terms-of-service/">Условия использования</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

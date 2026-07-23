@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} — {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ .Description }}">
+    <meta property="og:image" content="{{ .Params.image | absURL }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+    <meta property="article:author" content="{{ .Params.author }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #08080c;
+            --surface: #111116;
+            --surface2: #18181f;
+            --border: #25252d;
+            --border-light: #1c1c24;
+            --fg: #fafafa;
+            --fg2: #d4d4d8;
+            --fg3: #a1a1aa;
+            --fg4: #71717a;
+            --accent: #ec4899;
+            --accent2: #f472b6;
+            --accent-bg: #ec489910;
+            --green: #34d399;
+            --amber: #fbbf24;
+            --blue: #60a5fa;
+            --r: 8px;
+            --r2: 12px;
+            --r3: 16px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            background: var(--bg);
+            color: var(--fg);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--fg2);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            color: var(--fg);
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; }
+        h2 { font-size: 1.5rem; margin: 36px 0 14px; }
+        h3 { font-size: 1.15rem; margin: 28px 0 10px; font-weight: 600; }
+
+        a { color: var(--accent2); text-decoration: none; transition: color .15s; }
+        a:hover { color: var(--accent); }
+
+        .dim { color: var(--fg4); }
+        .muted { color: var(--fg3); }
+
+        b, strong { color: var(--fg); font-weight: 600; }
+
+        ::selection { background: var(--accent); color: #fff; }
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+        /* ===== HEADER ===== */
+        .hdr { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; height: 56px; display: flex; align-items: center; }
+        .hdr-inner { max-width: 1160px; margin: 0 auto; width: 100%; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; color: var(--fg); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        .nav { display: flex; gap: 24px; align-items: center; }
+        .nav a { font-size: .84rem; font-weight: 500; color: var(--fg3); transition: color .15s; text-decoration: none; position: relative; padding-bottom: 4px; }
+        .nav a:hover { color: var(--fg); }
+        .nav a.cur { color: var(--accent); }
+        .nav a.cur::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--accent); border-radius: 2px; }
+
+        @media (max-width: 640px) { .nav { display: none; } }
+
+        /* ===== BREADCRUMB ===== */
+        .breadcrumb {
+            padding: 20px 0 0;
+            font-size: .78rem;
+            color: var(--fg4);
+        }
+        .breadcrumb a { color: var(--fg4); }
+        .breadcrumb a:hover { color: var(--fg2); }
+        .breadcrumb span { color: var(--fg3); }
+
+        /* ===== ARTICLE HERO ===== */
+        .article-hero {
+            padding: 32px 0 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        .article-hero .meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            font-size: .82rem;
+            color: var(--fg4);
+            margin-bottom: 16px;
+        }
+        .article-hero .meta .tag {
+            background: var(--accent-bg);
+            color: var(--accent2);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: .75rem;
+            font-weight: 600;
+        }
+        .article-hero .meta .dot {
+            width: 4px; height: 4px; background: var(--fg4); border-radius: 50%;
+        }
+        .article-hero h1 {
+            margin-bottom: 10px;
+        }
+        .article-hero .subtitle {
+            font-size: 1.05rem;
+            color: var(--fg3);
+            line-height: 1.6;
+            max-width: 720px;
+        }
+        .article-hero .author-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 18px;
+            font-size: .82rem;
+            color: var(--fg3);
+        }
+        .article-hero .author-row .avatar {
+            width: 36px; height: 36px; border-radius: 50%;
+            background: var(--accent-bg); border: 2px solid var(--accent);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: .85rem; color: var(--accent);
+        }
+
+        /* ===== FEATURED IMAGE ===== */
+        .featured-image {
+            margin: 16px 0;
+            border-radius: var(--r3);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .featured-image .caption {
+            padding: 10px 18px;
+            font-size: .76rem;
+            color: var(--fg4);
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+        }
+
+        /* ===== ARTICLE CONTENT ===== */
+        .article-body {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 0;
+            font-size: .95rem;
+            line-height: 1.75;
+            color: var(--fg2);
+        }
+        .article-body p {
+            margin-bottom: 18px;
+        }
+        .article-body ul, .article-body ol {
+            margin: 14px 0 18px 24px;
+        }
+        .article-body li {
+            margin-bottom: 8px;
+        }
+        .article-body blockquote {
+            border-left: 3px solid var(--accent);
+            padding: 14px 20px;
+            margin: 24px 0;
+            background: var(--surface);
+            border-radius: 0 var(--r) var(--r) 0;
+            font-style: italic;
+            color: var(--fg3);
+        }
+        .article-body code {
+            background: var(--surface2);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: .85rem;
+            color: var(--accent2);
+        }
+        .article-body pre {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 18px 20px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: .84rem;
+            line-height: 1.6;
+        }
+        .article-body pre code {
+            background: none;
+            padding: 0;
+            color: var(--fg2);
+        }
+
+        /* ===== INFO BOX ===== */
+        .info-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px 24px;
+            margin: 28px 0;
+        }
+        .info-box .info-title {
+            font-weight: 600;
+            color: var(--fg);
+            margin-bottom: 8px;
+            font-size: .92rem;
+        }
+        .info-box p { font-size: .85rem; color: var(--fg3); margin-bottom: 0; }
+        .info-box.tip { border-left: 3px solid var(--green); }
+        .info-box.warn { border-left: 3px solid var(--amber); }
+
+        /* ===== TABLES (边框清晰) ===== */
+        .article-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: .85rem;
+            border: 1px solid var(--border);
+        }
+        .article-body table th,
+        .article-body table td {
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: middle;
+        }
+        .article-body table th {
+            background: var(--surface);
+            color: var(--fg);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border);
+        }
+        .article-body table td {
+            background: transparent;
+            color: var(--fg2);
+        }
+        .article-body table tr:hover td {
+            background: var(--surface);
+        }
+        .article-body table .price {
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        /* 保留 .compare-table 以防万一（若 Markdown 中手动加了此类） */
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: .85rem;
+            border: 1px solid var(--border);
+        }
+        .compare-table th,
+        .compare-table td {
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: middle;
+        }
+        .compare-table th {
+            background: var(--surface);
+            color: var(--fg);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border);
+        }
+        .compare-table td {
+            background: transparent;
+            color: var(--fg2);
+        }
+        .compare-table tr:hover td {
+            background: var(--surface);
+        }
+        .compare-table .price {
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        /* ===== ARTICLE LAYOUT (2-COL) ===== */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+            align-items: start;
+        }
+        @media (max-width: 900px) {
+            .article-layout { grid-template-columns: 1fr; }
+            .article-sidebar { display: none; }
+        }
+
+        /* ===== TABLE OF CONTENTS ===== */
+        .toc {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px 24px;
+            margin-bottom: 28px;
+        }
+        .toc-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--fg);
+            margin-bottom: 12px;
+        }
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            margin: 0;
+            padding: 0;
+        }
+        .toc ol li {
+            counter-increment: toc-counter;
+            margin-bottom: 6px;
+            font-size: .84rem;
+            line-height: 1.5;
+        }
+        .toc ol li::before {
+            content: counter(toc-counter) ".";
+            color: var(--accent);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .toc ol li a {
+            color: var(--fg3);
+            text-decoration: none;
+            transition: color .15s;
+        }
+        .toc ol li a:hover {
+            color: var(--accent2);
+        }
+
+        /* ===== SIDEBAR ===== */
+        .article-sidebar {
+            position: sticky;
+            top: 72px;
+        }
+        .sidebar-module {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .sidebar-module .sidebar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: .95rem;
+            font-weight: 700;
+            color: var(--fg);
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .sidebar-module .country-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: .82rem;
+            color: var(--fg3);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border-light);
+            transition: color .15s;
+        }
+        .sidebar-module .country-link:last-child { border-bottom: none; }
+        .sidebar-module .country-link:hover { color: var(--accent2); }
+        .sidebar-module .country-link .flag {
+            width: 24px; height: 16px;
+            border-radius: 2px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .sidebar-module .country-link .price {
+            margin-left: auto;
+            font-size: .74rem;
+            color: var(--green);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .sidebar-module .article-link {
+            display: block;
+            padding: 8px 0;
+            font-size: .82rem;
+            color: var(--fg3);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border-light);
+            line-height: 1.4;
+            transition: color .15s;
+        }
+        .sidebar-module .article-link:last-child { border-bottom: none; }
+        .sidebar-module .article-link:hover { color: var(--accent2); }
+
+        /* ===== RELATED POSTS ===== */
+        .related-section {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .related-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 22px 20px;
+            transition: all .2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .related-card:hover {
+            border-color: var(--accent);
+            background: var(--surface2);
+            transform: translateY(-2px);
+        }
+        .related-card .card-tag {
+            font-size: .7rem;
+            font-weight: 600;
+            color: var(--accent2);
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            margin-bottom: 8px;
+        }
+        .related-card h4 {
+            font-size: .95rem;
+            margin-bottom: 6px;
+            color: var(--fg);
+        }
+        .related-card p {
+            font-size: .78rem;
+            color: var(--fg4);
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ===== FOOTER ===== */
+        .ftr { background: var(--surface); border-top: 1px solid var(--border); padding: 48px 0 28px; }
+        .ftr-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 36px; }
+        .ftr-grid h4 { color: var(--fg); font-family: 'Playfair Display', serif; font-size: .9rem; margin-bottom: 12px; }
+        .ftr-grid a { color: var(--fg4); display: block; padding: 2px 0; font-size: .78rem; }
+        .ftr-grid a:hover { color: var(--fg); }
+        .ftr-bot { border-top: 1px solid var(--border); margin-top: 36px; padding-top: 20px; text-align: center; font-size: .72rem; color: var(--fg4); }
+        .ftr-bot a { color: var(--fg4); margin: 0 12px; }
+        @media (max-width: 768px) { .ftr-grid { grid-template-columns: 1fr; } }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .article-body { padding: 24px 0; font-size: .9rem; }
+            .article-hero { padding: 24px 0 18px; }
+            .article-hero h1 { font-size: 1.6rem; }
+            .featured-image img { max-height: 200px; }
+        }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": {{ .Title | jsonify }},
+        "description": {{ .Description | jsonify }},
+        "image": {{ .Params.image | absURL | jsonify }},
+        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+        "author": {
+            "@type": "Organization",
+            "name": {{ .Params.author | jsonify }},
+            "url": "{{ .Site.BaseURL }}about-us/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ .Site.Title }}",
+            "url": "{{ .Site.BaseURL }}"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ .Permalink }}"
+        }
+    }
+    </script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+{{ partial "header.html" . }}
+
+<div class="container">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="{{ .Site.BaseURL }}">Главная</a> &rsaquo;
+        <a href="{{ "blog/" | relURL }}">Блог</a> &rsaquo;
+        <span>{{ .Title }}</span>
+    </nav>
+</div>
+
+<article>
+    <div class="container">
+        <header class="article-hero">
+            <div class="meta">
+                <span class="tag">{{ index .Params.tags 0 | default "Статья" }}</span>
+                <span class="dot"></span>
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+                <span class="dot"></span>
+                <span>{{ .ReadingTime }} мин чтения</span>
+            </div>
+            <h1>{{ .Title }}</h1>
+            <p class="subtitle">{{ .Description }}</p>
+            <div class="author-row">
+                <div class="avatar">{{ substr .Params.author 0 1 }}{{ substr .Params.author 1 1 }}</div>
+                <span><strong>{{ .Params.author }}</strong> &middot; Обновлено {{ .Lastmod.Format "2 January 2006" }}</span>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <figure class="featured-image">
+            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" width="1120" height="480" loading="eager">
+            <figcaption class="caption">{{ .Params.image_caption | default "Иллюстрация к статье" }}</figcaption>
+        </figure>
+    </div>
+
+    <div class="container">
+        <div class="article-layout">
+            <div>
+                {{ if .TableOfContents }}
+                <nav class="toc" aria-label="Содержание статьи">
+                    <div class="toc-title">Содержание</div>
+                    {{ .TableOfContents }}
+                </nav>
+                {{ end }}
+
+                <div class="article-body">
+                    {{ .Content }}
+                </div>
+            </div>
+
+            <!-- ===== 侧边栏 ===== -->
+            <aside class="article-sidebar">
+                {{ if .Params.popular_countries }}
+                <div class="sidebar-module">
+                    <div class="sidebar-title">Популярные eSIM</div>
+                    {{ range .Params.popular_countries }}
+                    <a href="{{ .slug | relURL }}" class="country-link">
+                        <img src="{{ .flag | relURL }}" alt="" class="flag" width="24" height="16" loading="lazy">
+                        {{ .name }}
+                        <span class="price">{{ .price }}</span>
+                    </a>
+                    {{ end }}
+                </div>
+                {{ end }}
+
+                {{ if .Params.popular_articles }}
+                <div class="sidebar-module">
+                    <div class="sidebar-title">Популярные статьи</div>
+                    {{ range .Params.popular_articles }}
+                    <a href="{{ .slug | relURL }}" class="article-link">{{ .title }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </aside>
+        </div>
+    </div>
+</article>
+
+<!-- ===== 相关文章（保证显示） ===== -->
+<section class="related-section">
+    <div class="container">
+        <h2>Похожие статьи</h2>
+        <div class="related-grid">
+            {{ $related := .Site.RegularPages.Related . | first 3 }}
+            {{ if $related }}
+                {{ range $related }}
+                <a href="{{ .RelPermalink }}" class="related-card">
+                    <span class="card-tag">{{ index .Params.tags 0 | default "Статья" }}</span>
+                    <h4>{{ .Title }}</h4>
+                    <p>{{ .Description | truncate 80 }}</p>
+                </a>
+                {{ end }}
+            {{ else }}
+                {{ $others := where .Site.RegularPages "Permalink" "ne" .Permalink }}
+                {{ $others = first 3 $others }}
+                {{ if $others }}
+                    {{ range $others }}
+                    <a href="{{ .RelPermalink }}" class="related-card">
+                        <span class="card-tag">{{ index .Params.tags 0 | default "Статья" }}</span>
+                        <h4>{{ .Title }}</h4>
+                        <p>{{ .Description | truncate 80 }}</p>
+                    </a>
+                    {{ end }}
+                {{ else }}
+                    <a href="#" class="related-card" style="opacity:0.6; cursor:default;">
+                        <span class="card-tag">Скоро</span>
+                        <h4>Новые статьи будут добавлены</h4>
+                        <p>Следите за обновлениями блога</p>
+                    </a>
+                    <a href="#" class="related-card" style="opacity:0.6; cursor:default;">
+                        <span class="card-tag">Скоро</span>
+                        <h4>Новые статьи будут добавлены</h4>
+                        <p>Следите за обновлениями блога</p>
+                    </a>
+                    <a href="#" class="related-card" style="opacity:0.6; cursor:default;">
+                        <span class="card-tag">Скоро</span>
+                        <h4>Новые статьи будут добавлены</h4>
+                        <p>Следите за обновлениями блога</p>
+                    </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+{{ partial "footer.html" . }}
+
+</body>
+</html>

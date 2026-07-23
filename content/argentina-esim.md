@@ -345,7 +345,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Yesim"
    plan: " 5 GB 30дн"
    gb: 5
@@ -365,7 +365,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "ubigi"
    plan: " 10GB 30дн"
    gb: 10
@@ -405,7 +405,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Roami"
    plan: " 10GB 15дн"
    gb: 10
@@ -415,7 +415,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Global eSIM"
    plan: " 5 GB 21дн"
    gb: 5
@@ -455,7 +455,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Roami"
    plan: " 20GB 30дн"
    gb: 20
@@ -465,7 +465,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Airalo"
    plan: " 10 GB 7дн"
    gb: 10
@@ -495,7 +495,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "ESIM365"
    plan: " 50 GB 90дн"
    gb: 50
@@ -515,7 +515,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Airalo"
    plan: " 10 GB 15дн"
    gb: 10
@@ -545,7 +545,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Roami"
    plan: " 5GB 3дн"
    gb: 5
@@ -555,7 +555,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Roami"
    plan: " 5GB 15дн"
    gb: 5
@@ -565,7 +565,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Roami"
    plan: " 10GB 30дн"
    gb: 10
@@ -575,7 +575,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Airalo"
    plan: " 10 GB 30дн"
    gb: 10
@@ -705,7 +705,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "eSIM.World"
    plan: " 10 GB 7дн"
    gb: 10
@@ -765,7 +765,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "eSIM.World"
    plan: " 20 GB 14дн"
    gb: 20
@@ -785,7 +785,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Roami"
    plan: " 5GB 30дн"
    gb: 5
@@ -795,7 +795,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "Global eSIM"
    plan: " 1 GB 7дн"
    gb: 1
@@ -895,7 +895,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "just esim"
    plan: " 5GB 14дн"
    gb: 5
@@ -1165,7 +1165,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "esim plus"
    plan: " 3GB 30дн"
    gb: 3
@@ -1415,7 +1415,7 @@ params:
    code: "web20"
    voice: true
    free: true
-   url: "https://www.roamiapp.com"
+   url: "https://www.roamiapp.com/ru/"
  - provider: "ubigi"
    plan: " Unlimited 7дн"
    gb: "безлимит"
@@ -1579,7 +1579,7 @@ params:
      logo_color: "#ec4899"
      desc: "Скидка <strong>20%</strong> · от $1.76/ГБ со скидкой"
      code: "web20"
-     url: "https://www.roamiapp.com"
+     url: "https://www.roamiapp.com/ru/"
    - brand: "Ubigi"
      logo_color: "#dc2626"
      desc: "Скидка <strong>10%</strong> · 25GB за $26.10"

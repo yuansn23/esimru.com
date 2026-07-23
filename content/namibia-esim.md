@@ -426,7 +426,7 @@ params:
      logo_color: "#ec4899"
      desc: "Скидка <strong>20%</strong> · от $1.59/ГБ со скидкой"
      code: "web20"
-     url: "https://www.roamiapp.com"
+     url: "https://www.roamiapp.com/ru/"
    - brand: "Ubigi"
      logo_color: "#dc2626"
      desc: "Скидка <strong>10%</strong> · 1GB от $45.0 со скидкой"
