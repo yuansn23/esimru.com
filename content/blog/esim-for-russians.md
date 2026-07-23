@@ -2,8 +2,8 @@
 title: "eSIM для россиян: как купить и использовать за границей"
 description: "Как россиянам купить и оплатить eSIM: UnionPay, криптовалюта USDT, QIWI. Сравнение Airalo и другие, Kaspersky eSIM. Подробнее на eSIMRU."
 url: "/blog/esim-for-russians/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-24
+lastmod: 2026-07-24
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
@@ -50,7 +50,7 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
+draft: true
 ---
 
 Россияне могут покупать и использовать международные eSIM, несмотря на санкции и блокировку карт Visa/Mastercard. Рабочие способы оплаты: UnionPay российских банков, криптовалюта USDT/USDC, QIWI и ЮMoney. Kaspersky eSIM — российский провайдер, работающий с картами РФ без ограничений. Airalo и другие принимают UnionPay и криптовалюту. Промокод web20 даёт скидку 20% на тарифы.

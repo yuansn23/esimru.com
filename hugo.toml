@@ -2,3 +2,6 @@ baseURL = 'https://www.esimru.com/'
 languageCode = 'ru'
 enableRobotsTXT = true
 title = 'Найди самый дешёвый eSIM для поездки — сравнение тарифов | eSIM RU'
+ignoreLogs = ['warning-goldmark-raw-html']
+[markup.goldmark.renderer]
+unsafe = true

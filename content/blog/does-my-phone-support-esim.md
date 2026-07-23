@@ -2,8 +2,8 @@
 title: "Поддерживает ли телефон eSIM проверка совместимости"
 description: "Проверьте поддержку eSIM за 30 секунд: полный список iPhone, Samsung, Xiaomi и Google Pixel с eSIM. Без приложений, по данным GSMA."
 url: "/blog/does-my-phone-support-esim/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-24
+lastmod: 2026-07-24
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
@@ -50,7 +50,7 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
+draft: true
 ---
 
 

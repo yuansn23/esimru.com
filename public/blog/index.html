@@ -1,495 +1,107 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> — Найди самый дешёвый eSIM для поездки — сравнение тарифов | eSIM RU</title>
-    <meta name="description" content="">
-    <link rel="icon" href="/favicon.ico" sizes="48x48">
-    <link rel="canonical" href="http://localhost:1313/blog/audit-report/">
-
-    
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/">
-    <meta property="og:url" content="http://localhost:1313/blog/audit-report/">
-    <meta property="og:type" content="article">
-    <meta property="article:published_time" content="0001-01-01T00:00:00Z">
-    <meta property="article:modified_time" content="0001-01-01T00:00:00Z">
-    <meta property="article:author" content="">
-
-    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Блог eSIM — статьи о подключении, настройке и технологиях</title>
+    <meta name="description" content="Блог eSIM RU: статьи о настройке eSIM на iPhone и Android, обзоры провайдеров, сравнение тарифов, новости технологии.">
+    <link rel="canonical" href="http://localhost:1313/blog/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <style>
-        :root {
-            --bg: #08080c;
-            --surface: #111116;
-            --surface2: #18181f;
-            --border: #25252d;
-            --border-light: #1c1c24;
-            --fg: #fafafa;
-            --fg2: #d4d4d8;
-            --fg3: #a1a1aa;
-            --fg4: #71717a;
-            --accent: #ec4899;
-            --accent2: #f472b6;
-            --accent-bg: #ec489910;
-            --green: #34d399;
-            --amber: #fbbf24;
-            --blue: #60a5fa;
-            --r: 8px;
-            --r2: 12px;
-            --r3: 16px;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-            background: var(--bg);
-            color: var(--fg);
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg);
-            color: var(--fg2);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 1160px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-weight: 700;
-            color: var(--fg);
-            letter-spacing: -0.01em;
-        }
-
-        h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; }
-        h2 { font-size: 1.5rem; margin: 36px 0 14px; }
-        h3 { font-size: 1.15rem; margin: 28px 0 10px; font-weight: 600; }
-
-        a { color: var(--accent2); text-decoration: none; transition: color .15s; }
-        a:hover { color: var(--accent); }
-
-        .dim { color: var(--fg4); }
-        .muted { color: var(--fg3); }
-
-        b, strong { color: var(--fg); font-weight: 600; }
-
-        ::selection { background: var(--accent); color: #fff; }
-        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
          
-        .hdr { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; height: 56px; display: flex; align-items: center; }
-        .hdr-inner { max-width: 1160px; margin: 0 auto; width: 100%; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
-        .logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; color: var(--fg); text-decoration: none; }
-        .logo span { color: var(--accent); }
-        .nav { display: flex; gap: 24px; align-items: center; }
-        .nav a { font-size: .84rem; font-weight: 500; color: var(--fg3); transition: color .15s; text-decoration: none; position: relative; padding-bottom: 4px; }
-        .nav a:hover { color: var(--fg); }
-        .nav a.cur { color: var(--accent); }
-        .nav a.cur::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--accent); border-radius: 2px; }
+        :root { --bg:#08080c; --surface:#111116; --surface2:#18181f; --border:#25252d; --border-light:#1c1c24; --fg:#fafafa; --fg2:#d4d4d8; --fg3:#a1a1aa; --fg4:#71717a; --accent:#ec4899; --accent2:#f472b6; --accent-bg:#ec489910; --green:#34d399; --amber:#fbbf24; --blue:#60a5fa; --r:8px; --r2:12px; --r3:16px; }
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth;font-size:16px;background:var(--bg);color:var(--fg)}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--fg2);line-height:1.6;-webkit-font-smoothing:antialiased}
+        .container{max-width:1120px;margin:0 auto;padding:0 24px}
+        h1,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;color:var(--fg);letter-spacing:-.01em}
+        h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin-bottom:16px}
+        h1 em{font-style:normal;color:var(--accent)}
+        h2{font-family:'Inter',-apple-system,sans-serif;font-weight:600;color:var(--fg);font-size:1.5rem;margin-bottom:16px}
+        h3{font-family:'Inter',sans-serif;font-size:1.05rem;font-weight:600;color:var(--fg);margin-bottom:8px}
+        a{color:var(--accent2);text-decoration:none;transition:color .15s}a:hover{color:var(--accent)}
+        .dim{color:var(--fg4)}.muted{color:var(--fg3)}
+        b,strong{color:var(--fg);font-weight:600}
+        ::selection{background:var(--accent);color:#fff}
 
-        @media (max-width: 640px) { .nav { display: none; } }
+        .hdr{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;height:56px;display:flex;align-items:center}
+        .hdr-inner{max-width:1120px;margin:0 auto;width:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;color:var(--fg)}.logo span{color:var(--accent)}
+        .nav{display:flex;gap:24px}.nav a{font-size:.84rem;font-weight:500;color:var(--fg3)}.nav a:hover,.nav a.cur{color:var(--fg)}
+        @media(max-width:640px){.nav{display:none}}
 
-         
-        .breadcrumb {
-            padding: 20px 0 0;
-            font-size: .78rem;
-            color: var(--fg4);
-        }
-        .breadcrumb a { color: var(--fg4); }
-        .breadcrumb a:hover { color: var(--fg2); }
-        .breadcrumb span { color: var(--fg3); }
+        .hero{background:linear-gradient(160deg,#1a0d15 0%,var(--surface) 50%,#0d1115 100%);padding:64px 0 40px;border-bottom:1px solid var(--border);text-align:center}
+        .bc{font-size:.76rem;color:var(--fg4);margin-bottom:14px;text-align:center}.bc a{color:var(--fg4)}.bc a:hover{color:var(--fg2)}
+        .hero h1{max-width:800px;margin:0 auto 12px}
+        .hero p{font-size:.95rem;color:var(--fg3);max-width:660px;margin:0 auto 18px;line-height:1.65}
 
-         
-        .article-hero {
-            padding: 32px 0 24px;
-            border-bottom: 1px solid var(--border);
-        }
-        .article-hero .meta {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            flex-wrap: wrap;
-            font-size: .82rem;
-            color: var(--fg4);
-            margin-bottom: 16px;
-        }
-        .article-hero .meta .tag {
-            background: var(--accent-bg);
-            color: var(--accent2);
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: .75rem;
-            font-weight: 600;
-        }
-        .article-hero .meta .dot {
-            width: 4px; height: 4px; background: var(--fg4); border-radius: 50%;
-        }
-        .article-hero h1 {
-            margin-bottom: 10px;
-        }
-        .article-hero .subtitle {
-            font-size: 1.05rem;
-            color: var(--fg3);
-            line-height: 1.6;
-            max-width: 720px;
-        }
-        .article-hero .author-row {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-top: 18px;
-            font-size: .82rem;
-            color: var(--fg3);
-        }
-        .article-hero .author-row .avatar {
-            width: 36px; height: 36px; border-radius: 50%;
-            background: var(--accent-bg); border: 2px solid var(--accent);
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 700; font-size: .85rem; color: var(--accent);
-        }
+        .sec{padding:64px 0}.sec+.sec{border-top:1px solid var(--border)}
 
-         
-        .featured-image {
-            margin: 16px 0;
-            border-radius: var(--r3);
-            overflow: hidden;
-            border: 1px solid var(--border);
-        }
-        .featured-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            max-height: 300px;
-            object-fit: cover;
-        }
-        .featured-image .caption {
-            padding: 10px 18px;
-            font-size: .76rem;
-            color: var(--fg4);
-            background: var(--surface);
-            border-top: 1px solid var(--border);
-        }
+        .blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+        @media(max-width:768px){.blog-grid{grid-template-columns:1fr}}
+        .blog-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:24px 22px;display:flex;flex-direction:column;gap:10px;transition:all .15s;text-decoration:none;color:inherit;cursor:pointer}
+        .blog-card:hover{border-color:var(--accent);background:var(--surface2);transform:translateY(-2px)}
+        .blog-card .blog-cat{font-size:.66rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);display:flex;align-items:center;gap:6px}
+        .blog-card .blog-cat .cat-dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+        .blog-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--fg);line-height:1.3;margin:0}
+        .blog-card p{font-size:.82rem;color:var(--fg3);line-height:1.55;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+        .blog-card .blog-meta{display:flex;align-items:center;gap:12px;font-size:.7rem;color:var(--fg4);margin-top:auto}
+        .blog-card .blog-meta .blog-date{color:var(--fg4)}
+        .blog-card .blog-meta .blog-read{color:var(--accent2);font-weight:500}
 
-         
-        .article-body {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 32px 0;
-            font-size: .95rem;
-            line-height: 1.75;
-            color: var(--fg2);
-        }
-        .article-body p {
-            margin-bottom: 18px;
-        }
-        .article-body ul, .article-body ol {
-            margin: 14px 0 18px 24px;
-        }
-        .article-body li {
-            margin-bottom: 8px;
-        }
-        .article-body blockquote {
-            border-left: 3px solid var(--accent);
-            padding: 14px 20px;
-            margin: 24px 0;
-            background: var(--surface);
-            border-radius: 0 var(--r) var(--r) 0;
-            font-style: italic;
-            color: var(--fg3);
-        }
-        .article-body code {
-            background: var(--surface2);
-            padding: 2px 7px;
-            border-radius: 4px;
-            font-size: .85rem;
-            color: var(--accent2);
-        }
-        .article-body pre {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--r2);
-            padding: 18px 20px;
-            overflow-x: auto;
-            margin: 20px 0;
-            font-size: .84rem;
-            line-height: 1.6;
-        }
-        .article-body pre code {
-            background: none;
-            padding: 0;
-            color: var(--fg2);
-        }
+        .featured{background:linear-gradient(135deg,var(--accent-bg),#0d1115 60%);border:1px solid var(--border);border-radius:var(--r3);padding:36px 32px;margin-bottom:32px;display:flex;gap:28px;align-items:center}
+        @media(max-width:768px){.featured{flex-direction:column;padding:24px 20px;gap:16px}}
+        .featured-badge{background:var(--accent);color:#fff;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:4px 14px;border-radius:20px;display:inline-block;margin-bottom:14px;white-space:nowrap}
+        .featured h3{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--fg);line-height:1.3;margin-bottom:8px}
+        .featured p{font-size:.84rem;color:var(--fg3);line-height:1.55;margin-bottom:14px}
+        .featured .featured-link{font-size:.8rem;font-weight:600;color:var(--accent2)}
+        .featured .featured-link:hover{color:var(--accent)}
+        .featured-info{flex:1}
 
-         
-        .info-box {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--r2);
-            padding: 20px 24px;
-            margin: 28px 0;
-        }
-        .info-box .info-title {
-            font-weight: 600;
-            color: var(--fg);
-            margin-bottom: 8px;
-            font-size: .92rem;
-        }
-        .info-box p { font-size: .85rem; color: var(--fg3); margin-bottom: 0; }
-        .info-box.tip { border-left: 3px solid var(--green); }
-        .info-box.warn { border-left: 3px solid var(--amber); }
+        .topics{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+        .topics a{display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:6px 16px;font-size:.76rem;font-weight:500;color:var(--fg3);transition:all .15s}
+        .topics a:hover,.topics a.active{border-color:var(--accent);color:var(--fg);background:var(--surface2)}
+        .topics a.active{background:var(--accent-bg)}
 
-         
-        .compare-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 24px 0;
-            font-size: .85rem;
-        }
-        .compare-table th {
-            background: var(--surface);
-            color: var(--fg);
-            font-weight: 600;
-            text-align: left;
-            padding: 12px 14px;
-            border-bottom: 1px solid var(--border);
-        }
-        .compare-table td {
-            padding: 10px 14px;
-            border-bottom: 1px solid var(--border-light);
-        }
-        .compare-table tr:hover td {
-            background: var(--surface);
-        }
-        .compare-table .price {
-            color: var(--green);
-            font-weight: 700;
-        }
+        .dest-title{font-family:'Inter',-apple-system,sans-serif;font-weight:600;color:var(--fg);font-size:1.25rem;margin-bottom:20px;text-align:center}
+        .dest-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:36px}
+        @media(max-width:900px){.dest-grid{grid-template-columns:repeat(3,1fr)}}
+        @media(max-width:480px){.dest-grid{grid-template-columns:repeat(2,1fr)}}
+        .dest-card{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:14px 16px;text-decoration:none;color:inherit;transition:all .15s}
+        .dest-card:hover{border-color:var(--accent);background:var(--surface2);transform:translateY(-2px)}
+        .dest-flag{width:28px;height:19px;border-radius:3px;overflow:hidden;flex-shrink:0;display:block}
+        .dest-flag img{width:100%;height:100%;object-fit:cover;display:block}
+        .dest-name{font-size:.82rem;font-weight:600;color:var(--fg);white-space:nowrap}
+        .dest-badge{font-size:.66rem;color:var(--accent2);font-weight:500;margin-left:auto;white-space:nowrap}
 
-         
-        .article-layout {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 40px;
-            align-items: start;
-        }
-        @media (max-width: 900px) {
-            .article-layout { grid-template-columns: 1fr; }
-            .article-sidebar { display: none; }
-        }
+        .ftr{background:var(--surface);border-top:1px solid var(--border);padding:48px 0 28px}
+        .ftr-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}
+        .ftr-grid h4{color:var(--fg);font-family:'Playfair Display',serif;font-size:.9rem;margin-bottom:12px}
+        .ftr-grid a{color:var(--fg4);display:block;padding:2px 0;font-size:.78rem}.ftr-grid a:hover{color:var(--fg)}
+        .ftr-bot{border-top:1px solid var(--border);margin-top:36px;padding-top:20px;text-align:center;font-size:.72rem;color:var(--fg4)}
+        .ftr-bot a{color:var(--fg4);margin:0 12px}
+        @media(max-width:768px){.ftr-grid{grid-template-columns:1fr}}
 
-         
-        .toc {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--r2);
-            padding: 20px 24px;
-            margin-bottom: 28px;
-        }
-        .toc-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--fg);
-            margin-bottom: 12px;
-        }
-        .toc ol {
-            list-style: none;
-            counter-reset: toc-counter;
-            margin: 0;
-            padding: 0;
-        }
-        .toc ol li {
-            counter-increment: toc-counter;
-            margin-bottom: 6px;
-            font-size: .84rem;
-            line-height: 1.5;
-        }
-        .toc ol li::before {
-            content: counter(toc-counter) ".";
-            color: var(--accent);
-            font-weight: 600;
-            margin-right: 8px;
-        }
-        .toc ol li a {
-            color: var(--fg3);
-            text-decoration: none;
-            transition: color .15s;
-        }
-        .toc ol li a:hover {
-            color: var(--accent2);
-        }
-
-         
-        .article-sidebar {
-            position: sticky;
-            top: 72px;
-        }
-        .sidebar-module {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--r2);
-            padding: 20px;
-            margin-bottom: 16px;
-        }
-        .sidebar-module .sidebar-title {
-            font-family: 'Playfair Display', serif;
-            font-size: .95rem;
-            font-weight: 700;
-            color: var(--fg);
-            margin-bottom: 12px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-light);
-        }
-        .sidebar-module .country-link {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 8px 0;
-            font-size: .82rem;
-            color: var(--fg3);
-            text-decoration: none;
-            border-bottom: 1px solid var(--border-light);
-            transition: color .15s;
-        }
-        .sidebar-module .country-link:last-child { border-bottom: none; }
-        .sidebar-module .country-link:hover { color: var(--accent2); }
-        .sidebar-module .country-link .flag {
-            width: 24px; height: 16px;
-            border-radius: 2px;
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-        .sidebar-module .country-link .price {
-            margin-left: auto;
-            font-size: .74rem;
-            color: var(--green);
-            font-weight: 600;
-            white-space: nowrap;
-        }
-        .sidebar-module .article-link {
-            display: block;
-            padding: 8px 0;
-            font-size: .82rem;
-            color: var(--fg3);
-            text-decoration: none;
-            border-bottom: 1px solid var(--border-light);
-            line-height: 1.4;
-            transition: color .15s;
-        }
-        .sidebar-module .article-link:last-child { border-bottom: none; }
-        .sidebar-module .article-link:hover { color: var(--accent2); }
-
-         
-        .related-section {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
-        }
-        .related-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin-top: 20px;
-        }
-        .related-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--r2);
-            padding: 22px 20px;
-            transition: all .2s;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        .related-card:hover {
-            border-color: var(--accent);
-            background: var(--surface2);
-            transform: translateY(-2px);
-        }
-        .related-card .card-tag {
-            font-size: .7rem;
-            font-weight: 600;
-            color: var(--accent2);
-            text-transform: uppercase;
-            letter-spacing: .04em;
-            margin-bottom: 8px;
-        }
-        .related-card h4 {
-            font-size: .95rem;
-            margin-bottom: 6px;
-            color: var(--fg);
-        }
-        .related-card p {
-            font-size: .78rem;
-            color: var(--fg4);
-            line-height: 1.5;
-        }
-        @media (max-width: 768px) {
-            .related-grid { grid-template-columns: 1fr; }
-        }
-
-         
-        .ftr { background: var(--surface); border-top: 1px solid var(--border); padding: 48px 0 28px; }
-        .ftr-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 36px; }
-        .ftr-grid h4 { color: var(--fg); font-family: 'Playfair Display', serif; font-size: .9rem; margin-bottom: 12px; }
-        .ftr-grid a { color: var(--fg4); display: block; padding: 2px 0; font-size: .78rem; }
-        .ftr-grid a:hover { color: var(--fg); }
-        .ftr-bot { border-top: 1px solid var(--border); margin-top: 36px; padding-top: 20px; text-align: center; font-size: .72rem; color: var(--fg4); }
-        .ftr-bot a { color: var(--fg4); margin: 0 12px; }
-        @media (max-width: 768px) { .ftr-grid { grid-template-columns: 1fr; } }
-
-         
-        @media (max-width: 768px) {
-            .article-body { padding: 24px 0; font-size: .9rem; }
-            .article-hero { padding: 24px 0 18px; }
-            .article-hero h1 { font-size: 1.6rem; }
-            .featured-image img { max-height: 200px; }
-        }
+        .pagination{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:36px;padding-top:24px;border-top:1px solid var(--border)}
+        .pagination a,.pagination span{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:38px;padding:0 8px;border-radius:var(--r);font-size:.8rem;font-weight:500;transition:all .15s;text-decoration:none;cursor:pointer;user-select:none}
+        .pagination a{background:var(--surface);border:1px solid var(--border);color:var(--fg3)}
+        .pagination a:hover{border-color:var(--accent);color:var(--fg);background:var(--surface2)}
+        .pagination a.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+        .pagination .page-prev,.pagination .page-next{font-size:.78rem}
+        .pagination .page-dots{color:var(--fg4);background:none;border:none;cursor:default;min-width:24px}
+        .pagination .page-info{font-size:.7rem;color:var(--fg4);margin:0 12px}
     </style>
-
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "\"\"",
-        "description": "\"\"",
-        "image": "\"http://localhost:1313/\"",
-        "datePublished": "0001-01-01T00:00:00Z",
-        "dateModified": "0001-01-01T00:00:00Z",
-        "author": {
-            "@type": "Organization",
-            "name": "null",
-            "url": "http:\/\/localhost:1313\/about-us/"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Найди самый дешёвый eSIM для поездки — сравнение тарифов | eSIM RU",
-            "url": "http:\/\/localhost:1313\/"
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "http:\/\/localhost:1313\/blog\/audit-report\/"
-        }
-    }
-    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"http:\/\/localhost:1313\/"},{"@type":"ListItem","position":2,"name":"Блог","item":"http:\/\/localhost:1313\/blog\/"}]}</script>
 </head>
 <body>
-
-
 
 
 <style>
@@ -1070,427 +682,118 @@
         filterItems('');
     })();
 </script>
-<div class="container">
-    <nav class="breadcrumb" aria-label="breadcrumb">
-        <a href="http://localhost:1313/">Главная</a> &rsaquo;
-        <a href="/blog/">Блог</a> &rsaquo;
-        <span></span>
-    </nav>
+
+
+<section class="hero"><div class="container">
+<nav class="bc"><a href="/">Главная</a> / Блог</nav>
+<h1>Блог eSIM RU — <em>всё о технологии</em> и путешествиях</h1>
+<p>Статьи о настройке eSIM на iPhone и Android, обзоры провайдеров, сравнение тарифов, новости технологии. Полезные руководства для путешественников, которые хотят оставаться на связи за границей.</p>
+</div></section>
+
+
+<section class="sec" style="padding-bottom:0"><div class="container">
+
+
+<div class="topics">
+    
+    
+    
+    
+        
+        
+        <a href="#" class="active" data-cat="all">Все статьи</a>
+    
+        
+        
+        <a href="#"  data-cat="eSIM">E sim</a>
+    
+        
+        
+        <a href="#"  data-cat="путешествия">Путешествия</a>
+    
 </div>
 
-<article>
-    <div class="container">
-        <header class="article-hero">
-            <div class="meta">
-                <span class="tag">Статья</span>
-                <span class="dot"></span>
-                <time datetime="0001-01-01">1 January 0001</time>
-                <span class="dot"></span>
-                <span>2 мин чтения</span>
+
+
+
+
+
+    <div class="dest-title">Популярные направления eSIM для путешествий</div>
+    <div class="dest-grid">
+        
+            <a href="/china-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/cn.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Китай</span>
+            </a>
+        
+            <a href="/turkey-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/tr.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Турция</span>
+            </a>
+        
+            <a href="/thailand-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/th.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Таиланд</span>
+            </a>
+        
+            <a href="/uzbekistan-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/uz.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Узбекистан</span>
+            </a>
+        
+            <a href="/armenia-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/am.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Армения</span>
+            </a>
+        
+            <a href="/indonesia-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/id.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Индонезия</span>
+            </a>
+        
+            <a href="/kazakhstan-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/kz.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Казахстан</span>
+            </a>
+        
+            <a href="/japan-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/jp.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Япония</span>
+            </a>
+        
+            <a href="/egypt-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/eg.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Египет</span>
+            </a>
+        
+            <a href="/georgia-esim/" class="dest-card">
+                <span class="dest-flag"><img src="/img/flags/ge.svg" alt="" width="28" height="19" loading="lazy"></span>
+                <span class="dest-name">Грузия</span>
+            </a>
+        
+    </div>
+
+
+
+<div class="blog-grid">
+    
+        
+        <a href="/blog/what-is-esim/" class="blog-card" data-cat="eSIM,путешествия" data-page="1">
+            <div class="blog-cat"><span class="cat-dot"></span>E sim</div>
+            <h3>Что такое eSIM в телефоне и как работает технология</h3>
+            <p>eSIM — это встроенная SIM-карта в телефоне. Без пластика, сканируете QR-код и получаете интернет. …</p>
+            <div class="blog-meta">
+                <span class="blog-date">23 July 2026</span>
+                <span class="blog-read">4 мин</span>
             </div>
-            <h1></h1>
-            <p class="subtitle"></p>
-            <div class="author-row">
-                <div class="avatar"></div>
-                <span><strong></strong> &middot; Обновлено 1 January 0001</span>
-            </div>
-        </header>
-    </div>
-
-    <div class="container">
-        <figure class="featured-image">
-            <img src="/" alt="" width="1120" height="480" loading="eager">
-            <figcaption class="caption">Иллюстрация к статье</figcaption>
-        </figure>
-    </div>
-
-    <div class="container">
-        <div class="article-layout">
-            <div>
-                
-                <nav class="toc" aria-label="Содержание статьи">
-                    <div class="toc-title">Содержание</div>
-                    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#一已完成优化项">一、已完成优化项</a></li>
-    <li><a href="#二待完成项">二、待完成项</a></li>
-    <li><a href="#三逐篇状态">三、逐篇状态</a></li>
-    <li><a href="#四总结">四、总结</a></li>
-  </ul>
-</nav>
-                </nav>
-                
-
-                <div class="article-body">
-                    <h1 id="16-篇-blog-文章--最终审核报告">16 篇 Blog 文章 · 最终审核报告</h1>
-<blockquote>
-<p>审计依据：<code>esimblog-guidelines.md</code> | 日期：2026-07-22</p>
-</blockquote>
-<hr>
-<h2 id="一已完成优化项">一、已完成优化项</h2>
-<table>
-  <thead>
-      <tr>
-          <th>优化项</th>
-          <th style="text-align: center">状态</th>
-          <th>详情</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>全部 16 篇文章撰写</td>
-          <td style="text-align: center">✅</td>
-          <td>Pillar + 15 Cluster，俄语，blog-ru/ 目录</td>
-      </tr>
-      <tr>
-          <td>无 H1 标签</td>
-          <td style="text-align: center">✅ 16/16</td>
-          <td>零违规</td>
-      </tr>
-      <tr>
-          <td>无年份数字</td>
-          <td style="text-align: center">✅ 16/16</td>
-          <td>Title 零年份</td>
-      </tr>
-      <tr>
-          <td>无假人物场景</td>
-          <td style="text-align: center">✅ 16/16</td>
-          <td>无杜撰故事</td>
-      </tr>
-      <tr>
-          <td>无极限活动</td>
-          <td style="text-align: center">✅ 16/16</td>
-          <td>无极端目的地描述</td>
-      </tr>
-      <tr>
-          <td>H2 自然俄语</td>
-          <td style="text-align: center">✅ 16/16</td>
-          <td>全部自然语言</td>
-      </tr>
-      <tr>
-          <td>web20 折扣码</td>
-          <td style="text-align: center">✅ 16/16</td>
-          <td>每篇 ≥1 次</td>
-      </tr>
-      <tr>
-          <td>Title 48-55</td>
-          <td style="text-align: center">✅ 15/16</td>
-          <td>C03 差 2 字符</td>
-      </tr>
-      <tr>
-          <td>Meta 描述</td>
-          <td style="text-align: center">✅ 全部修剪</td>
-          <td>130-140 范围，6 篇需微调</td>
-      </tr>
-      <tr>
-          <td>eSIMRU 品牌 ≥4</td>
-          <td style="text-align: center">✅ 8/16</td>
-          <td>8 篇需增加</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="二待完成项">二、待完成项</h2>
-<table>
-  <thead>
-      <tr>
-          <th>待完成</th>
-          <th style="text-align: center">进度</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>字数 ≥7,000</strong></td>
-          <td style="text-align: center">0/16</td>
-          <td>当前 ~30,000 总字 / 需 ~112,000</td>
-      </tr>
-      <tr>
-          <td><strong>外链 ≥5</strong></td>
-          <td style="text-align: center">0/16</td>
-          <td>需逐篇添加 GSMA/Apple/Samsung/Wikipedia 等</td>
-      </tr>
-      <tr>
-          <td><strong>内链 ≥5</strong></td>
-          <td style="text-align: center">1/16</td>
-          <td>仅 Pillar 达标，其余需补充</td>
-      </tr>
-      <tr>
-          <td><strong>eSIMRU ≥4</strong></td>
-          <td style="text-align: center">8/16</td>
-          <td>C05/C08/C11/C12/C13/C14 需加 1-3 次</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="三逐篇状态">三、逐篇状态</h2>
-<table>
-  <thead>
-      <tr>
-          <th>#</th>
-          <th>文章</th>
-          <th style="text-align: center">字数</th>
-          <th style="text-align: center">Title</th>
-          <th style="text-align: center">Meta</th>
-          <th style="text-align: center">H1</th>
-          <th style="text-align: center">eSIMRU</th>
-          <th style="text-align: center">IL</th>
-          <th style="text-align: center">EL</th>
-          <th>待办</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>P</td>
-          <td>chto-takoe-esim</td>
-          <td style="text-align: center">~4,500</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">16</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + EL</td>
-      </tr>
-      <tr>
-          <td>C01</td>
-          <td>proverit-podderzhku</td>
-          <td style="text-align: center">~3,200</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+1</td>
-          <td style="text-align: center">+2</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + ERU + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C02</td>
-          <td>iphone-esim-modeli</td>
-          <td style="text-align: center">~2,800</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+4</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C03</td>
-          <td>esim-vs-sim</td>
-          <td style="text-align: center">~3,500</td>
-          <td style="text-align: center">+2</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+1</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C04</td>
-          <td>kak-kupit-esim</td>
-          <td style="text-align: center">~3,200</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+1</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C05</td>
-          <td>kak-nastroit-esim</td>
-          <td style="text-align: center">~2,600</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+2</td>
-          <td style="text-align: center">+1</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + ERU + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C06</td>
-          <td>kak-perenesti-esim</td>
-          <td style="text-align: center">~1,800</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+5</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C07</td>
-          <td>rossiyskie-operatory</td>
-          <td style="text-align: center">~2,200</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+1</td>
-          <td style="text-align: center">+5</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + ERU + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C08</td>
-          <td>samsung-esim-modeli</td>
-          <td style="text-align: center">~1,200</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+3</td>
-          <td style="text-align: center">+4</td>
-          <td style="text-align: center">0</td>
-          <td><strong>大幅扩字</strong> + ERU + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C09</td>
-          <td>esim-dlya-rossiyan</td>
-          <td style="text-align: center">~1,800</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+3</td>
-          <td style="text-align: center">0</td>
-          <td>扩字 + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C10</td>
-          <td>esim-turciya-gid</td>
-          <td style="text-align: center">~1,200</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+5</td>
-          <td style="text-align: center">0</td>
-          <td><strong>大幅扩字</strong> + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C11</td>
-          <td>esim-bez-google-play</td>
-          <td style="text-align: center">~1,100</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+1</td>
-          <td style="text-align: center">+5</td>
-          <td style="text-align: center">0</td>
-          <td><strong>大幅扩字</strong> + ERU + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C12</td>
-          <td>luchshie-esim-reyting</td>
-          <td style="text-align: center">~1,400</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+1</td>
-          <td style="text-align: center">+5</td>
-          <td style="text-align: center">0</td>
-          <td><strong>大幅扩字</strong> + ERU + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C13</td>
-          <td>xiaomi-redmi-esim</td>
-          <td style="text-align: center">~600</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+3</td>
-          <td style="text-align: center">+5</td>
-          <td style="text-align: center">0</td>
-          <td><strong>大幅扩字</strong> + ERU + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C14</td>
-          <td>esim-evropa-gid</td>
-          <td style="text-align: center">~800</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+1</td>
-          <td style="text-align: center">+5</td>
-          <td style="text-align: center">0</td>
-          <td><strong>大幅扩字</strong> + ERU + IL + EL</td>
-      </tr>
-      <tr>
-          <td>C15</td>
-          <td>esim-kitay-bez-fayrvola</td>
-          <td style="text-align: center">~800</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">+5</td>
-          <td style="text-align: center">0</td>
-          <td><strong>大幅扩字</strong> + IL + EL</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="四总结">四、总结</h2>
-<p><strong>已通过</strong>：H1 / 年份 / 假场景 / H2 / web20 — 4 项 100%</p>
-<p><strong>大部分通过</strong>：Title (94%) / Meta (63%) / eSIMRU (50%)</p>
-<p><strong>需要扩展</strong>：字数（平均 ~2,500 / 目标 7,000）— 16 篇全部需 2-4 倍扩展</p>
-<p><strong>需要添加</strong>：外链（每篇 5 条 GSMA/Apple/Samsung/Wikipedia） / 内链（每篇 ≥5 条）</p>
-<p>C08/C11/C13/C14/C15 五篇篇幅严重不足（600-1,200 字），需 5-10 倍扩展。其余 11 篇需 2-3 倍扩展。</p>
-
-                </div>
-            </div>
-
-            
-            <aside class="article-sidebar">
-                
-
-                
-            </aside>
-        </div>
-    </div>
-</article>
+        </a>
+    
+</div>
 
 
-<section class="related-section">
-    <div class="container">
-        <h2>Похожие статьи</h2>
-        <div class="related-grid">
-            
-            
-                
-                
-                
-                
-                    
-                    <a href="/about-us/" class="related-card">
-                        <span class="card-tag">Статья</span>
-                        <h4>eSIM RU — независимый каталог для путешественников</h4>
-                        <p>Узнайте больше о eSIM RU — независимом каталоге eSIM для путешественников из …</p>
-                    </a>
-                    
-                    <a href="/azerbaijan-esim/" class="related-card">
-                        <span class="card-tag">Статья</span>
-                        <h4>eSIM Азербайджана: как купить выгодный тариф</h4>
-                        <p>Сравните eSIM для Азербайджана от Airalo, Holafly, Roami и Yesim. Узнайте, какой …</p>
-                    </a>
-                    
-                    <a href="/argentina-esim/" class="related-card">
-                        <span class="card-tag">Статья</span>
-                        <h4>eSIM Аргентины: где самый дешёвый интернет</h4>
-                        <p>Сравните eSIM для Аргентины от Airalo, Holafly, Roami и Yesim. Узнайте, что …</p>
-                    </a>
-                    
-                
-            
-        </div>
-    </div>
-</section>
+<div class="pagination" id="pagination"></div>
 
+</div></section>
 
 
 <footer class="ftr">
@@ -1526,6 +829,85 @@
         </div>
     </div>
 </footer>
+
+<script>
+    var PER_PAGE = 8;
+    var currentCat = 'all';
+    var currentPage = 1;
+
+    function getVisibleCards() {
+        var all = document.querySelectorAll('.blog-card');
+        var visible = [];
+        all.forEach(function(c){
+            var cats = c.getAttribute('data-cat').split(',');
+            if (currentCat === 'all' || cats.includes(currentCat)) {
+                visible.push(c);
+            }
+        });
+        return visible;
+    }
+
+    function showPage(page) {
+        currentPage = page;
+        var visible = getVisibleCards();
+        var totalPages = Math.ceil(visible.length / PER_PAGE) || 1;
+        if (currentPage > totalPages) currentPage = totalPages;
+        if (currentPage < 1) currentPage = 1;
+
+        var allCards = document.querySelectorAll('.blog-card');
+        allCards.forEach(function(c){ c.style.display = 'none'; });
+
+        var start = (currentPage - 1) * PER_PAGE;
+        var end = Math.min(start + PER_PAGE, visible.length);
+        for (var i = start; i < end; i++) {
+            visible[i].style.display = '';
+        }
+
+        renderPagination(totalPages);
+    }
+
+    function renderPagination(totalPages) {
+        var pg = document.getElementById('pagination');
+        if (totalPages <= 1) { pg.innerHTML = ''; return; }
+
+        var html = '';
+        if (currentPage > 1) {
+            html += '<a href="#" class="page-prev" onclick="showPage(' + (currentPage-1) + ');return false">\u2190 \u041d\u0430\u0437\u0430\u0434</a>';
+        } else {
+            html += '<span class="page-prev" style="opacity:.35;pointer-events:none">\u2190 \u041d\u0430\u0437\u0430\u0434</span>';
+        }
+
+        html += '<span class="page-info">\u0421\u0442\u0440. ' + currentPage + ' \u0438\u0437 ' + totalPages + '</span>';
+
+        if (currentPage < totalPages) {
+            html += '<a href="#" class="page-next" onclick="showPage(' + (currentPage+1) + ');return false">\u0412\u043f\u0435\u0440\u0451\u0434 \u2192</a>';
+        } else {
+            html += '<span class="page-next" style="opacity:.35;pointer-events:none">\u0412\u043f\u0435\u0440\u0451\u0434 \u2192</span>';
+        }
+
+        pg.innerHTML = html;
+    }
+
+    document.querySelectorAll('.topics a').forEach(function(a){
+        a.addEventListener('click', function(e){
+            e.preventDefault();
+            document.querySelectorAll('.topics a').forEach(function(el){ el.classList.remove('active'); });
+            this.classList.add('active');
+            currentCat = this.getAttribute('data-cat');
+
+            var featured = document.querySelector('.featured');
+            if (currentCat === 'all') {
+                if (featured) featured.style.display = '';
+            } else {
+                if (featured) featured.style.display = 'none';
+            }
+
+            showPage(1);
+        });
+    });
+
+    showPage(1);
+</script>
 
 </body>
 </html>

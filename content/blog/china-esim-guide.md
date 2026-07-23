@@ -2,8 +2,8 @@
 title: "eSIM Китай: интернет без файрвола и VPN для туристов"
 description: "eSIM Китай с VPN-маршрутизацией: Instagram, WhatsApp и Google без блокировок. China Mobile, Unicom, Telecom. Цены от 2.59 евро с web20."
 url: "/blog/china-esim-guide/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-24
+lastmod: 2026-07-24
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
@@ -50,7 +50,7 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
+draft: true
 ---
 
 eSIM для Китая с VPN-маршрутизацией — единственный способ пользоваться Instagram, WhatsApp, Google и YouTube в Китае без отдельного VPN. Трафик направляется через сервер в Гонконге или Сингапуре, обходя Великий китайский файрвол. Обычные eSIM, подключающиеся к China Mobile напрямую, блокируют зарубежные сервисы. Roami предлагает eSIM Китай с VPN-маршрутизацией от €2.59. Промокод web20 даёт скидку 20%.

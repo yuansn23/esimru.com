@@ -2,8 +2,8 @@
 title: "eSIM без Google Play: установка через Rustore и APK"
 description: "Установка eSIM без Google Play: Rustore, APK, AppGallery и веб-покупка. Для российских пользователей и Huawei без сервисов Google."
 url: "/blog/esim-without-google-play/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-24
+lastmod: 2026-07-24
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
@@ -50,7 +50,7 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
+draft: true
 ---
 
 

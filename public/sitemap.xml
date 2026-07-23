@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/2026/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/esim/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%D0%B3%D0%B0%D0%B9%D0%B4/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/what-is-esim/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2026-07-23T00:00:00+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about-us/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -172,77 +199,5 @@
   </url><url>
     <loc>http://localhost:1313/terms-of-service/</loc>
     <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/2026/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/esim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/esim-without-google-play/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/esim-for-russians/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/europe-esim-guide/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/esim-vs-physical-sim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/china-esim-guide/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/russian-operators-esim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/turkey-esim-guide/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/iphone-esim-models/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/samsung-esim-models/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/xiaomi-redmi-esim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%D0%B3%D0%B0%D0%B9%D0%B4/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/how-to-buy-esim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/how-to-setup-esim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/how-to-transfer-esim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/best-esim-providers/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/does-my-phone-support-esim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/what-is-esim/</loc>
-    <lastmod>2026-07-22T12:00:00+03:00</lastmod>
   </url>
 </urlset>

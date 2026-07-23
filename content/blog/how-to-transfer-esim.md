@@ -2,8 +2,8 @@
 title: "Как перенести eSIM на новый телефон: полная инструкция"
 description: "Перенос eSIM с iPhone на iPhone, с Android на Android и между платформами. Правила Airalo, Holafly и другие. Способы переноса eSIM."
 url: "/blog/how-to-transfer-esim/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-24
+lastmod: 2026-07-24
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
@@ -50,7 +50,7 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
+draft: true
 ---
 
 

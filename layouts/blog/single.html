@@ -551,8 +551,7 @@
             </div>
             <h1>{{ .Title }}</h1>
             <p class="subtitle">{{ .Description }}</p>
-            <div class="author-row">
-                <div class="avatar">{{ substr .Params.author 0 1 }}{{ substr .Params.author 1 1 }}</div>
+            <div class="author-row"> 
                 <span><strong>{{ .Params.author }}</strong> &middot; Обновлено {{ .Lastmod.Format "2 January 2006" }}</span>
             </div>
         </header>
@@ -594,7 +593,7 @@
                     {{ end }}
                 </div>
                 {{ end }}
-
+<!--
                 {{ if .Params.popular_articles }}
                 <div class="sidebar-module">
                     <div class="sidebar-title">Популярные статьи</div>
@@ -603,12 +602,14 @@
                     {{ end }}
                 </div>
                 {{ end }}
+				-->
             </aside>
         </div>
     </div>
 </article>
 
 <!-- ===== 相关文章（保证显示） ===== -->
+<!--
 <section class="related-section">
     <div class="container">
         <h2>Похожие статьи</h2>
@@ -654,7 +655,7 @@
         </div>
     </div>
 </section>
-
+-->
 <!-- ===== FOOTER ===== -->
 {{ partial "footer.html" . }}
 

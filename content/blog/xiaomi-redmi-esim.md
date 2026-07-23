@@ -2,8 +2,8 @@
 title: "Xiaomi Redmi eSIM модели совместимость и настройка"
 description: "Xiaomi, Redmi и POCO с eSIM: список совместимых моделей, настройка на MIUI и HyperOS. Региональные ограничения. Цены на eSIM от €2."
 url: "/blog/xiaomi-redmi-esim/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-24
+lastmod: 2026-07-24
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
@@ -50,7 +50,7 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
+draft: true
 ---
 
 Xiaomi поддерживает eSIM на флагманских моделях (Xiaomi 13/14/15), Redmi — выборочно, POCO — ограниченно. Перед покупкой проверьте EID через `*#06#`. На HyperOS настройка: Настройки → SIM-карты → Добавить eSIM. Для путешествий используйте eSIM-провайдера с промокодом web20 (скидка 20%).

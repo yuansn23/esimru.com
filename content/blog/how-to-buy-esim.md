@@ -2,8 +2,8 @@
 title: "Как купить eSIM онлайн: пошаговое руководство и цены"
 description: "Как купить eSIM онлайн за 3 шага. Сравнение цен Airalo, Holafly и другие, Yesim. Промокод web20 скидка 20 процентов. Оплата из России."
 url: "/blog/how-to-buy-esim/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-24
+lastmod: 2026-07-24
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
@@ -50,7 +50,7 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
+draft: true
 ---
 
 

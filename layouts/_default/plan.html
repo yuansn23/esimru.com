@@ -491,7 +491,7 @@ tr.best td:first-child{box-shadow:inset 3px 0 0 var(--green)}
 <h2>{{ $p.table_title }}</h2>
 <p class="muted" style="margin-bottom:16px">{{ $p.table_sub }}</p>
 
-{{ $brandsData := .Site.Data.brands.ru }}
+{{ $brandsData := site.Data.brands.ru }}
 <div class="brand-filter" id="brandFilter">
   <span class="bf-label">{{ $brandsData.brand_filter_label }}</span>
   <button class="bf-pill on" onclick="filterBrand('all',this)">{{ $brandsData.all_brands_label }}</button>

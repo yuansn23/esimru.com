@@ -2,8 +2,8 @@
 title: "Samsung Galaxy eSIM совместимые модели и настройка"
 description: "Samsung Galaxy с eSIM: полный список от S20 до S26, Z Flip и Fold. Dual SIM, настройка, региональные ограничения. Подробнее на eSIMRU."
 url: "/blog/samsung-esim-models/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-24
+lastmod: 2026-07-24
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
@@ -50,7 +50,7 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
+draft: true
 ---
 
 

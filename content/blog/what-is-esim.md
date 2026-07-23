@@ -2,12 +2,13 @@
 title: "Что такое eSIM в телефоне и как работает технология"
 description: "eSIM — это встроенная SIM-карта в телефоне. Без пластика, сканируете QR-код и получаете интернет. iPhone, Samsung, Xiaomi поддерживают."
 url: "/blog/what-is-esim/"
-date: 2026-07-15T09:00:00+03:00
-lastmod: 2026-07-22T12:00:00+03:00
+date: 2026-07-23
+lastmod: 2026-07-23
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение", "2026"]
 categories: ["eSIM", "путешествия"]
 image: "/img/blog/esim-guide.jpg"
+draft: false
 image_caption: "Сравнение тарифов eSIM от разных провайдеров — найдите лучшую цену за гигабайт за 10 секунд."
 popular_countries:
   - name: "Турция"
@@ -22,10 +23,6 @@ popular_countries:
     slug: "/thailand-esim/"
     flag: "/img/flags/th.svg"
     price: "от $1.99/ГБ"
-  - name: "ОАЭ"
-    slug: "/uae-esim/"
-    flag: "/img/flags/ae.svg"
-    price: "от $3.99/ГБ"
   - name: "Египет"
     slug: "/egypt-esim/"
     flag: "/img/flags/eg.svg"
@@ -50,7 +47,6 @@ popular_articles:
   - title: "Как настроить eSIM на iPhone 17: инструкция"
     slug: "/blog/esim-iphone-setup/"
     tag: "Инструкция"
-draft: false
 ---
 
 
