@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{ .Params.title | default .Title }}</title>
+    <meta name="description" content="{{ .Params.description | default .Description }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Params.pageTitle | plainify | default .Title }}">
+    <meta property="og:description" content="{{ .Params.description }}">
+    <meta property="og:image" content="{{ .Params.ogImage | default "https://www.esimru.com/img/devices-og.jpg" }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="article">
+    <meta property="article:modified_time" content="{{ now.Format "2006-01-02T15:04:05-07:00" }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Params.pageTitle | plainify | default .Title }}">
+    <meta name="twitter:description" content="{{ .Params.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 样式保持不变（您原有的所有样式） */
+        :root{--bg:#08080c;--surface:#111116;--surface2:#18181f;--border:#25252d;--border-light:#1c1c24;--fg:#fafafa;--fg2:#d4d4d8;--fg3:#a1a1aa;--fg4:#71717a;--accent:#ec4899;--accent2:#f472b6;--accent-bg:#ec489910;--green:#34d399;--amber:#fbbf24;--blue:#60a5fa;--r:8px;--r2:12px;--r3:16px;}
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth;font-size:16px;background:var(--bg);color:var(--fg)}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--fg2);line-height:1.6;-webkit-font-smoothing:antialiased}
+        .container{max-width:1120px;margin:0 auto;padding:0 24px}
+        h1,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;color:var(--fg);letter-spacing:-.01em}
+        h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin-bottom:16px}
+        h1 em{font-style:normal;color:var(--accent)}
+        h2{font-family:'Inter',-apple-system,sans-serif;font-weight:600;color:var(--fg);font-size:1.5rem;margin-bottom:16px}
+        h3{font-family:'Inter',sans-serif;font-size:1.05rem;font-weight:600;color:var(--fg);margin-bottom:8px}
+        a{color:var(--accent2);text-decoration:none;transition:color .15s}a:hover{color:var(--accent)}
+        .dim{color:var(--fg4)}.muted{color:var(--fg3)}
+        b,strong{color:var(--fg);font-weight:600}
+        ::selection{background:var(--accent);color:#fff}
+        .hdr{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;height:56px;display:flex;align-items:center}
+        .hdr-inner{max-width:1120px;margin:0 auto;width:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;color:var(--fg)}.logo span{color:var(--accent)}
+        .nav{display:flex;gap:24px}.nav a{font-size:.84rem;font-weight:500;color:var(--fg3)}.nav a:hover,.nav a.cur{color:var(--fg)}
+        @media(max-width:640px){.nav{display:none}}
+        .hero{background:linear-gradient(160deg,#1a0d15 0%,var(--surface) 50%,#0d1115 100%);padding:64px 0 40px;border-bottom:1px solid var(--border);text-align:center}
+        .bc{font-size:.76rem;color:var(--fg4);margin-bottom:14px;text-align:center}.bc a{color:var(--fg4)}.bc a:hover{color:var(--fg2)}
+        .hero h1{max-width:800px;margin:0 auto 12px}
+        .hero p{font-size:.95rem;color:var(--fg3);max-width:660px;margin:0 auto 18px;line-height:1.65}
+        .hero-figures{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+        .hero-fig{text-align:center}
+        .hero-fig .hf-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:800;color:var(--accent);line-height:1}
+        .hero-fig .hf-label{font-size:.72rem;color:var(--fg4);margin-top:2px}
+        .sec{padding:64px 0}.sec+.sec{border-top:1px solid var(--border)}
+        .quick-check{background:var(--surface);border:1px solid var(--accent);border-radius:var(--r3);padding:28px 32px;margin-bottom:40px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+        .quick-check-icon{font-size:2.5rem;flex-shrink:0}
+        .quick-check-text{flex:1;min-width:200px}
+        .quick-check-text h3{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:4px}
+        .quick-check-text p{font-size:.82rem;color:var(--fg3);line-height:1.5}
+        .quick-check-text code{background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:.8rem;color:var(--accent2)}
+        .discount-bar{background:linear-gradient(135deg,var(--accent-bg),#0d1115 70%);border:1px solid var(--accent);border-radius:var(--r3);padding:20px 28px;margin-bottom:36px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center;text-align:center}
+        .discount-bar .code{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--accent2);background:var(--surface);padding:6px 16px;border-radius:var(--r);border:1px dashed var(--accent)}
+        .discount-bar .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:10px 24px;border-radius:var(--r);font-size:.84rem;transition:all .15s;text-decoration:none}
+        .discount-bar .cta-btn:hover{background:var(--accent2)}
+        .brand-section{margin-bottom:48px}
+        .brand-header{display:flex;align-items:center;gap:14px;margin-bottom:16px;cursor:pointer;user-select:none}
+        .brand-logo{width:44px;height:44px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;color:#fff;flex-shrink:0}
+        .brand-header h2{margin-bottom:0;font-size:1.35rem}
+        .brand-header .brand-count{font-size:.76rem;color:var(--fg4);font-weight:400}
+        .brand-arrow{color:var(--fg4);font-size:.8rem;transition:transform .2s;margin-left:auto}
+        .brand-section.open .brand-arrow{transform:rotate(90deg)}
+        .device-table{width:100%;border-collapse:collapse;font-size:.84rem;display:none}
+        .brand-section.open .device-table{display:table}
+        .device-table thead th{text-align:left;padding:10px 14px;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--fg4);border-bottom:1px solid var(--border)}
+        .device-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border-light);color:var(--fg2)}
+        .device-table tbody tr{transition:background .15s}
+        .device-table tbody tr:hover{background:var(--surface)}
+        .device-table .model-name{color:var(--fg);font-weight:600}
+        .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.68rem;font-weight:600;white-space:nowrap}
+        .badge-yes{background:#34d39915;color:var(--green)}
+        .badge-no{background:#ef444415;color:#ef4444}
+        .badge-partial{background:#fbbf2415;color:var(--amber)}
+        .device-table .note{font-size:.72rem;color:var(--fg4);max-width:280px}
+        .incompat-box{background:#ef444408;border:1px solid #ef444420;border-radius:var(--r2);padding:18px 22px;margin-top:16px}
+        .incompat-box h4{font-size:.78rem;font-weight:600;color:#ef4444;margin-bottom:8px}
+        .incompat-box ul{list-style:none;padding:0;margin:0}
+        .incompat-box li{font-size:.74rem;color:var(--fg4);padding:2px 0;position:relative;padding-left:14px}
+        .incompat-box li::before{content:'✗';position:absolute;left:0;color:#ef4444;font-size:.65rem;top:3px}
+        .unlock-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--r3);padding:32px 36px;margin-top:40px}
+        .unlock-box h2{margin-bottom:10px}
+        .unlock-box p{font-size:.84rem;color:var(--fg3);line-height:1.6;margin-bottom:10px}
+        .page-layout{max-width:1120px;margin:0 auto;padding:0 24px;display:flex;gap:32px;align-items:flex-start}
+        .main-content{flex:1;min-width:0;order:1}
+        .main-content .container{max-width:none;padding:0}
+        .sidebar{order:2;width:200px;flex-shrink:0;position:sticky;top:72px;align-self:flex-start}
+        @media(max-width:1024px){.sidebar{display:none}}
+        .sidebar-title{font-family:'Playfair Display',serif;font-weight:700;font-size:.9rem;color:var(--fg);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+        .sidebar-nav{display:flex;flex-direction:column;gap:2px}
+        .sidebar-nav a{display:block;padding:7px 12px;font-size:.75rem;color:var(--fg4);text-decoration:none;border-radius:var(--r);transition:all .15s;border-left:2px solid transparent}
+        .sidebar-nav a:hover{color:var(--fg);background:var(--surface);border-left-color:var(--border)}
+        .sidebar-nav a.active{color:var(--accent2);background:var(--accent-bg);border-left-color:var(--accent);font-weight:600}
+        .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+        .faq-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:18px 20px;transition:border-color .15s}
+        .faq-card:hover{border-color:var(--accent)}
+        .faq-card h3{font-family:'Inter',sans-serif;font-size:.85rem;font-weight:600;color:var(--fg);margin-bottom:6px}
+        .faq-card p{font-size:.76rem;color:var(--fg4);line-height:1.55}
+        @media(max-width:640px){.faq-grid{grid-template-columns:1fr}}
+        .cta-box{background:var(--accent-bg);border:1px solid var(--accent);border-radius:var(--r3);padding:40px 32px;text-align:center;max-width:640px;margin:0 auto}
+        .cta-box h2{color:var(--accent);margin-bottom:10px}
+        .cta-box p{font-size:.9rem;color:var(--fg3);margin-bottom:20px}
+        .cta-box a.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:12px 32px;border-radius:var(--r);font-size:.9rem;transition:all .15s}
+        .cta-box a.btn:hover{background:var(--accent2);transform:translateY(-1px)}
+        .ftr{background:var(--surface);border-top:1px solid var(--border);padding:48px 0 28px}
+        .ftr-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}
+        .ftr-grid h4{color:var(--fg);font-family:'Playfair Display',serif;font-size:.9rem;margin-bottom:12px}
+        .ftr-grid a{color:var(--fg4);display:block;padding:2px 0;font-size:.78rem}.ftr-grid a:hover{color:var(--fg)}
+        .ftr-bot{border-top:1px solid var(--border);margin-top:36px;padding-top:20px;text-align:center;font-size:.72rem;color:var(--fg4)}
+        .ftr-bot a{color:var(--fg4);margin:0 12px}
+        @media(max-width:768px){.ftr-grid{grid-template-columns:1fr}}
+    </style>
+    <script type="application/ld+json">
+    {{ (dict 
+        "@context" "https://schema.org"
+        "@type" "BreadcrumbList"
+        "itemListElement" (slice 
+            (dict "@type" "ListItem" "position" 1 "name" "Главная" "item" .Site.BaseURL)
+            (dict "@type" "ListItem" "position" 2 "name" "Совместимые устройства" "item" .Permalink)
+        )
+    ) | jsonify | safeJS }}
+    </script>
+    <script type="application/ld+json">
+    {{ (dict 
+        "@context" "https://schema.org"
+        "@type" "FAQPage"
+        "mainEntity" (slice)
+    ) | jsonify | safeJS }}
+    </script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+{{ partial "header.html" . }}
+
+<!-- HERO -->
+<section class="hero"><div class="container">
+<nav class="bc"><a href="/">Главная</a> / Совместимые устройства</nav>
+<h1>{{ .Params.pageTitle | safeHTML }}</h1>
+<p>{{ .Params.pageDescription | safeHTML }} <span style="color:var(--fg4);font-size:.76rem">Обновлено: {{ .Params.updateDate }}</span></p>
+<div class="hero-figures">
+{{ range .Params.heroFigures }}
+    <div class="hero-fig"><div class="hf-num">{{ .num }}</div><div class="hf-label">{{ .label }}</div></div>
+{{ end }}
+</div>
+</div></section>
+
+<!-- QUICK CHECK + DISCOUNT -->
+<section class="sec" style="padding-bottom:0"><div class="container">
+<div class="quick-check">
+<div class="quick-check-icon">📱</div>
+<div class="quick-check-text">
+<h3>{{ .Params.quickCheck.title }}</h3>
+<p>{{ .Params.quickCheck.text | safeHTML }}</p>
+</div>
+</div>
+<div class="discount-bar">
+<span style="font-size:.9rem;color:var(--fg3)">{{ .Params.discountBar.promoLabel }}</span>
+<span class="code">{{ .Params.discountBar.promoCode }}</span>
+<span style="font-size:.84rem;color:var(--fg3)">{{ .Params.discountBar.discountText }}</span>
+<a href="{{ .Params.discountBar.ctaLink }}" target="_blank" rel="noopener" class="cta-btn">{{ .Params.discountBar.ctaText }}</a>
+</div>
+</div></section>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+<aside class="sidebar">
+<div class="sidebar-title">Быстрая навигация</div>
+<nav class="sidebar-nav" id="sideNav">
+{{ range .Params.brands }}
+    <a href="#{{ .id }}">{{ .name }}</a>
+{{ end }}
+</nav>
+</aside>
+<div class="main-content">
+
+{{ range .Params.brands }}
+<section class="sec" style="padding-bottom:0"><div class="container">
+<div class="brand-section open" id="{{ .id }}">
+<div class="brand-header" onclick="toggleBrand('{{ .id }}')">
+<div class="brand-logo" style="background:{{ .logoColor }}">{{ .logoText }}</div>
+<h2>{{ .name }} <span class="brand-count">· {{ .count }}</span></h2>
+<span class="brand-arrow">▶</span>
+</div>
+<table class="device-table">
+<thead><tr>
+    <th>Модель</th>
+    {{ if eq .id "brand-other" }}<th>Бренд</th>{{ end }}
+    <th>eSIM</th>
+    {{ if ne .id "brand-sharp" }}{{ if ne .id "brand-rakuten" }}{{ if ne .id "brand-other" }}<th>Dual eSIM</th>{{ end }}{{ end }}{{ end }}
+    <th class="note-col">Примечание</th>
+</tr></thead>
+<tbody>
+{{ $brandId := .id }}
+{{ range .devices }}
+<tr>
+    <td class="model-name">{{ .model }}</td>
+    {{ if eq $brandId "brand-other" }}<td>{{ .brand }}</td>{{ end }}
+    <td>{{ if eq .esim "yes" }}<span class="badge badge-yes">да</span>{{ else if eq .esim "partial" }}<span class="badge badge-partial">частично</span>{{ else }}<span class="badge badge-no">нет</span>{{ end }}</td>
+    {{ if ne $brandId "brand-sharp" }}{{ if ne $brandId "brand-rakuten" }}{{ if ne $brandId "brand-other" }}
+    <td>{{ if eq .dual "yes" }}<span class="badge badge-yes">да</span>{{ else if eq .dual "partial" }}<span class="badge badge-partial">частично</span>{{ else }}<span class="badge badge-no">нет</span>{{ end }}</td>
+    {{ end }}{{ end }}{{ end }}
+    <td class="note">{{ .note | default "" }}</td>
+</tr>
+{{ end }}
+</tbody>
+</table>
+{{ if .incompatible }}
+<div class="incompat-box">
+<h4>{{ .incompatible.title }}</h4>
+<ul>
+{{ range .incompatible.items }}
+<li>{{ . | safeHTML }}</li>
+{{ end }}
+</ul>
+</div>
+{{ end }}
+{{ if .subDevices }}
+{{ range .subDevices }}
+<h3 style="margin-top:24px;margin-bottom:12px">{{ .title }}</h3>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;font-size:.82rem;color:var(--fg3);margin-bottom:32px">
+{{ range .items }}
+<div>{{ . }}</div>
+{{ end }}
+</div>
+{{ end }}
+{{ end }}
+</div>
+</div></section>
+{{ end }}
+
+<!-- UNLOCK BOX -->
+<section class="sec"><div class="container">
+<div class="unlock-box">
+<h2>{{ .Params.unlockBox.title }}</h2>
+{{ range .Params.unlockBox.paragraphs }}
+<p>{{ . | safeHTML }}</p>
+{{ end }}
+</div>
+
+<!-- FAQ -->
+<h2 style="margin-top:48px">Частые вопросы о поддержке eSIM в телефонах</h2>
+<div class="faq-grid" style="margin-top:16px">
+{{ range .Params.faq }}
+<div class="faq-card"><h3>{{ .question }}</h3><p>{{ .answer | safeHTML }}</p></div>
+{{ end }}
+</div>
+</div></section>
+
+<!-- CTA -->
+<section class="sec"><div class="container">
+<div class="cta-box">
+<h2>{{ .Params.cta.title }}</h2>
+<p>{{ .Params.cta.text | safeHTML }}</p>
+<a href="{{ .Params.cta.link }}" target="_blank" rel="noopener" class="btn">{{ .Params.cta.linkText }}</a>
+</div>
+</div></section>
+
+</div><!-- /main-content -->
+</div><!-- /page-layout -->
+
+<!-- ===== FOOTER ===== -->
+{{ partial "footer.html" . }}
+
+<script>
+function toggleBrand(id){ document.getElementById(id).classList.toggle('open'); }
+(function(){
+    var nav = document.getElementById('sideNav');
+    if (!nav) return;
+    var links = nav.querySelectorAll('a');
+    var sections = [];
+    links.forEach(function(a){
+        var id = a.getAttribute('href').replace('#','');
+        var el = document.getElementById(id);
+        if (el) sections.push({id:id, el:el, link:a});
+    });
+    function onScroll(){
+        var scrollY = window.scrollY + 80;
+        var active = null;
+        sections.forEach(function(s){
+            if (s.el.offsetTop <= scrollY) active = s;
+        });
+        links.forEach(function(a){ a.classList.remove('active'); });
+        if (active) active.link.classList.add('active');
+    }
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+})();
+</script>
+
+</body>
+</html>

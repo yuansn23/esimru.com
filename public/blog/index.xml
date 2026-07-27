@@ -6,14 +6,14 @@
     <description>Recent content in Блог eSIM on Найди самый дешёвый eSIM для поездки — сравнение тарифов | eSIM RU</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Что такое eSIM в телефоне и как работает технология</title>
+      <title>Что такое eSIM и как работает встроенная SIM-карта</title>
       <link>http://localhost:1313/blog/what-is-esim/</link>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/what-is-esim/</guid>
-      <description>&lt;ol&gt;&#xA;&lt;li&gt;eSIM — это встроенная в телефон цифровая SIM-карта.&lt;/li&gt;&#xA;&lt;li&gt;Не нужно вставлять пластик: сканируете QR-код или устанавливаете приложение — и интернет работает.&lt;/li&gt;&#xA;&lt;li&gt;iPhone 11 и новее, &lt;a href=&#34;https://www.samsung.com/us/support/mobile-devices/what-is-esim/&#34;&gt;Samsung Galaxy&lt;/a&gt; S20+, &lt;a href=&#34;https://support.google.com/pixelphone/answer/7083788&#34;&gt;Google Pixel&lt;/a&gt; 4+ поддерживают eSIM.&lt;/li&gt;&#xA;&lt;li&gt;Для путешествий тарифы eSIM начинаются от €2.59 у ведущих провайдеров — в 5 раз дешевле роуминга.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;как-работает-esim-без-физической-sim-карты&#34;&gt;Как работает eSIM: без физической SIM-карты&lt;/h2&gt;&#xA;&lt;p&gt;eSIM расшифровывается как Embedded SIM — встроенная SIM-карта. В отличие от обычной пластиковой SIM, которую нужно вставлять в лоток телефона, eSIM впаяна в материнскую плату устройства на заводе. Вы не можете её вытащить, потерять или повредить.&lt;/p&gt;</description>
+      <description>&lt;p&gt;eSIM (Embedded SIM) — это встроенная в телефон цифровая SIM-карта, которая не требует пластикового носителя. В отличие от обычной SIM, которую нужно вставлять в лоток, чип eSIM впаян в материнскую плату телефона на заводе. На один чип eUICC можно записать до 8 профилей операторов одновременно. Для путешествий тарифы eSIM начинаются от $0.54 у таких провайдеров, как Yesim и другие — в 5–10 раз дешевле роуминга российских операторов. Активация занимает 1–2 минуты через сканирование QR-кода, без похода в салон связи. Разберём, что такое eSIM на практике, можно ли eSIM использовать на вашем телефоне, и как работает технология — от чипа eUICC до подключения к интернету за границей.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

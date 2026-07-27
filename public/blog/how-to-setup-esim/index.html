@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как подключить eSIM: инструкция для iPhone и Android</title>
+    <meta name="description" content="Как настроить eSIM на iPhone, Samsung, Xiaomi, Google Pixel и Huawei за 2 минуты. Инструкция по активации и решение 10 типовых проблем.">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="canonical" href="http://localhost:1313/blog/how-to-setup-esim/">
+
+    
+    <meta property="og:title" content="Как подключить eSIM: инструкция для iPhone и Android">
+    <meta property="og:description" content="Как настроить eSIM на iPhone, Samsung, Xiaomi, Google Pixel и Huawei за 2 минуты. Инструкция по активации и решение 10 типовых проблем.">
+    <meta property="og:image" content="http://localhost:1313/img/blog/how-to-setup-esim.jpg">
+    <meta property="og:url" content="http://localhost:1313/blog/how-to-setup-esim/">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-07-24T00:00:00Z">
+    <meta property="article:modified_time" content="2026-07-24T00:00:00Z">
+    <meta property="article:author" content="Команда eSIM RU">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #08080c;
+            --surface: #111116;
+            --surface2: #18181f;
+            --border: #25252d;
+            --border-light: #1c1c24;
+            --fg: #fafafa;
+            --fg2: #d4d4d8;
+            --fg3: #a1a1aa;
+            --fg4: #71717a;
+            --accent: #ec4899;
+            --accent2: #f472b6;
+            --accent-bg: #ec489910;
+            --green: #34d399;
+            --amber: #fbbf24;
+            --blue: #60a5fa;
+            --r: 8px;
+            --r2: 12px;
+            --r3: 16px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            background: var(--bg);
+            color: var(--fg);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--fg2);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            color: var(--fg);
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; }
+        h2 { font-size: 1.5rem; margin: 36px 0 14px; }
+        h3 { font-size: 1.15rem; margin: 28px 0 10px; font-weight: 600; }
+
+        a { color: var(--accent2); text-decoration: none; transition: color .15s; }
+        a:hover { color: var(--accent); }
+
+        .dim { color: var(--fg4); }
+        .muted { color: var(--fg3); }
+
+        b, strong { color: var(--fg); font-weight: 600; }
+
+        ::selection { background: var(--accent); color: #fff; }
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+         
+        .hdr { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; height: 56px; display: flex; align-items: center; }
+        .hdr-inner { max-width: 1160px; margin: 0 auto; width: 100%; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; color: var(--fg); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        .nav { display: flex; gap: 24px; align-items: center; }
+        .nav a { font-size: .84rem; font-weight: 500; color: var(--fg3); transition: color .15s; text-decoration: none; position: relative; padding-bottom: 4px; }
+        .nav a:hover { color: var(--fg); }
+        .nav a.cur { color: var(--accent); }
+        .nav a.cur::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--accent); border-radius: 2px; }
+
+        @media (max-width: 640px) { .nav { display: none; } }
+
+         
+        .breadcrumb {
+            padding: 20px 0 0;
+            font-size: .78rem;
+            color: var(--fg4);
+        }
+        .breadcrumb a { color: var(--fg4); }
+        .breadcrumb a:hover { color: var(--fg2); }
+        .breadcrumb span { color: var(--fg3); }
+
+         
+        .article-hero {
+            padding: 32px 0 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        .article-hero .meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            font-size: .82rem;
+            color: var(--fg4);
+            margin-bottom: 16px;
+        }
+        .article-hero .meta .tag {
+            background: var(--accent-bg);
+            color: var(--accent2);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: .75rem;
+            font-weight: 600;
+        }
+        .article-hero .meta .dot {
+            width: 4px; height: 4px; background: var(--fg4); border-radius: 50%;
+        }
+        .article-hero h1 {
+            margin-bottom: 10px;
+        }
+        .article-hero .subtitle {
+            font-size: 1.05rem;
+            color: var(--fg3);
+            line-height: 1.6;
+            max-width: 720px;
+        }
+        .article-hero .author-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 18px;
+            font-size: .82rem;
+            color: var(--fg3);
+        }
+        .article-hero .author-row .avatar {
+            width: 36px; height: 36px; border-radius: 50%;
+            background: var(--accent-bg); border: 2px solid var(--accent);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: .85rem; color: var(--accent);
+        }
+
+         
+        .featured-image {
+            margin: 16px 0;
+            border-radius: var(--r3);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .featured-image .caption {
+            padding: 10px 18px;
+            font-size: .76rem;
+            color: var(--fg4);
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+        }
+
+         
+        .article-body {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 0;
+            font-size: .95rem;
+            line-height: 1.75;
+            color: var(--fg2);
+        }
+        .article-body p {
+            margin-bottom: 18px;
+        }
+        .article-body ul, .article-body ol {
+            margin: 14px 0 18px 24px;
+        }
+        .article-body li {
+            margin-bottom: 8px;
+        }
+        .article-body blockquote {
+            border-left: 3px solid var(--accent);
+            padding: 14px 20px;
+            margin: 24px 0;
+            background: var(--surface);
+            border-radius: 0 var(--r) var(--r) 0;
+            font-style: italic;
+            color: var(--fg3);
+        }
+        .article-body code {
+            background: var(--surface2);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: .85rem;
+            color: var(--accent2);
+        }
+        .article-body pre {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 18px 20px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: .84rem;
+            line-height: 1.6;
+        }
+        .article-body pre code {
+            background: none;
+            padding: 0;
+            color: var(--fg2);
+        }
+
+         
+        .info-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px 24px;
+            margin: 28px 0;
+        }
+        .info-box .info-title {
+            font-weight: 600;
+            color: var(--fg);
+            margin-bottom: 8px;
+            font-size: .92rem;
+        }
+        .info-box p { font-size: .85rem; color: var(--fg3); margin-bottom: 0; }
+        .info-box.tip { border-left: 3px solid var(--green); }
+        .info-box.warn { border-left: 3px solid var(--amber); }
+
+         
+        .article-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: .85rem;
+            border: 1px solid var(--border);
+        }
+        .article-body table th,
+        .article-body table td {
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: middle;
+        }
+        .article-body table th {
+            background: var(--surface);
+            color: var(--fg);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border);
+        }
+        .article-body table td {
+            background: transparent;
+            color: var(--fg2);
+        }
+        .article-body table tr:hover td {
+            background: var(--surface);
+        }
+        .article-body table .price {
+            color: var(--green);
+            font-weight: 700;
+        }
+
+         
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: .85rem;
+            border: 1px solid var(--border);
+        }
+        .compare-table th,
+        .compare-table td {
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: middle;
+        }
+        .compare-table th {
+            background: var(--surface);
+            color: var(--fg);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border);
+        }
+        .compare-table td {
+            background: transparent;
+            color: var(--fg2);
+        }
+        .compare-table tr:hover td {
+            background: var(--surface);
+        }
+        .compare-table .price {
+            color: var(--green);
+            font-weight: 700;
+        }
+
+         
+        .article-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+            align-items: start;
+        }
+        @media (max-width: 900px) {
+            .article-layout { grid-template-columns: 1fr; }
+            .article-sidebar { display: none; }
+        }
+
+         
+        .toc {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px 24px;
+            margin-bottom: 28px;
+        }
+        .toc-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--fg);
+            margin-bottom: 12px;
+        }
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            margin: 0;
+            padding: 0;
+        }
+        .toc ol li {
+            counter-increment: toc-counter;
+            margin-bottom: 6px;
+            font-size: .84rem;
+            line-height: 1.5;
+        }
+        .toc ol li::before {
+            content: counter(toc-counter) ".";
+            color: var(--accent);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .toc ol li a {
+            color: var(--fg3);
+            text-decoration: none;
+            transition: color .15s;
+        }
+        .toc ol li a:hover {
+            color: var(--accent2);
+        }
+
+         
+        .article-sidebar {
+            position: sticky;
+            top: 72px;
+        }
+        .sidebar-module {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .sidebar-module .sidebar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: .95rem;
+            font-weight: 700;
+            color: var(--fg);
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .sidebar-module .country-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: .82rem;
+            color: var(--fg3);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border-light);
+            transition: color .15s;
+        }
+        .sidebar-module .country-link:last-child { border-bottom: none; }
+        .sidebar-module .country-link:hover { color: var(--accent2); }
+        .sidebar-module .country-link .flag {
+            width: 24px; height: 16px;
+            border-radius: 2px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .sidebar-module .country-link .price {
+            margin-left: auto;
+            font-size: .74rem;
+            color: var(--green);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .sidebar-module .article-link {
+            display: block;
+            padding: 8px 0;
+            font-size: .82rem;
+            color: var(--fg3);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border-light);
+            line-height: 1.4;
+            transition: color .15s;
+        }
+        .sidebar-module .article-link:last-child { border-bottom: none; }
+        .sidebar-module .article-link:hover { color: var(--accent2); }
+
+         
+        .related-section {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .related-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r2);
+            padding: 22px 20px;
+            transition: all .2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .related-card:hover {
+            border-color: var(--accent);
+            background: var(--surface2);
+            transform: translateY(-2px);
+        }
+        .related-card .card-tag {
+            font-size: .7rem;
+            font-weight: 600;
+            color: var(--accent2);
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            margin-bottom: 8px;
+        }
+        .related-card h4 {
+            font-size: .95rem;
+            margin-bottom: 6px;
+            color: var(--fg);
+        }
+        .related-card p {
+            font-size: .78rem;
+            color: var(--fg4);
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+         
+        .ftr { background: var(--surface); border-top: 1px solid var(--border); padding: 48px 0 28px; }
+        .ftr-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 36px; }
+        .ftr-grid h4 { color: var(--fg); font-family: 'Playfair Display', serif; font-size: .9rem; margin-bottom: 12px; }
+        .ftr-grid a { color: var(--fg4); display: block; padding: 2px 0; font-size: .78rem; }
+        .ftr-grid a:hover { color: var(--fg); }
+        .ftr-bot { border-top: 1px solid var(--border); margin-top: 36px; padding-top: 20px; text-align: center; font-size: .72rem; color: var(--fg4); }
+        .ftr-bot a { color: var(--fg4); margin: 0 12px; }
+        @media (max-width: 768px) { .ftr-grid { grid-template-columns: 1fr; } }
+
+         
+        @media (max-width: 768px) {
+            .article-body { padding: 24px 0; font-size: .9rem; }
+            .article-hero { padding: 24px 0 18px; }
+            .article-hero h1 { font-size: 1.6rem; }
+            .featured-image img { max-height: 200px; }
+        }
+    </style>
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "\"Как подключить eSIM: инструкция для iPhone и Android\"",
+        "description": "\"Как настроить eSIM на iPhone, Samsung, Xiaomi, Google Pixel и Huawei за 2 минуты. Инструкция по активации и решение 10 типовых проблем.\"",
+        "image": "\"http://localhost:1313/img/blog/how-to-setup-esim.jpg\"",
+        "datePublished": "2026-07-24T00:00:00Z",
+        "dateModified": "2026-07-24T00:00:00Z",
+        "author": {
+            "@type": "Organization",
+            "name": "\"Команда eSIM RU\"",
+            "url": "http:\/\/localhost:1313\/about-us/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Найди самый дешёвый eSIM для поездки — сравнение тарифов | eSIM RU",
+            "url": "http:\/\/localhost:1313\/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/blog\/how-to-setup-esim\/"
+        }
+    }
+    </script>
+</head>
+<body>
+
+
+<style>
+ 
+.hdr{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;height:56px;display:flex;align-items:center}
+.hdr-inner{max-width:1160px;margin:0 auto;width:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;color:var(--fg)}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:24px;align-items:center}
+.nav a{font-size:.84rem;font-weight:500;color:var(--fg3);transition:color .15s;text-decoration:none;position:relative;padding-bottom:4px}
+.nav a:hover{color:var(--fg)}
+.nav a.cur{color:var(--accent)}
+.nav a.cur::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:var(--accent);border-radius:2px}
+.hdr-search-wrap{position:relative;display:flex;align-items:center}
+.hdr-search{width:220px;padding:9px 14px 9px 36px;border:1px solid var(--accent);border-radius:24px;background:var(--bg);color:var(--fg);font-size:.8rem;font-family:inherit;outline:none;transition:all .2s;box-shadow:0 0 0 2px var(--accent-bg)}
+.hdr-search:hover{border-color:var(--accent2)}
+.hdr-search:focus{border-color:var(--accent2);box-shadow:0 0 0 4px var(--accent-bg);background:var(--surface)}
+.hdr-search::placeholder{color:var(--fg4)}
+.hdr-search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:.85rem;pointer-events:none}
+
+ 
+.search-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-height: 320px;
+    overflow-y: auto;
+    z-index: 200;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    display: none;
+    padding: 6px 0;
+}
+.search-dropdown .result-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    cursor: pointer;
+    gap: 12px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.15s ease, color 0.15s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+.search-dropdown .result-item:last-child { border-bottom: none; }
+.search-dropdown .result-item:hover {
+    background: #e6f0ff;
+    color: #000;
+}
+.search-dropdown .result-item img {
+    width: 28px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+.search-dropdown .result-item .info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.search-dropdown .result-item .info .name {
+    font-weight: 500;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-dropdown .result-item .info .desc {
+    font-size: .75rem;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-dropdown .no-result {
+    padding: 12px 14px;
+    color: #999;
+    text-align: center;
+    font-size: .85rem;
+}
+.search-dropdown::-webkit-scrollbar { width: 4px; }
+.search-dropdown::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+
+ 
+.search-dropdown .result-item {
+    display: none;  
+}
+.search-dropdown .result-item.visible {
+    display: flex;  
+}
+
+@media(max-width:768px){.hdr-search-wrap{display:none}}
+@media(max-width:640px){.nav{display:none}}
+</style>
+
+<header class="hdr">
+    <div class="hdr-inner">
+        <a href="/" class="logo">eSIM<span> RU</span></a>
+        <nav class="nav">
+            <a href="/">Главная</a>
+            <a href="/asia-esim/">Азия</a>
+            <a href="/europe-esim/" class="cur">Европа</a>
+            <a href="/africa-esim/">Африка</a>
+            <a href="/americas-esim/">Америка</a>
+            <a href="/sea-esim/">Юго-Восточная Азия​</a>
+            
+			<a href="/devices/">Поддержка eSIM</a>
+            <a href="/about-us/">О нас</a>
+        </nav>
+      
+        <span class="hdr-search-wrap">
+            <input type="text" class="hdr-search" id="searchInput" placeholder="Поиск страны…" autocomplete="off">
+            <span class="hdr-search-icon">&#9906;</span>
+            <div id="searchResults" class="search-dropdown">
+                
+                
+                <a href="/china-esim/" class="result-item" data-name="eSIM Китай" data-code="cn">
+                    <img src="/img/flags/cn.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Китай</span>
+                        <span class="desc">Пекин, Шанхай</span>
+                    </div>
+                </a>
+                
+                <a href="/uzbekistan-esim/" class="result-item" data-name="eSIM Узбекистан" data-code="uz">
+                    <img src="/img/flags/uz.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Узбекистан</span>
+                        <span class="desc">Ташкент, Самарканд</span>
+                    </div>
+                </a>
+                
+                <a href="/armenia-esim/" class="result-item" data-name="eSIM Армения" data-code="am">
+                    <img src="/img/flags/am.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Армения</span>
+                        <span class="desc">Ереван, Гарни</span>
+                    </div>
+                </a>
+                
+                <a href="/israel-esim/" class="result-item" data-name="eSIM Израиль" data-code="il">
+                    <img src="/img/flags/il.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Израиль</span>
+                        <span class="desc">Тель-Авив, Иерусалим</span>
+                    </div>
+                </a>
+                
+                <a href="/russia-esim/" class="result-item" data-name="eSIM Россия" data-code="ru">
+                    <img src="/img/flags/ru.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Россия</span>
+                        <span class="desc">Москва, Санкт-Петербург</span>
+                    </div>
+                </a>
+                
+                <a href="/bulgaria-esim/" class="result-item" data-name="eSIM Болгария" data-code="bg">
+                    <img src="/img/flags/bg.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Болгария</span>
+                        <span class="desc">София, Бургас</span>
+                    </div>
+                </a>
+                
+                <a href="/canada-esim/" class="result-item" data-name="eSIM Канада" data-code="ca">
+                    <img src="/img/flags/ca.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Канада</span>
+                        <span class="desc">Торонто, Ванкувер</span>
+                    </div>
+                </a>
+                
+                <a href="/south-africa-esim/" class="result-item" data-name="eSIM Южно-Африканская Республика" data-code="za">
+                    <img src="/img/flags/za.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Южно-Африканская Республика</span>
+                        <span class="desc">Кейптаун, Йоханнесбург</span>
+                    </div>
+                </a>
+                
+                <a href="/india-esim/" class="result-item" data-name="eSIM Индия" data-code="in">
+                    <img src="/img/flags/in.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Индия</span>
+                        <span class="desc">Дели, Мумбаи</span>
+                    </div>
+                </a>
+                
+                <a href="/indonesia-esim/" class="result-item" data-name="eSIM Индонезия" data-code="id">
+                    <img src="/img/flags/id.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Индонезия</span>
+                        <span class="desc">Джакарта, Бали</span>
+                    </div>
+                </a>
+                
+                <a href="/kazakhstan-esim/" class="result-item" data-name="eSIM Казахстан" data-code="kz">
+                    <img src="/img/flags/kz.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Казахстан</span>
+                        <span class="desc">Нур-Султан, Алматы</span>
+                    </div>
+                </a>
+                
+                <a href="/turkey-esim/" class="result-item" data-name="eSIM Турция" data-code="tr">
+                    <img src="/img/flags/tr.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Турция</span>
+                        <span class="desc">Стамбул, Анкара</span>
+                    </div>
+                </a>
+                
+                <a href="/egypt-esim/" class="result-item" data-name="eSIM Египет" data-code="eg">
+                    <img src="/img/flags/eg.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Египет</span>
+                        <span class="desc">Каир, Шарм-эль-Шейх</span>
+                    </div>
+                </a>
+                
+                <a href="/serbia-esim/" class="result-item" data-name="eSIM Сербия" data-code="rs">
+                    <img src="/img/flags/rs.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Сербия</span>
+                        <span class="desc">Белград, Нови-Сад</span>
+                    </div>
+                </a>
+                
+                <a href="/cyprus-esim/" class="result-item" data-name="eSIM Кипр" data-code="cy">
+                    <img src="/img/flags/cy.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Кипр</span>
+                        <span class="desc">Никосия, Лимасол</span>
+                    </div>
+                </a>
+                
+                <a href="/seychelles-esim/" class="result-item" data-name="eSIM Сейшелы" data-code="sc">
+                    <img src="/img/flags/sc.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Сейшелы</span>
+                        <span class="desc">Маэ, Праслен</span>
+                    </div>
+                </a>
+                
+                <a href="/nepal-esim/" class="result-item" data-name="eSIM Непал" data-code="np">
+                    <img src="/img/flags/np.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Непал</span>
+                        <span class="desc">Катманду, Покхара</span>
+                    </div>
+                </a>
+                
+                <a href="/brazil-esim/" class="result-item" data-name="eSIM Бразилия" data-code="br">
+                    <img src="/img/flags/br.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Бразилия</span>
+                        <span class="desc">Рио-де-Жанейро, Сан-Паулу</span>
+                    </div>
+                </a>
+                
+                <a href="/greece-esim/" class="result-item" data-name="eSIM Греция" data-code="gr">
+                    <img src="/img/flags/gr.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Греция</span>
+                        <span class="desc">Афины, Салоники</span>
+                    </div>
+                </a>
+                
+                <a href="/germany-esim/" class="result-item" data-name="eSIM Германия" data-code="de">
+                    <img src="/img/flags/de.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Германия</span>
+                        <span class="desc">Берлин, Мюнхен</span>
+                    </div>
+                </a>
+                
+                <a href="/italy-esim/" class="result-item" data-name="eSIM Италия" data-code="it">
+                    <img src="/img/flags/it.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Италия</span>
+                        <span class="desc">Рим, Милан</span>
+                    </div>
+                </a>
+                
+                <a href="/morocco-esim/" class="result-item" data-name="eSIM Марокко" data-code="ma">
+                    <img src="/img/flags/ma.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Марокко</span>
+                        <span class="desc">Касабланка, Марракеш</span>
+                    </div>
+                </a>
+                
+                <a href="/sri-lanka-esim/" class="result-item" data-name="eSIM Шри-Ланка" data-code="lk">
+                    <img src="/img/flags/lk.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Шри-Ланка</span>
+                        <span class="desc">Коломбо, Канди</span>
+                    </div>
+                </a>
+                
+                <a href="/singapore-esim/" class="result-item" data-name="eSIM Сингапур" data-code="sg">
+                    <img src="/img/flags/sg.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Сингапур</span>
+                        <span class="desc">Сингапур, Сентоса</span>
+                    </div>
+                </a>
+                
+                <a href="/japan-esim/" class="result-item" data-name="eSIM Япония" data-code="jp">
+                    <img src="/img/flags/jp.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Япония</span>
+                        <span class="desc">Токио, Осака</span>
+                    </div>
+                </a>
+                
+                <a href="/georgia-esim/" class="result-item" data-name="eSIM Грузия" data-code="ge">
+                    <img src="/img/flags/ge.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Грузия</span>
+                        <span class="desc">Тбилиси, Батуми</span>
+                    </div>
+                </a>
+                
+                <a href="/europe-esim/" class="result-item" data-name="eSIM Европа" data-code="eu">
+                    <img src="/img/flags/eu.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Европа</span>
+                        <span class="desc">Европа (роуминг)</span>
+                    </div>
+                </a>
+                
+                <a href="/mauritius-esim/" class="result-item" data-name="eSIM Маврикий" data-code="mu">
+                    <img src="/img/flags/mu.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Маврикий</span>
+                        <span class="desc">Порт-Луи, Гран-Бэ</span>
+                    </div>
+                </a>
+                
+                <a href="/france-esim/" class="result-item" data-name="eSIM Франция" data-code="fr">
+                    <img src="/img/flags/fr.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Франция</span>
+                        <span class="desc">Париж, Ницца</span>
+                    </div>
+                </a>
+                
+                <a href="/poland-esim/" class="result-item" data-name="eSIM Польша" data-code="pl">
+                    <img src="/img/flags/pl.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Польша</span>
+                        <span class="desc">Варшава, Краков</span>
+                    </div>
+                </a>
+                
+                <a href="/thailand-esim/" class="result-item" data-name="eSIM Таиланд" data-code="th">
+                    <img src="/img/flags/th.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Таиланд</span>
+                        <span class="desc">Бангкок, Пхукет</span>
+                    </div>
+                </a>
+                
+                <a href="/belarus-esim/" class="result-item" data-name="eSIM Беларусь" data-code="by">
+                    <img src="/img/flags/by.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Беларусь</span>
+                        <span class="desc">Минск, Брест</span>
+                    </div>
+                </a>
+                
+                <a href="/tunisia-esim/" class="result-item" data-name="eSIM Тунис" data-code="tn">
+                    <img src="/img/flags/tn.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Тунис</span>
+                        <span class="desc">Тунис, Сус</span>
+                    </div>
+                </a>
+                
+                <a href="/namibia-esim/" class="result-item" data-name="eSIM Намибия" data-code="na">
+                    <img src="/img/flags/na.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Намибия</span>
+                        <span class="desc">Виндхук, Свакопмунд</span>
+                    </div>
+                </a>
+                
+                <a href="/finland-esim/" class="result-item" data-name="eSIM Финляндия" data-code="fi">
+                    <img src="/img/flags/fi.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Финляндия</span>
+                        <span class="desc">Хельсинки, Турку</span>
+                    </div>
+                </a>
+                
+                <a href="/uk-esim/" class="result-item" data-name="eSIM Великобритания" data-code="gb">
+                    <img src="/img/flags/gb.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Великобритания</span>
+                        <span class="desc">Лондон, Манчестер</span>
+                    </div>
+                </a>
+                
+                <a href="/philippines-esim/" class="result-item" data-name="eSIM Филиппины" data-code="ph">
+                    <img src="/img/flags/ph.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Филиппины</span>
+                        <span class="desc">Манила, Себу</span>
+                    </div>
+                </a>
+                
+                <a href="/mongolia-esim/" class="result-item" data-name="eSIM Монголия" data-code="mn">
+                    <img src="/img/flags/mn.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Монголия</span>
+                        <span class="desc">Улан-Батор, Пустыня Гоби</span>
+                    </div>
+                </a>
+                
+                <a href="/vietnam-esim/" class="result-item" data-name="eSIM Вьетнам" data-code="vn">
+                    <img src="/img/flags/vn.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Вьетнам</span>
+                        <span class="desc">Ханой, Хошимин</span>
+                    </div>
+                </a>
+                
+                <a href="/azerbaijan-esim/" class="result-item" data-name="eSIM Азербайджан" data-code="az">
+                    <img src="/img/flags/az.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Азербайджан</span>
+                        <span class="desc">Баку, Гянджа</span>
+                    </div>
+                </a>
+                
+                <a href="/oman-esim/" class="result-item" data-name="eSIM Оман" data-code="om">
+                    <img src="/img/flags/om.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Оман</span>
+                        <span class="desc">Маскат, Салала</span>
+                    </div>
+                </a>
+                
+                <a href="/argentina-esim/" class="result-item" data-name="eSIM Аргентина" data-code="ar">
+                    <img src="/img/flags/ar.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Аргентина</span>
+                        <span class="desc">Буэнос-Айрес, Кордова</span>
+                    </div>
+                </a>
+                
+                <a href="/uae-esim/" class="result-item" data-name="eSIM ОАЭ" data-code="ae">
+                    <img src="/img/flags/ae.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM ОАЭ</span>
+                        <span class="desc">Дубай, Абу-Даби</span>
+                    </div>
+                </a>
+                
+                <a href="/south-korea-esim/" class="result-item" data-name="eSIM Южная Корея" data-code="kr">
+                    <img src="/img/flags/kr.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Южная Корея</span>
+                        <span class="desc">Сеул, Пусан</span>
+                    </div>
+                </a>
+                
+                <a href="/maldives-esim/" class="result-item" data-name="eSIM Мальдивы" data-code="mv">
+                    <img src="/img/flags/mv.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Мальдивы</span>
+                        <span class="desc">Мале, Атолл Ари</span>
+                    </div>
+                </a>
+                
+                <a href="/malaysia-esim/" class="result-item" data-name="eSIM Малайзия" data-code="my">
+                    <img src="/img/flags/my.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Малайзия</span>
+                        <span class="desc">Куала-Лумпур, Пенанг</span>
+                    </div>
+                </a>
+                
+                <a href="/montenegro-esim/" class="result-item" data-name="eSIM Черногория" data-code="me">
+                    <img src="/img/flags/me.svg" alt="" width="28" height="18" loading="lazy" onerror="this.style.display='none'">
+                    <div class="info">
+                        <span class="name">eSIM Черногория</span>
+                        <span class="desc">Подгорица, Будва</span>
+                    </div>
+                </a>
+                
+            </div>
+        </span>
+    </div>
+</header>
+
+<script>
+    (function() {
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('searchResults');
+        if (!searchInput || !resultsContainer) return;
+
+        
+        const allItems = resultsContainer.querySelectorAll('.result-item');
+
+        
+        allItems.forEach(el => el.classList.remove('visible'));
+
+        function filterItems(query) {
+            const q = query.trim().toLowerCase();
+            let matchCount = 0;
+
+            allItems.forEach(el => {
+                const name = el.getAttribute('data-name').toLowerCase();
+                const code = el.getAttribute('data-code').toLowerCase();
+                const match = name.includes(q) || code.includes(q);
+                if (match) {
+                    el.classList.add('visible');
+                    matchCount++;
+                } else {
+                    el.classList.remove('visible');
+                }
+            });
+
+            
+            if (q.length === 0 || matchCount === 0) {
+                resultsContainer.style.display = 'none';
+                if (matchCount === 0 && q.length > 0) {
+                    
+                    let noResult = resultsContainer.querySelector('.no-result');
+                    if (!noResult) {
+                        noResult = document.createElement('div');
+                        noResult.className = 'no-result';
+                        noResult.textContent = 'Ничего не найдено';
+                        resultsContainer.appendChild(noResult);
+                    }
+                    noResult.style.display = 'block';
+                } else {
+                    const noResult = resultsContainer.querySelector('.no-result');
+                    if (noResult) noResult.style.display = 'none';
+                }
+            } else {
+                resultsContainer.style.display = 'block';
+                const noResult = resultsContainer.querySelector('.no-result');
+                if (noResult) noResult.style.display = 'none';
+            }
+        }
+
+        searchInput.addEventListener('input', function() {
+            filterItems(this.value);
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.hdr-search-wrap')) {
+                resultsContainer.style.display = 'none';
+            }
+        });
+
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                this.value = '';
+                resultsContainer.style.display = 'none';
+                this.blur();
+            }
+        });
+
+        searchInput.addEventListener('blur', function() {
+            setTimeout(() => {
+                resultsContainer.style.display = 'none';
+            }, 200);
+        });
+
+        
+        filterItems('');
+    })();
+</script>
+
+<div class="container">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="http://localhost:1313/">Главная</a> &rsaquo;
+        <a href="/blog/">Блог</a> &rsaquo;
+        <span>Как подключить eSIM: инструкция для iPhone и Android</span>
+    </nav>
+</div>
+
+<article>
+    <div class="container">
+        <header class="article-hero">
+            <div class="meta">
+                <span class="tag">гайд</span>
+                <span class="dot"></span>
+                <time datetime="2026-07-24">24 July 2026</time>
+                <span class="dot"></span>
+                <span>21 мин чтения</span>
+            </div>
+            <h1>Как подключить eSIM: инструкция для iPhone и Android</h1>
+            <p class="subtitle">Как настроить eSIM на iPhone, Samsung, Xiaomi, Google Pixel и Huawei за 2 минуты. Инструкция по активации и решение 10 типовых проблем.</p>
+            <div class="author-row"> 
+                <span><strong>Команда eSIM RU</strong> &middot; Обновлено 24 July 2026</span>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <figure class="featured-image">
+            <img src="/img/blog/how-to-setup-esim.jpg" alt="Как подключить eSIM: инструкция для iPhone и Android" width="1120" height="480" loading="eager">
+            <figcaption class="caption">Сравнение тарифов eSIM от разных провайдеров — найдите лучшую цену за гигабайт за 10 секунд.</figcaption>
+        </figure>
+    </div>
+
+    <div class="container">
+        <div class="article-layout">
+            <div>
+                
+                <nav class="toc" aria-label="Содержание статьи">
+                    <div class="toc-title">Содержание</div>
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#draft-true">&quot;
+tag: &ldquo;Инструкция&rdquo;
+draft: true</a></li>
+    <li><a href="#что-нужно-перед-настройкой-esim-три-обязательных-условия">Что нужно перед настройкой eSIM: три обязательных условия</a>
+      <ul>
+        <li><a href="#телефон-с-поддержкой-esim">Телефон с поддержкой eSIM</a></li>
+        <li><a href="#купленный-тариф-esim">Купленный тариф eSIM</a></li>
+        <li><a href="#стабильное-подключение-к-wi-fi">Стабильное подключение к Wi-Fi</a></li>
+      </ul>
+    </li>
+    <li><a href="#как-настроить-esim-на-iphone-три-способа">Как настроить eSIM на iPhone: три способа</a>
+      <ul>
+        <li><a href="#способ-1-сканирование-qr-кода-стандартный-метод-2-минуты">Способ 1: Сканирование QR-кода (стандартный метод, 2 минуты)</a></li>
+        <li><a href="#способ-2-ручной-ввод-данных">Способ 2: Ручной ввод данных</a></li>
+        <li><a href="#способ-3-установка-через-приложение-провайдера-самый-простой">Способ 3: Установка через приложение провайдера (самый простой)</a></li>
+      </ul>
+    </li>
+    <li><a href="#как-настроить-esim-на-samsung-galaxy">Как настроить eSIM на Samsung Galaxy</a></li>
+    <li><a href="#как-настроить-esim-на-google-pixel">Как настроить eSIM на Google Pixel</a></li>
+    <li><a href="#как-настроить-esim-на-xiaomi-redmi-и-poco">Как настроить eSIM на Xiaomi, Redmi и POCO</a>
+      <ul>
+        <li><a href="#hyperos-xiaomi-13-14-15-redmi-note-13-pro-и-новее">HyperOS (Xiaomi 13, 14, 15, Redmi Note 13 Pro+ и новее)</a></li>
+        <li><a href="#miui-xiaomi-12-redmi-note-12-и-старше">MIUI (Xiaomi 12, Redmi Note 12 и старше)</a></li>
+      </ul>
+    </li>
+    <li><a href="#как-настроить-esim-на-huawei">Как настроить eSIM на Huawei</a></li>
+    <li><a href="#после-настройки-четыре-обязательных-действия">После настройки: четыре обязательных действия</a></li>
+    <li><a href="#влияние-esim-на-батарею-и-производительность-телефона">Влияние eSIM на батарею и производительность телефона</a></li>
+    <li><a href="#esim-не-работает-решение-10-частых-проблем">eSIM не работает: решение 10 частых проблем</a>
+      <ul>
+        <li><a href="#1-ошибка-не-удалось-активировать-esim">1. Ошибка «Не удалось активировать eSIM»</a></li>
+        <li><a href="#2-нет-интернета-после-успешной-активации">2. Нет интернета после успешной активации</a></li>
+        <li><a href="#3-esim-не-отображается-в-настройках-после-активации">3. eSIM не отображается в настройках после активации</a></li>
+        <li><a href="#4-не-добавляется-вторая-esim-лимит-профилей">4. Не добавляется вторая eSIM (лимит профилей)</a></li>
+        <li><a href="#5-qr-код-не-сканируется">5. QR-код не сканируется</a></li>
+        <li><a href="#6-сеть-недоступна-ручной-выбор-оператора">6. Сеть недоступна: ручной выбор оператора</a></li>
+        <li><a href="#7-esim-пропала-после-обновления-ios-или-android">7. eSIM пропала после обновления iOS или Android</a></li>
+        <li><a href="#8-не-приходят-sms-на-esim">8. Не приходят SMS на eSIM</a></li>
+        <li><a href="#9-медленный-интернет">9. Медленный интернет</a></li>
+        <li><a href="#10-не-активируется-за-границей">10. Не активируется за границей</a></li>
+      </ul>
+    </li>
+    <li><a href="#сравнение-способов-установки-esim-qr-код-ручной-ввод-приложение">Сравнение способов установки eSIM: QR-код, ручной ввод, приложение</a></li>
+    <li><a href="#региональные-особенности-прошивок-когда-esim-заблокирован-производителем">Региональные особенности прошивок: когда eSIM заблокирован производителем</a>
+      <ul>
+        <li><a href="#samsung-с-российской-прошивкой">Samsung с российской прошивкой</a></li>
+        <li><a href="#xiaomi-с-китайской-прошивкой">Xiaomi с китайской прошивкой</a></li>
+        <li><a href="#iphone-глобальная-совместимость">iPhone: глобальная совместимость</a></li>
+      </ul>
+    </li>
+    <li><a href="#сколько-гигабайт-нужно-расчёт-трафика-по-типам-использования">Сколько гигабайт нужно: расчёт трафика по типам использования</a>
+      <ul>
+        <li><a href="#расход-трафика-по-типам-активности">Расход трафика по типам активности</a></li>
+        <li><a href="#профили-потребления-сколько-гб-брать">Профили потребления: сколько ГБ брать</a></li>
+        <li><a href="#как-сэкономить-трафик--практические-рекомендации">Как сэкономить трафик — практические рекомендации</a></li>
+      </ul>
+    </li>
+    <li><a href="#настройка-esim-для-двух-и-более-стран-переключение-между-операторами">Настройка eSIM для двух и более стран: переключение между операторами</a>
+      <ul>
+        <li><a href="#ручной-выбор-оператора-при-медленном-интернете">Ручной выбор оператора при медленном интернете</a></li>
+        <li><a href="#настройка-нескольких-esim-для-разных-стран">Настройка нескольких eSIM для разных стран</a></li>
+      </ul>
+    </li>
+    <li><a href="#сравнение-процесса-настройки-esim-у-популярных-провайдеров">Сравнение процесса настройки eSIM у популярных провайдеров</a>
+      <ul>
+        <li><a href="#особенности-настройки-на-старых-версиях-операционных-систем">Особенности настройки на старых версиях операционных систем</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </nav>
+                
+
+                <div class="article-body">
+                    <h2 id="draft-true">&quot;
+tag: &ldquo;Инструкция&rdquo;
+draft: true</h2>
+<p>Подключить и настроить eSIM на любом современном телефоне можно за 2-3 минуты тремя способами: отсканировать QR-код из письма провайдера (стандартный метод), ввести SM-DP+ адрес и esim код активации вручную (если QR-код не сканируется) или установить eSIM через приложение провайдера в один клик (самый простой способ для новичков). Активация esim не требует визита в салон связи — весь процесс от покупки до выхода в интернет занимает несколько минут. Тарифы eSIM стоят от $0.54/ГБ у таких провайдеров, как Airalo, Holafly, Yesim и Roami. Для первого знакомства с технологией многие провайдеры предоставляют бесплатный пробный eSIM, а промокод web20 даёт скидку 20% на основной тариф. Установка работает на iPhone (XR и новее), Samsung Galaxy (S20+), Google Pixel (4+), Xiaomi и Huawei с поддержкой eSIM. В этой инструкции разбираем пошагово, как подключить eSIM на каждой платформе, как настроить eSIM после активации и что делать при типовых ошибках.</p>
+<h2 id="что-нужно-перед-настройкой-esim-три-обязательных-условия">Что нужно перед настройкой eSIM: три обязательных условия</h2>
+<p>Перед тем как подключить eSIM, убедитесь, что у вас есть три вещи. Отсутствие любого из этих условий сделает настройку невозможной.</p>
+<h3 id="телефон-с-поддержкой-esim">Телефон с поддержкой eSIM</h3>
+<p>Проверить поддержку eSIM можно за 30 секунд. Откройте Настройки → Сотовая связь. Если в меню есть пункт «Добавить eSIM» или «Добавить сотовый тариф» — телефон поддерживает eSIM. Альтернативный способ: наберите <code>*#06#</code> на клавиатуре телефона. Если в появившемся списке идентификаторов присутствует EID (32 символа) — eSIM поддерживается на аппаратном уровне.</p>
+<p>Полный список моделей iPhone, Samsung, Google Pixel, Xiaomi и Huawei с поддержкой eSIM доступен в статье: <a href="/blog/does-my-phone-support-esim/">Поддерживает ли телефон eSIM</a>.</p>
+<p>Важный нюанс для Samsung с прошивкой для российского рынка: на некоторых моделях eSIM может быть заблокирована производителем. Если при попытке добавления eSIM появляется ошибка, а EID присутствует — ваша прошивка программно ограничивает eSIM. В этом случае может потребоваться смена региона прошивки или использование альтернативного устройства. Детальный разбор совместимости: <a href="/blog/samsung-esim-models/">Samsung Galaxy eSIM: совместимость</a>.</p>
+<h3 id="купленный-тариф-esim">Купленный тариф eSIM</h3>
+<p>Выберите провайдера (Roami, Airalo, Holafly, Yesim), страну назначения и тариф по объёму данных и сроку действия. После оплаты вы получите письмо на email с QR-кодом и инструкцией по активации. Пошаговое руководство по выбору и покупке: <a href="/blog/how-to-buy-esim/">Как купить eSIM онлайн</a>.</p>
+<p>Если вы впервые пользуетесь eSIM и не уверены в совместимости устройства, многие провайдеры предлагают бесплатный пробный eSIM через страницу /free-esim/. Это позволяет проверить работоспособность технологии на вашем телефоне до покупки платного тарифа. После успешной проверки примените промокод web20 для получения скидки 20% на основной тариф.</p>
+<h3 id="стабильное-подключение-к-wi-fi">Стабильное подключение к Wi-Fi</h3>
+<p>Для загрузки профиля eSIM требуется стабильное интернет-соединение. Профиль скачивается с серверов провайдера и не может быть передан по Bluetooth или через кабель. Активируйте eSIM до вылета — дома или в отеле на надёжном Wi-Fi. В аэропорту публичный Wi-Fi часто нестабилен, а прерывание загрузки профиля требует начинать процесс заново.</p>
+<p>Не пытайтесь выполнить активацию esim в самолёте (нет соединения с серверами провайдера) или в роуминге без Wi-Fi (мобильный интернет основной SIM-карты не используется для загрузки eSIM-профиля). Если загрузка профиля прервалась, дождитесь стабильного Wi-Fi и повторите процедуру.</p>
+<p>Согласно <a href="https://www.gsma.com/esim/">GSMA</a>, загрузка профиля eSIM через Wi-Fi является стандартным требованием, определённым спецификацией SGP.22 для потребительских устройств.</p>
+<h2 id="как-настроить-esim-на-iphone-три-способа">Как настроить eSIM на iPhone: три способа</h2>
+<p>iPhone поддерживает eSIM начиная с модели XR/XS (2018). Настройка выполняется через приложение «Настройки» в разделе «Сотовая связь». Ниже приведены три способа — от стандартного сканирования QR-кода до автоматической установки через приложение провайдера.</p>
+<h3 id="способ-1-сканирование-qr-кода-стандартный-метод-2-минуты">Способ 1: Сканирование QR-кода (стандартный метод, 2 минуты)</h3>
+<p>Это основной метод активации eSIM, работающий на всех моделях iPhone с eSIM. QR-код приходит на email после покупки тарифа.</p>
+<ol>
+<li>Откройте письмо от провайдера на втором устройстве — компьютере, планшете или втором телефоне. QR-код должен отображаться на отдельном экране, так как вы не можете сканировать код с того же iPhone, на который устанавливаете eSIM.</li>
+<li>На iPhone откройте Настройки → Сотовая связь → Добавить eSIM.</li>
+<li>Нажмите «Сканировать QR-код».</li>
+<li>Наведите камеру на QR-код с расстояния 15-20 см. Держите телефон ровно, не наклоняйте.</li>
+<li>Когда код распознан, нажмите «Продолжить» в появившемся окне.</li>
+<li>Дождитесь загрузки профиля — индикатор прогресса отображается внизу экрана. Загрузка занимает от 30 секунд до 2 минут в зависимости от скорости Wi-Fi.</li>
+<li>После загрузки присвойте eSIM метку для удобства: выберите из списка («Путешествия», «Работа», «Основной») или введите своё название.</li>
+<li>Выберите, какую SIM использовать для сотовых данных: отметьте новую eSIM.</li>
+<li>Включите «Роуминг данных» для eSIM. Это техническое требование туристических eSIM — реальный платный роуминг не активируется.</li>
+<li>Проверьте интернет: откройте Safari и загрузите любой сайт. Если страница открылась — eSIM настроена и работает.</li>
+</ol>
+<h3 id="способ-2-ручной-ввод-данных">Способ 2: Ручной ввод данных</h3>
+<p>Используйте этот метод, если QR-код не сканируется: нет второго экрана для отображения кода, камера не фокусируется на коде, или письмо содержит только текстовые данные активации. В таком случае esim код активации (SM-DP+ адрес и пароль) вводится вручную — это надёжный резервный способ.</p>
+<ol>
+<li>Настройки → Сотовая связь → Добавить eSIM.</li>
+<li>Внизу экрана нажмите «Ввести данные вручную» (маленькая ссылка под областью сканирования).</li>
+<li>В поле SM-DP+ Address введите длинную строку, начинающуюся с https:// — она указана в письме от провайдера.</li>
+<li>В поле Activation Code введите код активации (также из письма).</li>
+<li>При необходимости введите Confirmation Code — если требуется провайдером.</li>
+<li>Нажмите «Далее» и дождитесь загрузки профиля.</li>
+<li>После загрузки выполните шаги 7-10 из Способа 1.</li>
+</ol>
+<p>Ручной ввод надёжнее сканирования в условиях плохого освещения или если QR-код повреждён (например, при распечатке на чёрно-белом принтере с низким разрешением).</p>
+<h3 id="способ-3-установка-через-приложение-провайдера-самый-простой">Способ 3: Установка через приложение провайдера (самый простой)</h3>
+<p>Большинство eSIM-провайдеров имеют iOS-приложения, которые автоматизируют установку, исключая ручной ввод и сканирование QR-кода. Это рекомендуемый способ для тех, кто впервые пользуется eSIM.</p>
+<ol>
+<li>Установите приложение провайдера из App Store. Доступные приложения: Airalo, Holafly, Yesim, Nomad, Ubigi.</li>
+<li>Зарегистрируйтесь в приложении и купите тариф. Оплата принимается картами UnionPay, через QIWI и ЮMoney — большинство крупных сервисов поддерживают все эти способы.</li>
+<li>После покупки в приложении нажмите «Установить eSIM» или «Активировать».</li>
+<li>Приложение автоматически направит вас в Настройки → Сотовая связь и предложит добавить профиль.</li>
+<li>Подтвердите установку — eSIM активируется без сканирования QR-кода.</li>
+</ol>
+<p>Этот метод полностью исключает ошибки ручного ввода и проблемы со сканированием кода. Современные приложения провайдеров автоматически определяют модель iPhone и подбирают оптимальные параметры активации, что делает процесс установки практически незаметным для пользователя.</p>
+<h2 id="как-настроить-esim-на-samsung-galaxy">Как настроить eSIM на Samsung Galaxy</h2>
+<p>Настройка eSIM на Samsung Galaxy (серии S20 и новее, Z Flip, Z Fold) отличается расположением пунктов меню, но логика остаётся той же. <a href="https://www.samsung.com/us/support/mobile-devices/what-is-esim/">Samsung eSIM guide</a> подтверждает поддержку eSIM на указанных моделях.</p>
+<ol>
+<li>Откройте Настройки → Подключения → Диспетчер SIM.</li>
+<li>Нажмите «Добавить eSIM» или «Добавить мобильный тариф».</li>
+<li>Выберите способ активации: «Сканировать QR-код» или «Ввести код активации вручную».</li>
+<li>Если сканируете — наведите камеру на QR-код на втором устройстве. Если вводите вручную — укажите SM-DP+ адрес и код активации из письма провайдера.</li>
+<li>Дождитесь загрузки профиля (индикатор прогресса внизу экрана).</li>
+<li>Присвойте eSIM имя для удобного различения с основной SIM.</li>
+<li>Выберите eSIM в качестве SIM-карты для мобильных данных.</li>
+<li>Включите «Роуминг данных» для eSIM — обязательно.</li>
+<li>Проверьте интернет: откройте браузер и загрузите любой сайт.</li>
+</ol>
+<p>На Samsung с прошивкой для России: если при попытке добавления eSIM появляется ошибка «Не удалось добавить eSIM» или пункт «Добавить eSIM» отсутствует в меню — ваша прошивка программно блокирует eSIM. Проверьте наличие EID через <code>*#06#</code>. Если EID присутствует, но eSIM не добавляется — обратитесь к статье <a href="/blog/samsung-esim-models/">Samsung Galaxy eSIM: совместимость</a> для детального разбора.</p>
+<h2 id="как-настроить-esim-на-google-pixel">Как настроить eSIM на Google Pixel</h2>
+<p>Настройка на Google Pixel (серии 4 и новее) проще, чем на Samsung, благодаря чистому Android. <a href="https://support.google.com/pixelphone/answer/7083788">Google Pixel support</a> содержит официальную инструкцию.</p>
+<ol>
+<li>Настройки → Сеть и интернет → SIM-карты.</li>
+<li>Нажмите «Добавить eSIM» или значок «+» рядом с «SIM-карты».</li>
+<li>Выберите «Сканировать QR-код» — наведите камеру на код.</li>
+<li>После распознавания нажмите «Готово».</li>
+<li>Выберите eSIM для передачи данных.</li>
+<li>Включите «Роуминг данных».</li>
+</ol>
+<p>Google Pixel 7 и новее поддерживают Dual eSIM — две активные eSIM одновременно. Это удобно для путешественников, комбинирующих туристический eSIM с домашней eSIM.</p>
+<h2 id="как-настроить-esim-на-xiaomi-redmi-и-poco">Как настроить eSIM на Xiaomi, Redmi и POCO</h2>
+<p>Настройка на Xiaomi зависит от версии оболочки. На MIUI (старые модели) и HyperOS (новые модели) расположение меню различается.</p>
+<h3 id="hyperos-xiaomi-13-14-15-redmi-note-13-pro-и-новее">HyperOS (Xiaomi 13, 14, 15, Redmi Note 13 Pro+ и новее)</h3>
+<ol>
+<li>Настройки → SIM-карты и мобильные сети.</li>
+<li>Нажмите «Добавить eSIM» или значок «+».</li>
+<li>Отсканируйте QR-код или введите данные вручную.</li>
+<li>Дождитесь загрузки профиля.</li>
+<li>Выберите eSIM для мобильного интернета.</li>
+<li>Включите «Роуминг данных».</li>
+</ol>
+<h3 id="miui-xiaomi-12-redmi-note-12-и-старше">MIUI (Xiaomi 12, Redmi Note 12 и старше)</h3>
+<p>Расположение меню может отличаться в зависимости от версии MIUI. Общий путь: Настройки → Подключения → SIM-карты и мобильные сети → Добавить eSIM. Если пункт отсутствует, проверьте поддержку eSIM на вашей модели в статье <a href="/blog/xiaomi-redmi-esim/">Xiaomi и Redmi eSIM: совместимость</a>.</p>
+<p>Важное ограничение: не все модели Xiaomi и Redmi с поддержкой eSIM на глобальной прошивке сохраняют эту функцию на китайской прошивке. Перед покупкой eSIM проверьте наличие пункта «Добавить eSIM» в настройках вашего конкретного устройства.</p>
+<h2 id="как-настроить-esim-на-huawei">Как настроить eSIM на Huawei</h2>
+<p>Устройства Huawei (P40, P50, P60, Pura 70, Pura 80, Mate 40 и новее) поддерживают eSIM, несмотря на отсутствие сервисов Google:</p>
+<ol>
+<li>Настройки → Мобильная сеть → Управление SIM-картами.</li>
+<li>Нажмите «Добавить eSIM».</li>
+<li>Отсканируйте QR-код или введите данные вручную.</li>
+<li>Дождитесь активации.</li>
+<li>Выберите eSIM для передачи данных.</li>
+</ol>
+<p>На Huawei без сервисов Google установить приложение провайдера можно через AppGallery. Подробнее — в статье <a href="/blog/esim-without-google-play/">Установка eSIM без Google Play</a>.</p>
+<h2 id="после-настройки-четыре-обязательных-действия">После настройки: четыре обязательных действия</h2>
+<p>Активация esim — это только полдела. Для стабильной работы интернета в поездке выполните следующие проверки и настройки сразу после завершения активации:</p>
+<ol>
+<li><strong>Включите «Роуминг данных» для eSIM.</strong> Это самая частая причина отсутствия интернета после активации. Без этой настройки eSIM не сможет подключиться к сети местного оператора. Несмотря на название, реальный платный роуминг не активируется — счета не выставляются.</li>
+<li><strong>Проверьте интернет-соединение.</strong> Откройте браузер и загрузите любой сайт (например, google.com). Если страница открылась — eSIM работает.</li>
+<li><strong>Проверьте скорость интернета.</strong> Откройте speedtest.net и запустите тест. Нормальная скорость для 4G — 10-50 Мбит/с, для 5G — 50-300+ Мбит/с. Если скорость значительно ниже заявленной, см. раздел решения проблем ниже.</li>
+<li><strong>Отключите автопереключение сотовых данных.</strong> Настройки → Сотовая связь → Сотовые данные → отключите «Переключение сотовых данных». Эта настройка предотвращает случайное использование дорогого роуминга через основную SIM-карту, если eSIM потеряет сигнал.</li>
+</ol>
+<h2 id="влияние-esim-на-батарею-и-производительность-телефона">Влияние eSIM на батарею и производительность телефона</h2>
+<p>Использование двух SIM-карт одновременно (физическая SIM + eSIM) незначительно увеличивает расход батареи — в среднем на 5-10% за день активного использования. Это связано с тем, что модем телефона поддерживает связь с двумя разными вышками сотовой связи одновременно. Влияние на время автономной работы минимально и сопоставимо с работой телефона в режиме Dual SIM с двумя физическими картами.</p>
+<p>Оптимизация расхода батареи при использовании eSIM:</p>
+<ol>
+<li>Назначьте eSIM для передачи данных, а физическую SIM — только для звонков и SMS. В настройках отключите «Переключение сотовых данных» — это предотвращает постоянный поиск лучшей сети между двумя SIM-картами.</li>
+<li>Если в какой-то момент eSIM не нужна (вы на Wi-Fi, интернет от eSIM не используется), временно отключите эту SIM: Настройки → Сотовая связь → выберите eSIM → отключите «Включить эту SIM». Повторное включение занимает 5-10 секунд.</li>
+<li>В зонах со слабым сигналом обе SIM-карты увеличивают мощность передатчика для поддержания связи, что ускоряет разряд батареи. Если сигнал eSIM слабый (1-2 деления), а Wi-Fi доступен — отключите eSIM до выхода из зоны слабого покрытия.</li>
+</ol>
+<p>На производительность телефона eSIM не влияет — все современные смартфоны (iPhone XR и новее, Samsung S20+, Google Pixel 4+) аппаратно оптимизированы для работы с eSIM. Задержки или замедления интернета, связанные с eSIM, не отличаются от физической SIM — скорость определяется исключительно сетью оператора и загруженностью вышек, а не типом SIM-карты.</p>
+<h2 id="esim-не-работает-решение-10-частых-проблем">eSIM не работает: решение 10 частых проблем</h2>
+<p>Даже при правильной настройке могут возникнуть проблемы с активацией или работой eSIM. Ниже приведены 10 наиболее распространённых проблем и способы их решения.</p>
+<h3 id="1-ошибка-не-удалось-активировать-esim">1. Ошибка «Не удалось активировать eSIM»</h3>
+<p>Самая частая проблема при первичной настройке. Возможные причины и решения:</p>
+<ul>
+<li><strong>Неверный EID.</strong> Сравните EID в Настройки → Основные → Об устройстве (iPhone) или Настройки → О телефоне (Android) с тем EID, на который выпущен профиль. Если они не совпадают, провайдер выпустил профиль для другого устройства — запросите новый QR-код с правильным EID.</li>
+<li><strong>Просроченный QR-код.</strong> Некоторые провайдеры ограничивают срок действия QR-кода 24-48 часами с момента выпуска. Если код просрочен, запросите новый в поддержке провайдера — это бесплатно и обычно занимает несколько минут.</li>
+<li><strong>Нестабильный Wi-Fi.</strong> Слабый сигнал Wi-Fi прерывает загрузку профиля. Переключитесь на другую сеть или подойдите ближе к роутеру.</li>
+</ul>
+<h3 id="2-нет-интернета-после-успешной-активации">2. Нет интернета после успешной активации</h3>
+<p>eSIM активировалась (отображается в настройках), но интернет не работает. Решения:</p>
+<ul>
+<li>Убедитесь, что eSIM выбрана для сотовых данных: Настройки → Сотовая связь → Сотовые данные → выберите eSIM (не основную SIM).</li>
+<li>Включите «Роуминг данных» для eSIM — без этого передача данных блокируется.</li>
+<li>Проверьте APN: Настройки → Сотовая связь → eSIM → Сотовая сеть. Правильный APN должен быть указан в письме от провайдера. Неправильный или отсутствующий APN — вторая по частоте причина отсутствия интернета после роуминга данных.</li>
+<li>Перезагрузите телефон — это решает проблему в 30% случаев.</li>
+<li>Подождите 5-10 минут после активации: некоторые eSIM требуют время для регистрации в сети местного оператора.</li>
+</ul>
+<h3 id="3-esim-не-отображается-в-настройках-после-активации">3. eSIM не отображается в настройках после активации</h3>
+<p>Три возможных причины:</p>
+<ul>
+<li>Профиль не был загружен до конца — во время активации должен появиться индикатор прогресса. Если вы не видели индикатор, повторите процедуру.</li>
+<li>eSIM пропала после обновления операционной системы — крупные обновления iOS/Android иногда сбрасывают профили eSIM. Переустановите eSIM через приложение провайдера. Большинство сервисов позволяют бесплатно переустановить eSIM в течение срока действия тарифа.</li>
+<li>Профиль был случайно удалён — проверьте Настройки → Сотовая связь, если eSIM отсутствует, запросите повторную установку через приложение или новый QR-код.</li>
+</ul>
+<h3 id="4-не-добавляется-вторая-esim-лимит-профилей">4. Не добавляется вторая eSIM (лимит профилей)</h3>
+<p>Каждый телефон имеет лимит на количество установленных профилей eSIM:</p>
+<ul>
+<li>iPhone XR/11/12/13: до 5 установленных eSIM, но только 1 активна одновременно</li>
+<li>iPhone 14 и новее (для США): до 8 eSIM, 2 активны одновременно</li>
+<li>iPhone 15+ (за пределами США): до 8 eSIM, 2 активны</li>
+<li>Samsung Galaxy: обычно до 5 eSIM, 1 активна</li>
+<li>Google Pixel 7+: до 5 eSIM, 2 активны (Dual eSIM)</li>
+</ul>
+<p>Если вы достигли лимита, удалите старый неиспользуемый профиль: Настройки → Сотовая связь → выберите неиспользуемую eSIM → Удалить eSIM. После удаления освободится слот для нового профиля.</p>
+<h3 id="5-qr-код-не-сканируется">5. QR-код не сканируется</h3>
+<p>Причины и решения:</p>
+<ul>
+<li>Код отображается на экране с низкой яркостью — увеличьте яркость до максимума. Если это не помогает, введите esim код вручную через пункт «Ввести данные вручную».</li>
+<li>Камера телефона загрязнена — протрите объектив мягкой тканью.</li>
+<li>Камера не фокусируется на коде — держите телефон на расстоянии 15-20 см, не ближе и не дальше.</li>
+<li>QR-код повреждён (распечатка низкого качества, засветка экрана) — используйте ручной ввод данных (Способ 2).</li>
+</ul>
+<h3 id="6-сеть-недоступна-ручной-выбор-оператора">6. Сеть недоступна: ручной выбор оператора</h3>
+<p>Если eSIM активировалась, но интернета нет из-за слабого сигнала — переключите оператора вручную:</p>
+<ol>
+<li>Настройки → Сотовая связь → выберите eSIM.</li>
+<li>Нажмите «Выбор сети» (или «Сеть»).</li>
+<li>Отключите переключатель «Автоматически».</li>
+<li>Подождите 30 секунд — телефон просканирует доступные сети.</li>
+<li>Из появившегося списка выберите сеть, рекомендованную провайдером в инструкции.</li>
+</ol>
+<p>Ручной выбор оператора часто решает проблему в зонах с перегруженными вышками, где автоматический выбор подключается к слабому сигналу.</p>
+<h3 id="7-esim-пропала-после-обновления-ios-или-android">7. eSIM пропала после обновления iOS или Android</h3>
+<p>Крупные обновления системы иногда сбрасывают установленные профили eSIM. Решения:</p>
+<ol>
+<li>Перезагрузите телефон — в 50% случаев eSIM появляется снова.</li>
+<li>Если eSIM не появилась — удалите остатки профиля в настройках (Настройки → Сотовая связь → eSIM → Удалить eSIM) и переустановите через приложение провайдера.</li>
+<li>Если приложение не даёт переустановить — запросите новый QR-код в поддержке.</li>
+</ol>
+<h3 id="8-не-приходят-sms-на-esim">8. Не приходят SMS на eSIM</h3>
+<p>Многие туристические eSIM предоставляют только передачу данных, без голосовых вызовов и SMS. Это нормально и указано в описании тарифа. Если вам нужны SMS (например, для получения банковских кодов подтверждения или регистрации в сервисах), выбирайте тарифы с явным указанием «голос и SMS» или «full eSIM with phone number». Тарифы «data-only» не поддерживают приём сообщений.</p>
+<h3 id="9-медленный-интернет">9. Медленный интернет</h3>
+<p>Если интернет работает, но скорость значительно ниже ожидаемой:</p>
+<ul>
+<li>Проверьте, что подключение идёт через 4G или 5G, а не 3G: значок сети в строке состояния. Если отображается 3G или E — вручную выберите оператора с поддержкой 4G/5G.</li>
+<li>В настройках eSIM проверьте, что включён режим «5G Auto» или «4G» (Настройки → Сотовая связь → eSIM → Голос и данные).</li>
+<li>Некоторые бюджетные тарифы eSIM намеренно ограничивают скорость. Перед покупкой проверяйте описание тарифа — обычно указано «скорость до XX Мбит/с».</li>
+</ul>
+<h3 id="10-не-активируется-за-границей">10. Не активируется за границей</h3>
+<p>Если вы пытаетесь активировать eSIM уже в стране назначения, а не дома, могут возникнуть две проблемы. Во-первых, нестабильный публичный Wi-Fi в отеле или кафе прерывает загрузку профиля. Во-вторых, некоторые местные сети блокируют доступ к серверам провайдера eSIM. Решение: активируйте eSIM до вылета на домашнем стабильном Wi-Fi. Это самое надёжное правило, предотвращающее большинство проблем с активацией.</p>
+<h2 id="сравнение-способов-установки-esim-qr-код-ручной-ввод-приложение">Сравнение способов установки eSIM: QR-код, ручной ввод, приложение</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Способ</th>
+          <th style="text-align: center">Сложность</th>
+          <th style="text-align: center">Время</th>
+          <th style="text-align: center">Надёжность</th>
+          <th>Кому подходит</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>QR-код</td>
+          <td style="text-align: center">Низкая</td>
+          <td style="text-align: center">2 мин</td>
+          <td style="text-align: center">Высокая (при наличии второго экрана)</td>
+          <td>Большинству пользователей</td>
+      </tr>
+      <tr>
+          <td>Ручной ввод</td>
+          <td style="text-align: center">Средняя</td>
+          <td style="text-align: center">3 мин</td>
+          <td style="text-align: center">Очень высокая</td>
+          <td>Если QR не сканируется</td>
+      </tr>
+      <tr>
+          <td>Приложение</td>
+          <td style="text-align: center">Минимальная</td>
+          <td style="text-align: center">1 мин</td>
+          <td style="text-align: center">Высокая</td>
+          <td>Новичкам — автоматизация</td>
+      </tr>
+  </tbody>
+</table>
+<p>Если вы впервые пользуетесь eSIM, рекомендуем установку через приложение провайдера: минимальный риск ошибки и самый быстрый результат. Вне зависимости от выбранного способа, понимание того, как подключить eSIM, сводится к трём простым шагам: получить QR-код, отсканировать его в настройках и дождаться активации. Большинство крупных сервисов предлагают отлаженный процесс установки через приложение: после покупки тарифа нажатие одной кнопки «Установить eSIM» запускает автоматическую настройку.</p>
+<h2 id="региональные-особенности-прошивок-когда-esim-заблокирован-производителем">Региональные особенности прошивок: когда eSIM заблокирован производителем</h2>
+<p>Отдельного внимания заслуживает ситуация с телефонами, купленными на разных рынках. Производители иногда программно блокируют eSIM на прошивках для определённых регионов, даже если аппаратный чип eUICC присутствует в устройстве.</p>
+<h3 id="samsung-с-российской-прошивкой">Samsung с российской прошивкой</h3>
+<p>Наиболее проблемная категория. Samsung historically блокирует eSIM на прошивках для российского рынка (код региона SER). Если у вас Samsung Galaxy S20-S24, купленный в России с предустановленной российской прошивкой, eSIM может быть недоступна, несмотря на наличие EID. Проверка: <code>*#06#</code> показывает EID, но в Настройки → Подключения → Диспетчер SIM отсутствует пункт «Добавить eSIM». Решение: смена прошивки на глобальную (регион EUX или аналогичный) разблокирует eSIM, однако это аннулирует гарантию и требует технической подготовки. Альтернатива: использовать другое устройство с гарантированной поддержкой eSIM.</p>
+<h3 id="xiaomi-с-китайской-прошивкой">Xiaomi с китайской прошивкой</h3>
+<p>Модели Xiaomi, Redmi и POCO с китайской прошивкой (China ROM) часто не имеют поддержки eSIM, даже если глобальная версия той же модели её поддерживает. При покупке Xiaomi проверяйте версию прошивки: глобальная (Global ROM, код MI) или долл.пейская (EEA ROM, код EU) поддерживают eSIM; китайская (China ROM, код CN) — как правило, нет.</p>
+<h3 id="iphone-глобальная-совместимость">iPhone: глобальная совместимость</h3>
+<p>iPhone всех регионов, начиная с XR/XS, поддерживают eSIM без программных ограничений по стране покупки. Единственное исключение — модели для Китая (Гонконг и континентальный Китай), где eSIM отключена на аппаратном уровне для всех моделей. При покупке iPhone проверяйте номер модели: модели для Китая имеют суффикс CH/A.</p>
+<p><a href="https://support.apple.com/en-us/HT212780">Apple eSIM support</a> содержит полный список моделей iPhone с поддержкой eSIM по регионам.</p>
+<h2 id="сколько-гигабайт-нужно-расчёт-трафика-по-типам-использования">Сколько гигабайт нужно: расчёт трафика по типам использования</h2>
+<p>Одна из главных ошибок при первой покупке eSIM — неправильный выбор объёма данных. Слишком маленький пакет закончится в середине поездки, слишком большой — переплата за неиспользованные гигабайты. Ниже приведены расчёты потребления трафика для основных сценариев использования смартфона в путешествии.</p>
+<h3 id="расход-трафика-по-типам-активности">Расход трафика по типам активности</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Активность</th>
+          <th style="text-align: center">Расход трафика</th>
+          <th>Примечание</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Google Maps / Яндекс Карты (навигация, 1 час)</td>
+          <td style="text-align: center">15-30 МБ</td>
+          <td>С офлайн-картами — 0 МБ</td>
+      </tr>
+      <tr>
+          <td>WhatsApp / Telegram (текст, 1 день)</td>
+          <td style="text-align: center">5-10 МБ</td>
+          <td>Без медиафайлов</td>
+      </tr>
+      <tr>
+          <td>WhatsApp / Telegram (голосовой звонок, 10 мин)</td>
+          <td style="text-align: center">5-8 МБ</td>
+          <td>Зависит от качества кодека</td>
+      </tr>
+      <tr>
+          <td>Видеозвонок (Zoom/WhatsApp, 10 мин)</td>
+          <td style="text-align: center">30-80 МБ</td>
+          <td>SD качество; HD — до 200 МБ</td>
+      </tr>
+      <tr>
+          <td>Instagram / соцсети (прокрутка, 30 мин)</td>
+          <td style="text-align: center">80-150 МБ</td>
+          <td>С автовоспроизведением видео</td>
+      </tr>
+      <tr>
+          <td>Загрузка фото в облако (10 фото)</td>
+          <td style="text-align: center">30-60 МБ</td>
+          <td>В зависимости от разрешения</td>
+      </tr>
+      <tr>
+          <td>YouTube (10 мин, качество 720p)</td>
+          <td style="text-align: center">100-200 МБ</td>
+          <td>1080p — до 400 МБ</td>
+      </tr>
+      <tr>
+          <td>Веб-сёрфинг (1 час)</td>
+          <td style="text-align: center">20-50 МБ</td>
+          <td>Без потокового видео</td>
+      </tr>
+      <tr>
+          <td>Загрузка офлайн-карт (один город)</td>
+          <td style="text-align: center">50-150 МБ</td>
+          <td>Однократно перед поездкой</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="профили-потребления-сколько-гб-брать">Профили потребления: сколько ГБ брать</h3>
+<p><strong>Лёгкий профиль (3-5 ГБ в неделю).</strong> Подходит для городского туризма с Wi-Fi в отеле. Вы используете навигацию, мессенджеры и иногда загружаете фото в соцсети. Среднесуточное потребление: 150-200 МБ. За неделю — около 1-1.5 ГБ. С запасом на случайный стриминг и загрузку карт — 3 ГБ за неделю с хорошим резервом.</p>
+<p><strong>Умеренный профиль (5-10 ГБ в неделю).</strong> Для активного туриста без гарантированного Wi-Fi — роудтрип на автомобиле, поездки на поездах между городами, интенсивное использование соцсетей с загрузкой фото и видео. Среднесуточное потребление: 500-800 МБ. За неделю — 4-6 ГБ. Рекомендуемый тариф: 10 ГБ с запасом.</p>
+<p><strong>Активный профиль (10-20 ГБ в неделю или безлимит).</strong> Для удалённой работы в поездке, видеоблогинга, регулярных видеозвонков и стриминга. Среднесуточное потребление: 1-3 ГБ. Если вы планируете ежедневно загружать видео на YouTube или участвовать в часовых видеоконференциях — безлимитный тариф может быть экономически оправдан. В отличие от пакетных тарифов, безлимитные тарифы (например, у Holafly) снимают необходимость следить за остатком трафика, но стоят значительно дороже.</p>
+<h3 id="как-сэкономить-трафик--практические-рекомендации">Как сэкономить трафик — практические рекомендации</h3>
+<p>Независимо от выбранного тарифа, несколько простых привычек помогут растянуть гигабайты на всю поездку:</p>
+<ol>
+<li>Скачайте офлайн-карты Google Maps для всех городов маршрута до вылета на домашнем Wi-Fi. Карты одного города занимают 50-150 МБ и не требуют интернета для навигации — экономия до 30 МБ в день только на картах.</li>
+<li>Настройте мессенджеры на загрузку медиа только при подключении к Wi-Fi: WhatsApp → Настройки → Данные и хранилище → Автозагрузка медиа → Wi-Fi. Это уберёт до 70% трафика мессенджеров.</li>
+<li>Загрузите плейлисты в Spotify/YouTube Music и серии в Netflix до вылета — стриминг является крупнейшим потребителем трафика. Один час музыки в день экономит до 150 МБ; один загруженный заранее фильм — до 2 ГБ.</li>
+<li>Отключите фоновое обновление приложений для eSIM: Настройки → Сотовая связь → eSIM → отключите «Фоновое обновление» для необязательных приложений. Некоторые приложения могут потреблять 100-200 МБ в день в фоновом режиме, обновляя контент.</li>
+</ol>
+<h2 id="настройка-esim-для-двух-и-более-стран-переключение-между-операторами">Настройка eSIM для двух и более стран: переключение между операторами</h2>
+<p>Если ваш маршрут охватывает несколько стран, а eSIM — региональный (например, <a href="/blog/europe-esim-guide/">eSIM Европа</a>), настройка после активации не требует дополнительных действий: eSIM автоматически регистрируется в сети местного оператора при пересечении границы. Однако есть нюансы, влияющие на скорость и стабильность соединения.</p>
+<h3 id="ручной-выбор-оператора-при-медленном-интернете">Ручной выбор оператора при медленном интернете</h3>
+<p>В некоторых случаях автоматический выбор сети подключает вас к оператору с более слабым сигналом, хотя доступен другой с лучшим покрытием. Признаки: скорость интернета ниже 2 Мбит/с при отображении 4G/5G, частые обрывы соединения на границе зон покрытия.</p>
+<p>Решение: вручную выберите оператора в настройках:</p>
+<ol>
+<li>Настройки → Сотовая связь → eSIM → Выбор сети.</li>
+<li>Отключите переключатель «Автоматически».</li>
+<li>Подождите 20-30 секунд — телефон просканирует все доступные сети.</li>
+<li>Выберите оператора с наиболее сильным сигналом (по количеству делений) или оператора, рекомендованного провайдером в инструкции к тарифу. Например, в Германии приоритет обычно у Deutsche Telekom, во Франции — у Orange, в Италии — у TIM.</li>
+<li>Если сигнал выбранного оператора ухудшается — повторите процедуру и выберите другого доступного оператора.</li>
+</ol>
+<h3 id="настройка-нескольких-esim-для-разных-стран">Настройка нескольких eSIM для разных стран</h3>
+<p>Некоторые путешественники предпочитают покупать отдельные страновые eSIM для каждой страны вместо одного регионального. При такой стратегии настройка выглядит иначе:</p>
+<ol>
+<li>Установите eSIM для первой страны до вылета — активируйте и проверьте интернет.</li>
+<li>По прибытии в первую страну eSIM автоматически подключится к местной сети.</li>
+<li>За день до переезда во вторую страну установите второй eSIM через приложение провайдера (не сканируя новый QR-код, если приложение позволяет добавить тариф).</li>
+<li>На границе или по прибытии во вторую страну: Настройки → Сотовая связь → Сотовые данные → переключите на второй eSIM. Первый eSIM можно оставить активным для звонков (если тариф поддерживает голос) или отключить для экономии батареи.</li>
+</ol>
+<p>В отличие от регионального eSIM, который работает в 30+ странах без дополнительной настройки, стратегия с отдельными страновыми тарифами требует ручного управления, но даёт доступ к локальным операторам и потенциально более низкой цене за гигабайт для длительного пребывания в одной стране.</p>
+<h2 id="сравнение-процесса-настройки-esim-у-популярных-провайдеров">Сравнение процесса настройки eSIM у популярных провайдеров</h2>
+<p>Несмотря на то, что технически активация eSIM одинакова для всех провайдеров — сканирование QR-кода или ручной ввод данных — пользовательский опыт настройки существенно различается в зависимости от того, насколько продумано приложение и инструкции конкретного сервиса.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Провайдер</th>
+          <th style="text-align: center">Установка через приложение</th>
+          <th style="text-align: center">Автоматическая настройка APN</th>
+          <th style="text-align: center">Русский язык в приложении</th>
+          <th style="text-align: center">Поддержка при настройке</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Airalo</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Частично</td>
+          <td style="text-align: center">Чат в приложении</td>
+      </tr>
+      <tr>
+          <td>Holafly</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет (ручной ввод APN)</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Чат в приложении</td>
+      </tr>
+      <tr>
+          <td>Yesim</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Чат в приложении</td>
+      </tr>
+      <tr>
+          <td>Roami</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Чат в приложении, 15-30 мин</td>
+      </tr>
+      <tr>
+          <td>Nomad</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Email-поддержка</td>
+      </tr>
+      <tr>
+          <td>Ubigi</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Да</td>
+          <td style="text-align: center">Нет</td>
+          <td style="text-align: center">Чат в приложении</td>
+      </tr>
+  </tbody>
+</table>
+<p>Ключевое различие, влияющее на удобство настройки — автоматическая конфигурация APN. У большинства провайдеров APN настраивается автоматически при загрузке профиля eSIM, и интернет начинает работать сразу после активации. Однако у Holafly APN иногда требуется вводить вручную, что создаёт дополнительный шаг и является частой причиной обращений в поддержку от пользователей, не знакомых с этой особенностью.</p>
+<p>Наличие русского языка в интерфейсе приложения также существенно влияет на процесс настройки для русскоязычных пользователей. Airalo имеет лишь частичную русификацию — основные разделы переведены, но технические описания тарифов и сообщения об ошибках часто отображаются на английском. Yesim, Roami и Holafly предоставляют полностью русифицированный интерфейс, что упрощает настройку для пользователей, не владеющих английским языком.</p>
+<p>Скорость ответа поддержки при проблемах с настройкой критична, если eSIM не активируется непосредственно перед вылетом. В то время как большинство провайдеров отвечают в чате в течение 15-30 минут, некоторые сервисы (Nomad) работают только через email с временем ответа до нескольких часов — это нужно учитывать при планировании активации в день вылета.</p>
+<p>При покупке тарифа через сайт, а не через приложение, промокод web20 даёт скидку 20% у большинства провайдеров. Перед покупкой ознакомьтесь с инструкцией: <a href="/blog/how-to-buy-esim/">Как купить eSIM онлайн</a>.</p>
+<h3 id="особенности-настройки-на-старых-версиях-операционных-систем">Особенности настройки на старых версиях операционных систем</h3>
+<p>Пользователи iPhone с iOS 15 и старше, а также Android 11 и старше, могут столкнуться с тем, что процесс добавления eSIM выглядит иначе, чем описано в инструкциях выше. До iOS 16 меню «Сотовая связь» называлось «Сотовые данные», и пункт «Добавить eSIM» находился в подменю «Тарифные планы». На Android 11 и старше расположение пунктов может отличаться в зависимости от оболочки производителя.</p>
+<p>Общий принцип остаётся неизменным: сканирование QR-кода или ручной ввод данных из письма провайдера. Если вы не можете найти пункт «Добавить eSIM» в настройках, используйте поиск по настройкам (строка поиска вверху экрана настроек) — введите «eSIM» или «Добавить сотовый тариф». Система найдёт нужный пункт меню независимо от его расположения в конкретной версии операционной системы.</p>
+<p>Другой частый сценарий — использование eSIM на телефоне, который давно не обновлялся. Производители телефонов регулярно выпускают обновления, улучшающие поддержку eSIM и исправляющие ошибки совместимости с новыми профилями провайдеров. Перед первой настройкой eSIM рекомендуется обновить операционную систему до последней доступной версии — это снижает вероятность ошибок активации и проблем с совместимостью.</p>
+<p>Если вы впервые пользуетесь eSIM, рекомендуем установку через приложение провайдера: минимальный риск ошибки и самый быстрый результат. Вне зависимости от выбранного способа, понимание того, как подключить eSIM, сводится к трём простым шагам: получить QR-код, отсканировать его в настройках и дождаться активации. Большинство крупных сервисов предлагают отлаженный процесс установки через приложение: после покупки тарифа нажатие одной кнопки «Установить eSIM» запускает автоматическую настройку. Если QR-код не сканируется, используйте ручной ввод данных — это надёжный ре�</p>
+
+                </div>
+            </div>
+
+            
+            <aside class="article-sidebar">
+                
+                <div class="sidebar-module">
+                    <div class="sidebar-title">Популярные eSIM</div>
+                    
+                    <a href="/turkey-esim/" class="country-link">
+                        <img src="/img/flags/tr.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Турция
+                        <span class="price">от $0.60/ГБ</span>
+                    </a>
+                    
+                    <a href="/china-esim/" class="country-link">
+                        <img src="/img/flags/cn.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Китай
+                        <span class="price">от $1.53/ГБ</span>
+                    </a>
+                    
+                    <a href="/thailand-esim/" class="country-link">
+                        <img src="/img/flags/th.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Таиланд
+                        <span class="price">от $0.54/ГБ</span>
+                    </a>
+                    
+                    <a href="/uae-esim/" class="country-link">
+                        <img src="/img/flags/ae.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        ОАЭ
+                        <span class="price">от $0.54/ГБ</span>
+                    </a>
+                    
+                    <a href="/egypt-esim/" class="country-link">
+                        <img src="/img/flags/eg.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Египет
+                        <span class="price">от $1.99/ГБ</span>
+                    </a>
+                    
+                    <a href="/vietnam-esim/" class="country-link">
+                        <img src="/img/flags/vn.svg" alt="" class="flag" width="24" height="16" loading="lazy">
+                        Вьетнам
+                        <span class="price">от $1.99/ГБ</span>
+                    </a>
+                    
+                </div>
+                
+
+            </aside>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer class="ftr">
+    <div class="container">
+        <div class="ftr-grid">
+            <div>
+                <h4>eSIM RU</h4>
+                <p class="dim" style="font-size:.8rem">Независимый каталог eSIM для путешественников из России — честное сравнение тарифов, без рекламы и скрытых условий, только объективные данные, чтобы ты всегда был в сети по лучшей цене.</p>
+            </div>
+			
+        <div>
+    <h4>Популярные страны</h4>
+    <a href="/turkey-esim/">Турция</a>
+	<a href="/middle-east-esim/">Ближний Восток</a>
+    <a href="/china-esim/">Китай</a>
+    <a href="/thailand-esim/">Таиланд</a>
+    <a href="/vietnam-esim/">Вьетнам</a>
+    <a href="/georgia-esim/">Грузия</a>
+    <a href="/kazakhstan-esim/">Казахстан</a>
+    <a href="/belarus-esim/">Беларусь</a>
+    <a href="/montenegro-esim/">Черногория</a>
+</div>
+			
+            <div>
+                <h4>Информация</h4> 
+                <a href="/devices/">Поддержка eSIM</a>
+				<a href="/about-us/">О нас</a>
+				<a href="/blog/">блог</a>
+                <a href="/contact/">Контакты</a>
+            </div>
+        </div>
+        <div class="ftr-bot">
+            &copy; 2026 eSIM RU
+            <a href="/privacy-policy/">Политика конфиденциальности</a>
+            <a href="/terms-of-service/">Условия использования</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
