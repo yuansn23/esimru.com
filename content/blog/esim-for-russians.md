@@ -2,8 +2,8 @@
 title: "eSIM для россиян: как оплатить и купить за границей"
 description: "Оплата eSIM из России: карты Мир, Visa, QIWI и ЮMoney. Тарифы от $0.54/ГБ. Сравнение провайдеров и пошаговая инструкция."
 url: "/blog/esim-for-russians/"
-date: 2026-08-04
-lastmod: 2026-08-04
+date: 2026-07-30
+lastmod: 2026-07-30
 author: "Команда eSIM RU"
 tags: ["гайд", "оплата", "россия"]
 categories: ["eSIM", "путешествия"]

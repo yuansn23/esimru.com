@@ -2,8 +2,8 @@
 title: "iPhone с eSIM: список моделей и настройка Dual SIM"
 description: "iPhone с eSIM: полный список моделей от XR до 17 Pro Max с Dual eSIM. Настройка за 2 минуты, сравнение цен против роуминга."
 url: "/blog/iphone-esim-models/"
-date: 2026-08-18
-lastmod: 2026-08-18
+date: 2026-08-01
+lastmod: 2026-08-01
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение"]
 categories: ["eSIM", "путешествия"]

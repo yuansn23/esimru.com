@@ -2,8 +2,8 @@
 title: "Установка eSIM без Google Play: Rustore, APK и сайт"
 description: "Установка eSIM без Google Play: Rustore, APK, AppGallery Huawei или веб-покупка. Все способы с инструкцией. Скидка 20% по коду web20."
 url: "/blog/esim-without-google-play/"
-date: 2026-08-08
-lastmod: 2026-08-08
+date: 2026-07-31
+lastmod: 2026-07-31
 author: "Команда eSIM RU"
 tags: ["гайд"]
 categories: ["eSIM", "путешествия"]

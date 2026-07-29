@@ -2,8 +2,8 @@
 title: "Поддерживает ли телефон eSIM: проверка за 30 секунд"
 description: "Проверьте eSIM за 30 секунд: список iPhone, Samsung, Xiaomi, Pixel. Инструкция iOS и Android. Бесплатный тестовый eSIM на 100 МБ."
 url: "/blog/does-my-phone-support-esim/"
-date: 2026-08-02
-lastmod: 2026-08-02
+date: 2026-07-30
+lastmod: 2026-07-30
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение"]
 categories: ["eSIM", "путешествия"]

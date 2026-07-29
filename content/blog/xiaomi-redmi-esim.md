@@ -2,8 +2,8 @@
 title: "Xiaomi и Redmi с eSIM: список моделей и проверка"
 description: "Xiaomi, Redmi и POCO с eSIM: список моделей, настройка HyperOS и MIUI, проверка EID. Российская прошивка не блокирует eSIM."
 url: "/blog/xiaomi-redmi-esim/"
-date: 2026-08-28
-lastmod: 2026-08-28
+date: 2026-07-29
+lastmod: 2026-07-29
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение"]
 categories: ["eSIM", "путешествия"]

@@ -2,8 +2,8 @@
 title: "eSIM против обычной SIM: безопасность, цена, удобство"
 description: "eSIM или обычная SIM: сравнение по цене, безопасности, Dual SIM. Экономия до 92% на интернете за границей. Промокод web20."
 url: "/blog/esim-vs-physical-sim/"
-date: 2026-08-06
-lastmod: 2026-08-06
+date: 2026-07-30
+lastmod: 2026-07-30
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение"]
 categories: ["eSIM", "путешествия"]

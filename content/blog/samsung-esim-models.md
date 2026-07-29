@@ -2,8 +2,8 @@
 title: "Samsung Galaxy с eSIM: список моделей и настройка"
 description: "Все Samsung Galaxy с eSIM от S20 до S26, Z Fold и Flip. Совместимость, региональная блокировка в РФ, Dual SIM. Проверка EID и настройка."
 url: "/blog/samsung-esim-models/"
-date: 2026-08-22
-lastmod: 2026-08-22
+date: 2026-08-02
+lastmod: 2026-08-02
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение"]
 categories: ["eSIM", "путешествия"]

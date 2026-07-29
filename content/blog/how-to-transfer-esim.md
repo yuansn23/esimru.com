@@ -2,8 +2,8 @@
 title: "Перенести eSIM на новый телефон: пошаговая инструкция"
 description: "Перенос eSIM между iPhone и Android: быстрый перенос iOS, приложение, новый QR-код. Бесплатно. Скидка 20% по коду web20."
 url: "/blog/how-to-transfer-esim/"
-date: 2026-08-16
-lastmod: 2026-08-16
+date: 2026-08-01
+lastmod: 2026-08-01
 author: "Команда eSIM RU"
 tags: ["гайд"]
 categories: ["eSIM", "путешествия"]

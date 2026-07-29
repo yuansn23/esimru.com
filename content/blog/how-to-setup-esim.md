@@ -2,8 +2,8 @@
 title: "Как подключить eSIM: инструкция для iPhone и Android"
 description: "Как настроить eSIM на iPhone, Samsung, Xiaomi, Google Pixel и Huawei за 2 минуты. Инструкция по активации и решение 10 типовых проблем."
 url: "/blog/how-to-setup-esim/"
-date: 2026-08-14
-lastmod: 2026-08-14
+date: 2026-08-01
+lastmod: 2026-08-01
 author: "Команда eSIM RU"
 tags: ["гайд"]
 categories: ["eSIM", "путешествия"]

@@ -2,8 +2,8 @@
 title: "eSIM для Европы: полный гид по тарифам и покрытию"
 description: "eSIM Европа: цены от $9 за 5 ГБ, сравнение Airalo и Holafly, покрытие 5G Orange и Vodafone в 30+ странах. Скидка 20% по коду web20."
 url: "/blog/europe-esim-guide/"
-date: 2026-08-10
-lastmod: 2026-08-10
+date: 2026-07-31
+lastmod: 2026-07-31
 author: "Команда eSIM RU"
 tags: ["гайд", "сравнение"]
 categories: ["eSIM", "путешествия"]
