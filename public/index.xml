@@ -6,112 +6,35 @@
     <description>Recent content in eSIM для путешествий — сравнение цен и лучшие тарифы on Найди самый дешёвый eSIM для поездки — сравнение тарифов | eSIM RU</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>eSIM Турция: цены, покрытие и сравнение провайдеров</title>
+      <link>http://localhost:1313/blog/turkey-esim-guide/</link>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/turkey-esim-guide/</guid>
+      <description>&lt;p&gt;eSIM для Турции — это способ получить мобильный интернет по местным ценам без замены физической SIM-карты. Купить eSIM для Турции можно онлайн за 5 минут — не нужно искать салон связи в аэропорту. Тарифы начинаются от $2.40 за 1 ГБ на 30 дней, а пакет 5 ГБ на две недели обойдётся в $5.99 (со скидкой по промокоду web20 — $4.79). Провайдеры с автоматическим переключением между Turkcell, Vodafone TR и Türk Telekom обеспечивают покрытие в Стамбуле, Анталии, Каппадокии и на Эгейском побережье. Экономия по сравнению с роумингом российских операторов достигает 89–92%.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xiaomi и Redmi с eSIM: список моделей и проверка</title>
+      <link>http://localhost:1313/blog/xiaomi-redmi-esim/</link>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/xiaomi-redmi-esim/</guid>
+      <description>&lt;p&gt;Xiaomi поддерживает eSIM на флагманских моделях начиная с Xiaomi 13 (2022 год), Redmi — выборочно и только в глобальных версиях, POCO — ограниченно. В отличие от Samsung, Xiaomi не блокирует eUICC-чип на российских прошивках: если модель глобально поддерживает eSIM, она будет работать и на устройстве с российской прошивкой. Перед покупкой eSIM проверьте совместимость через USSD-код *#06# — наличие 32-значного номера EID означает, что eSIM доступна. Настройка на HyperOS и MIUI занимает около двух минут. Туристический eSIM для Xiaomi обходится от $0.54 за поездку при использовании промокода web20.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Лучшие eSIM-провайдеры: полное сравнение цен и тарифов</title>
+      <link>http://localhost:1313/blog/best-esim-providers/</link>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/best-esim-providers/</guid>
+      <description>&lt;p&gt;Рынок туристических eSIM сформировался вокруг четырёх основных провайдеров: Roami, Airalo, Holafly и Yesim. Каждый специализируется на своей нише. Roami лидирует по количеству тарифов на страну (8–12) и единственный предлагает автоматическое переключение между местными операторами — это критично для роудтрипов и поездок между городами. Airalo покрывает 200+ стран — максимум на рынке. Holafly — единственный провайдер со 100% безлимитными тарифами. Yesim привлекает бесплатным бонусом 500 МБ и встроенным VPN. Мы сравнили эти лучшие eSIM сервисы по 7 критериям: цены для 10 популярных направлений, скорость поддержки, удобство приложений, покрытие, авто-переключение сети, гибкость тарифов, способы оплаты и реальные отзывы пользователей eSIM.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Что такое eSIM и как работает встроенная SIM-карта</title>
       <link>http://localhost:1313/blog/what-is-esim/</link>
       <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/what-is-esim/</guid>
       <description>&lt;p&gt;eSIM (Embedded SIM) — это встроенная в телефон цифровая SIM-карта, которая не требует пластикового носителя. В отличие от обычной SIM, которую нужно вставлять в лоток, чип eSIM впаян в материнскую плату телефона на заводе. На один чип eUICC можно записать до 8 профилей операторов одновременно. Для путешествий тарифы eSIM начинаются от $0.54 у таких провайдеров, как Yesim и другие — в 5–10 раз дешевле роуминга российских операторов. Активация занимает 1–2 минуты через сканирование QR-кода, без похода в салон связи. Разберём, что такое eSIM на практике, можно ли eSIM использовать на вашем телефоне, и как работает технология — от чипа eUICC до подключения к интернету за границей.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>eSIM для Европы: полный гид по тарифам и покрытию</title>
-      <link>http://localhost:1313/blog/europe-esim-guide/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/europe-esim-guide/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Региональный eSIM для путешествий по Европе стоит от $9 за 5 ГБ и работает в 30+ странах ЕС и ЕЭЗ — от Португалии до Эстонии. Для посещения двух и более стран один региональный тариф даёт в 1.5–2 раза больше данных, чем покупка отдельных страновых eSIM. Ведущие провайдеры предлагают тарифы с автоматическим переключением между Orange, Vodafone и Deutsche Telekom, а промокод web20 даёт скидку 20%. Для тех, кто впервые пробует eSIM, многие сервисы предоставляют бесплатный пробный тариф через страницу /free-esim/.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>eSIM для россиян: как оплатить и купить за границей</title>
-      <link>http://localhost:1313/blog/esim-for-russians/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/esim-for-russians/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Оплатить eSIM из России можно четырьмя способами: карты Мир и Visa российских банков (через локальные платёжные шлюзы провайдеров), QIWI Кошелёк, ЮMoney и карты зарубежных банков (Казахстан, Армения, Грузия). Минимальная цена eSIM на рынке — от $0.54 за 1 ГБ (Китай, Таиланд, ОАЭ), от $1.05 за 1 ГБ для Турции, от $2.00 для Европы. Весь процесс от выбора тарифа до активации занимает 5 минут — нужен только email, загранпаспорт не требуется. eSIM для россиян решает главную задачу: мобильный интернет за границей без переплаты за роуминг и без необходимости искать местную SIM-карту в аэропорту.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>eSIM Китай: интернет без файрвола с VPN-маршрутизацией</title>
-      <link>http://localhost:1313/blog/china-esim-guide/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/china-esim-guide/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Китайская eSIM с VPN-маршрутизацией стоит от $0.54 за гигабайт (Yesim) и позволяет пользоваться Instagram, WhatsApp, Google и YouTube в обход Великого китайского файрвола. Для короткой поездки хватит 3 ГБ за $4.99 (Roami), а для двухнедельного тура по стране — 5-10 ГБ. Без VPN-маршрутизации обычный eSIM подключается к China Mobile напрямую, и все зарубежные сервисы блокируются. Промокод web20 снижает цену на 20%.&lt;/p&gt;&#xA;&lt;h2 id=&#34;великий-китайский-файрвол-что-блокируется-и-почему-обычный-esim-не-работает&#34;&gt;Великий китайский файрвол: что блокируется и почему обычный eSIM не работает&lt;/h2&gt;&#xA;&lt;p&gt;Китайская система интернет-цензуры, известная как &lt;a href=&#34;https://en.wikipedia.org/wiki/Great_Firewall&#34;&gt;Великий файрвол&lt;/a&gt; (Great Firewall, GFW), представляет собой совокупность технологий фильтрации трафика на государственном уровне. Согласно исследованиям, GFW использует технологию Deep Packet Inspection (DPI) — глубокий анализ каждого пакета данных, проходящего через сети китайских операторов. Система способна не только блокировать IP-адреса и домены, но и распознавать VPN-протоколы, прерывать зашифрованные соединения и вводить DNS-спуфинг для перенаправления запросов.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>eSIM МТС, Билайн, МегаФон: тарифы, цены и подключение</title>
-      <link>http://localhost:1313/blog/russian-operators-esim/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/russian-operators-esim/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;МТС, Билайн и МегаФон — все три оператора «большой тройки» — поддерживают eSIM с 2019–2021 годов. Первый выпуск eSIM у любого из них бесплатный, процесс занимает от 5 до 15 минут через приложение или в салоне связи. Тарифы на eSIM идентичны обычным тарифам оператора — от 300 до 650 рублей в месяц. Для поездок за границу международный eSIM от таких провайдеров, как Airalo, Holafly или Yesim, обходится в 8–12 раз дешевле роуминга российских операторов: две недели интернета в Турции через eSIM стоят около 700 рублей против 6 300 рублей в роуминге МТС.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>eSIM против обычной SIM: безопасность, цена, удобство</title>
-      <link>http://localhost:1313/blog/esim-vs-physical-sim/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/esim-vs-physical-sim/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;eSIM выигрывает у обычной SIM-карты в трёх ключевых категориях: безопасность (чип впаян в телефон, невозможность SIM-swap атак), экономия в путешествиях ($4.99 за 5 ГБ в Турции против $63 за роуминг — разница в 9 раз), и удобство Dual SIM (российский номер остаётся в телефоне, eSIM обеспечивает местный интернет). Физическая SIM сохраняет преимущество в универсальной совместимости — она работает в любом телефоне за последние 25 лет. eSIM хранит от 5 до 8 профилей, не требует замены пластика при смене оператора и не подвержена механическому износу. Промокод web20 даёт скидку 20% на первый заказ eSIM. Ниже собраны все плюсы и минусы eSIM и обычной SIM-карты, чтобы разница между технологиями была очевидной, а выбор — осознанным.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>eSIM Турция: цены, покрытие и сравнение провайдеров</title>
-      <link>http://localhost:1313/blog/turkey-esim-guide/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/turkey-esim-guide/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;eSIM для Турции — это способ получить мобильный интернет по местным ценам без замены физической SIM-карты. Купить eSIM для Турции можно онлайн за 5 минут — не нужно искать салон связи в аэропорту. Тарифы начинаются от $2.40 за 1 ГБ на 30 дней, а пакет 5 ГБ на две недели обойдётся в $5.99 (со скидкой по промокоду web20 — $4.79). Провайдеры с автоматическим переключением между Turkcell, Vodafone TR и Türk Telekom обеспечивают покрытие в Стамбуле, Анталии, Каппадокии и на Эгейском побережье. Экономия по сравнению с роумингом российских операторов достигает 89–92%.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>iPhone с eSIM: список моделей и настройка Dual SIM</title>
-      <link>http://localhost:1313/blog/iphone-esim-models/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/iphone-esim-models/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;iPhone поддерживает eSIM начиная с XR и XS (2018 год), а с iPhone 14 американская версия стала полностью eSIM-only — без физического слота. iPhone 17 eSIM поддерживают все четыре модели линейки (17, 17 Pro, 17 Pro Max и 17 Air) с двумя активными eSIM одновременно. Современные iPhone 15 и новее, включая esim pro-версии (Pro и Pro Max), вмещают до 8 сохранённых профилей eSIM и поддерживают две активные линии одновременно (Dual eSIM). Настройка занимает около двух минут: сканирование QR-кода от провайдера — и интернет работает. Стоимость туристического eSIM для iPhone составляет от $2 до $50 в зависимости от объёма трафика и срока действия.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Samsung Galaxy с eSIM: список моделей и настройка</title>
-      <link>http://localhost:1313/blog/samsung-esim-models/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/samsung-esim-models/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Samsung добавила eSIM с линейкой Galaxy S20 в 2020 году, но с критическим ограничением: модели для России, Китая и ряда других стран могут иметь eUICC-чип, заблокированный на уровне прошивки. Проверка проста — наберите *#06#, и если отображается 32-значный номер EID, eSIM доступна. Начиная с Galaxy S24 блокировка для российского рынка снята; Galaxy S25 eSIM работает на всех версиях без ограничений — S25, S25+ и S25 Ultra поддерживают до 5 профилей с двумя активными eSIM одновременно. Флагманские модели вмещают до 5 профилей eSIM, складные Z Fold и Z Flip — аналогично, бюджетная A-серия — выборочно и только в долл.пейских версиях. Туристический galaxy esim для Samsung обходится от $0.54 за поездку.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Xiaomi и Redmi с eSIM: список моделей и проверка</title>
-      <link>http://localhost:1313/blog/xiaomi-redmi-esim/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/xiaomi-redmi-esim/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Xiaomi поддерживает eSIM на флагманских моделях начиная с Xiaomi 13 (2022 год), Redmi — выборочно и только в глобальных версиях, POCO — ограниченно. В отличие от Samsung, Xiaomi не блокирует eUICC-чип на российских прошивках: если модель глобально поддерживает eSIM, она будет работать и на устройстве с российской прошивкой. Перед покупкой eSIM проверьте совместимость через USSD-код *#06# — наличие 32-значного номера EID означает, что eSIM доступна. Настройка на HyperOS и MIUI занимает около двух минут. Туристический eSIM для Xiaomi обходится от $0.54 за поездку при использовании промокода web20.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Как купить eSIM онлайн: тарифы, оплата, активация</title>
-      <link>http://localhost:1313/blog/how-to-buy-esim/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/how-to-buy-esim/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Купить eSIM онлайн — это три шага, занимающие 5–7 минут: выбрать страну и объём трафика, сравнить цены провайдеров на нужный пакет, оплатить заказ и получить QR-код на email. Минимальная цена входа — $2.40 за 1 ГБ на 30 дней (Турция, Китай и другие направления). Вопрос «сколько стоит eSIM» зависит от региона, объёма трафика и выбранного провайдера — ниже приведены детальные таблицы цен. Крупнейшие платформы: Roami (автоматическое переключение между операторами, промокод web20 со скидкой 20%), Airalo (200+ стран, от $6.50), Holafly (безлимитные тарифы, от $11.90). Оплата из России доступна через UnionPay, QIWI и ЮMoney. Активация занимает 2 минуты — QR-код сканируется в настройках телефона до вылета.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Как подключить eSIM: инструкция для iPhone и Android</title>
-      <link>http://localhost:1313/blog/how-to-setup-esim/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/how-to-setup-esim/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Подключить и настроить eSIM на любом современном телефоне можно за 2-3 минуты тремя способами: отсканировать QR-код из письма провайдера (стандартный метод), ввести SM-DP+ адрес и esim код активации вручную (если QR-код не сканируется) или установить eSIM через приложение провайдера в один клик (самый простой способ для новичков). Активация esim не требует визита в салон связи — весь процесс от покупки до выхода в интернет занимает несколько минут. Тарифы eSIM стоят от $0.54/ГБ у таких провайдеров, как Airalo, Holafly, Yesim и Roami. Для первого знакомства с технологией многие провайдеры предоставляют бесплатный пробный eSIM, а промокод web20 даёт скидку 20% на основной тариф. Установка работает на iPhone (XR и новее), Samsung Galaxy (S20+), Google Pixel (4+), Xiaomi и Huawei с поддержкой eSIM. В этой инструкции разбираем пошагово, как подключить eSIM на каждой платформе, как настроить eSIM после активации и что делать при типовых ошибках.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Перенести eSIM на новый телефон: пошаговая инструкция</title>
-      <link>http://localhost:1313/blog/how-to-transfer-esim/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/how-to-transfer-esim/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Перенос eSIM на новый телефон технически возможен для большинства провайдеров, но в отличие от физической SIM-карты, eSIM невозможно просто переставить из одного устройства в другое — она привязана к уникальному идентификатору EID конкретного телефона. Для успешного переноса необходимо удалить профиль eSIM на старом устройстве и заново установить его на новом через приложение провайдера, новый QR-код или функцию быстрого переноса Apple (для iPhone с iOS 19+). Крупные провайдеры — Airalo, Holafly, Yesim и Nomad — позволяют перенести eSIM бесплатно, а для новых тарифов промокод web20 даёт скидку 20% на туристические тарифы.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Поддерживает ли телефон eSIM: проверка за 30 секунд</title>
-      <link>http://localhost:1313/blog/does-my-phone-support-esim/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/does-my-phone-support-esim/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Проверить поддержку eSIM можно за 30 секунд без установки приложений. Откройте Настройки телефона: на iPhone — «Сотовая связь», на Samsung — «Подключения» → «Диспетчер SIM», на Xiaomi — «SIM-карты и мобильные сети». Если видите пункт «Добавить eSIM» — телефон поддерживает технологию. Универсальный метод: наберите &lt;code&gt;*#06#&lt;/code&gt; в звонилке — наличие строки EID из 32 цифр означает, что чип eUICC физически присутствует и активен. Ниже — полный список более чем 200 моделей телефонов с eSIM, сверенный с данными &lt;a href=&#34;https://www.gsma.com/esim/&#34;&gt;GSMA&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Установка eSIM без Google Play: Rustore, APK и сайт</title>
-      <link>http://localhost:1313/blog/esim-without-google-play/</link>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/esim-without-google-play/</guid>
-      <description>&lt;h2 id=&#34;draft-true&#34;&gt;&amp;quot;&#xA;tag: &amp;ldquo;Инструкция&amp;rdquo;&#xA;draft: true&lt;/h2&gt;&#xA;&lt;p&gt;Установить eSIM-приложение и купить тариф для путешествий можно полностью без Google Play — через российский магазин Rustore, прямую загрузку APK с сайта провайдера, магазин AppGallery для устройств Huawei или через веб-покупку на сайте без установки каких-либо приложений. Для российских пользователей, у которых оплата через Google Play заблокирована с марта 2022 года, все четыре способа полностью рабочие. Roami, в отличие от Airalo и Holafly, присутствует в Rustore и поддерживает веб-покупку через собственный сайт. Промокод web20 даёт скидку 20% при оформлении тарифа на сайте, независимо от способа установки.&lt;/p&gt;</description>
     </item>
     <item>
       <title>eSIM RU — независимый каталог для путешественников</title>

@@ -1,235 +1,251 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-      <loc>http://localhost:1313/devices/</loc>
-      <lastmod>2026-07-25T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/europe-esim-guide/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/esim-for-russians/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/china-esim-guide/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/russian-operators-esim/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/esim-vs-physical-sim/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
+    <url>
       <loc>http://localhost:1313/blog/turkey-esim-guide/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/iphone-esim-models/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/samsung-esim-models/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/blog/xiaomi-redmi-esim/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/how-to-buy-esim/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/how-to-setup-esim/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/blog/best-esim-providers/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/how-to-transfer-esim/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/does-my-phone-support-esim/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/esim-without-google-play/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+      <loc>http://localhost:1313/devices/</loc>
+      <lastmod>2026-07-27</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/blog/what-is-esim/</loc>
-      <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-27</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/blog/</loc>
-      <lastmod>2026-07-23T00:00:00+03:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/ru-keyword-report/</loc>
-      <lastmod>2026-07-21T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-27</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/about-us/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/azerbaijan-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/argentina-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/armenia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/indonesia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/belarus-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/middle-east-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/bulgaria-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/brazil-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/united-kingdom-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/vietnam-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/germany-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/greece-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/georgia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/egypt-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/israel-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/india-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/italy-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/kazakhstan-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/canada-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/cyprus-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/china-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/south-korea-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/mauritius-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/malaysia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/maldives-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/morocco-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/mongolia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/namibia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/nepal-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/united-arab-emirates-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/oman-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/poland-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/russia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/seychelles-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/serbia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/singapore-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/thailand-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/tunisia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/turkey-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/uzbekistan-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/philippines-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/finland-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/france-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/montenegro-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/sri-lanka-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/south-africa-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/japan-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/contact/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/asia-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/sea-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/americas-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/africa-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/europe-esim/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/privacy-policy/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
+      <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
       <loc>http://localhost:1313/terms-of-service/</loc>
-      <lastmod>2026-07-20T00:00:00+00:00</lastmod>
-    </url><url>
-      <loc>http://localhost:1313/blog/esimblog-guidelines/</loc>
-      <lastmod>2026-07-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-07-20</lastmod>
     </url>
 </urlset>

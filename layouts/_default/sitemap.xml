@@ -1,20 +1,25 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {{ range .Pages }}
-    {{- /* 跳过所有分类 (taxonomy) 和标签 (term) 页面 */ -}}
-    {{- if not (or (eq .Kind "taxonomy") (eq .Kind "term")) -}}
+  {{- /* 遍历所有页面（包括 section, page 等） */ -}}
+  {{- range .Site.Pages }}
+    {{- /* 排除被标记为 sitemap_exclude 的页面 */ -}}
+    {{- if ne .Params.sitemap_exclude true }}
+      {{- /* 只包含 page 和 section 两种 kind（可根据需要添加其他 kind） */ -}}
+      {{- if or (eq .Kind "page") (eq .Kind "section") }}
+        {{- /* 可选：排除首页（通常首页已单独处理，但保留也不影响） */ -}}
+        {{- if ne .Kind "home" }}
     <url>
       <loc>{{ .Permalink }}</loc>
-      {{- if not .Lastmod.IsZero }}
-      <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
+      {{- $lastmodTime := .Lastmod }}
+      {{- if $lastmodTime.IsZero }}
+        {{- $lastmodTime = .Date }}
       {{- end }}
-      {{- with .Sitemap.ChangeFreq }}
-      <changefreq>{{ . }}</changefreq>
-      {{- end }}
-      {{- if ge .Sitemap.Priority 0.0 }}
-      <priority>{{ .Sitemap.Priority }}</priority>
+      {{- if not $lastmodTime.IsZero }}
+      <lastmod>{{ $lastmodTime.Format "2006-01-02" | safeHTML }}</lastmod>
       {{- end }}
     </url>
-    {{- end -}}
-  {{ end }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
 </urlset>
